@@ -78,61 +78,53 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 22 Haziran 2026 (Pazartesi)</div>
+    <div>Kapanış ref.: 23 Haziran 2026 (Salı)</div>
   </div>
 </header>
 
-<!-- ============================================================= -->
-<!--  GÜNLÜK GÜNCELLEME ALANI: Sadece aşağıdaki DATA objesini       -->
-<!--  düzenleyerek panoyu her gün güncelleyebilirsiniz.            -->
-<!-- ============================================================= -->
 <script>
 const DATA = {
-  asof: "23 Haziran 2026, Salı",
+  asof: "24 Haziran 2026, Çarşamba",
   kpis: [
-    {label:"USD/TRY", val:"46,43", chg:"yatay", dir:"flat", meta:"22 Haz"},
-    {label:"BIST 100", val:"14.730", chg:"%−0,03", dir:"down", meta:"22 Haz kapanış"},
-    {label:"5Y CDS", val:"217,97 bps", chg:"düşük risk bölgesi", dir:"up", meta:"17 Haz"},
-    {label:"TR 10Y getiri", val:"%33,03", chg:"gösterge tahvil", dir:"flat", meta:"15 Haz"},
+    {label:"USD/TRY", val:"46,48", chg:"yatay", dir:"flat", meta:"23 Haz"},
+    {label:"BIST 100", val:"14.539", chg:"%−1,29", dir:"down", meta:"23 Haz kapanış"},
+    {label:"5Y CDS", val:"218,97 bps", chg:"düşük risk bölgesi", dir:"up", meta:"19 Haz"},
+    {label:"TR 10Y getiri", val:"%33,37", chg:"küresel baskıyla ↑", dir:"down", meta:"23 Haz"},
     {label:"Efektif Fonlama", val:"%40", chg:"üst banttan", dir:"flat", meta:"politika faizi %37 · PPK 23 Tem"},
     {label:"TÜFE (yıllık)", val:"%32,61", chg:"çekirdek %30,44", dir:"down", meta:"Mayıs"},
     {label:"TCMB Rezerv", val:"152,1 mlr$", chg:"haftalık −7,3 mlr", dir:"down", meta:"12 Haz · yeni veri 25 Haz"},
-    {label:"TCMB Döviz Pozisyonu", val:"31,3 mlr$", chg:"günlük değişim −0,8 mlr$", dir:"down", meta:"19 Haz"},
-    {label:"S&P 500", val:"7.472,79", chg:"%−0,37", dir:"down", meta:"22 Haz"},
-    {label:"Nasdaq Bileşik", val:"26.166,60", chg:"%−1,32", dir:"down", meta:"AI/SpaceX satışı"},
-    {label:"ABD 10Y", val:"%4,48–4,49", chg:"yükseliş", dir:"down", meta:"22 Haz"},
-    {label:"WTI", val:"74,02$", chg:"%−4,28", dir:"down", meta:"Mart başından düşük"},
-    {label:"Brent", val:"~79,2$", chg:"sert düşüş", dir:"down", meta:"22 Haz"},
-    {label:"Altın", val:"4.198$", chg:"toparlanma", dir:"up", meta:"22 Haz"},
+    {label:"TCMB Döviz Pozisyonu", val:"~31,4 mlr$", chg:"19 Haz 31,3'ten yatay", dir:"flat", meta:"23 Haz"},
+    {label:"S&P 500", val:"7.365,46", chg:"%−1,44", dir:"down", meta:"23 Haz"},
+    {label:"Dow Jones", val:"51.666,84", chg:"%−0,09 (yatay)", dir:"flat", meta:"23 Haz"},
+    {label:"Nasdaq Bileşik", val:"26.166,6", chg:"22 Haz kapanış", dir:"flat", meta:"23 Haz verisi gecikmeli"},
+    {label:"ABD 10Y", val:"%4,51", chg:"yüksek seyir", dir:"flat", meta:"22 Haz"},
+    {label:"Brent", val:"77,29$", chg:"%−0,78", dir:"down", meta:"23 Haz"},
+    {label:"Altın", val:"4.089$", chg:"4.100$ altı", dir:"down", meta:"24 Haz"},
+    {label:"KOSPI", val:"%−9,99", chg:"çip satışı", dir:"down", meta:"23 Haz · Samsung/SK Hynix −%12"},
     {label:"Fed Funds", val:"%3,50–3,75", chg:"şahin duruş", dir:"flat", meta:"FOMC 17 Haz"},
   ],
-  // Önemli günlük/haftalık değişimler (grafik) — % cinsinden
   moves: {
-    labels:["S&P 500","Nasdaq","Dow","WTI","BIST 100","USD/TRY"],
-    values:[-0.37, -1.32, 0.29, -4.28, -0.03, 0.01],
-    note:"22 Haziran günlük değişim (%). ABD'de teknoloji öncülüğünde satış; enerji zayıf seyrini koruyor."
+    labels:["KOSPI","S&P 500","Dow","BIST 100","Brent","USD/TRY"],
+    values:[-9.99, -1.44, -0.09, -1.29, -0.78, 0.03],
+    note:"23 Haziran günlük değişim (%). Asya çip satışı küresele yayıldı (KOSPI −%10)."
   },
-  // TCMB Döviz Pozisyonu (Net_Reserves L kolonu, 27 Şubat'tan beri, mlr USD) — Kaynak: TCMB/EVDS
   fxposition: {
-    labels:["27.02","02.03","03.03","04.03","05.03","06.03","09.03","10.03","11.03","12.03","13.03","16.03","17.03","18.03","19.03","23.03","24.03","25.03","26.03","27.03","30.03","31.03","01.04","02.04","03.04","06.04","07.04","08.04","09.04","10.04","13.04","14.04","15.04","16.04","17.04","20.04","21.04","22.04","24.04","27.04","28.04","29.04","30.04","04.05","05.05","06.05","07.05","08.05","11.05","12.05","13.05","14.05","15.05","18.05","20.05","21.05","22.05","25.05","26.05","01.06","02.06","03.06","04.06","05.06","08.06","09.06","10.06","11.06","12.06","15.06","16.06","17.06","18.06","19.06"],
-    values:[22.94,23.19,23.44,23.44,23.44,23.44,23.44,23.44,23.44,23.49,23.74,23.80,23.83,23.92,24.30,24.84,25.21,25.59,26.34,27.13,28.08,29.17,29.88,30.26,30.52,30.75,31.14,31.29,31.37,31.43,31.46,31.53,31.57,31.64,31.42,31.42,31.44,31.56,31.08,31.15,31.20,31.32,31.45,31.47,31.49,31.50,31.51,30.94,30.99,31.00,31.07,31.07,30.75,30.75,30.76,30.80,31.70,31.80,31.80,31.99,32.06,32.14,32.22,32.13,32.24,32.36,32.46,32.58,32.12,32.20,32.27,32.34,32.10,31.30],
-    note:"Son: 31,3 mlr$ (19 Haz) · günlük değişim −0,8 mlr$ · tepe 32,6 (11 Haz)."
+    labels:["27.02","02.03","03.03","04.03","05.03","06.03","09.03","10.03","11.03","12.03","13.03","16.03","17.03","18.03","19.03","23.03","24.03","25.03","26.03","27.03","30.03","31.03","01.04","02.04","03.04","06.04","07.04","08.04","09.04","10.04","13.04","14.04","15.04","16.04","17.04","20.04","21.04","22.04","24.04","27.04","28.04","29.04","30.04","04.05","05.05","06.05","07.05","08.05","11.05","12.05","13.05","14.05","15.05","18.05","20.05","21.05","22.05","25.05","26.05","01.06","02.06","03.06","04.06","05.06","08.06","09.06","10.06","11.06","12.06","15.06","16.06","17.06","18.06","19.06","22.06","23.06"],
+    values:[22.94,23.19,23.44,23.44,23.44,23.44,23.44,23.44,23.44,23.49,23.74,23.80,23.83,23.92,24.30,24.84,25.21,25.59,26.34,27.13,28.08,29.17,29.88,30.26,30.52,30.75,31.14,31.29,31.37,31.43,31.46,31.53,31.57,31.64,31.42,31.42,31.44,31.56,31.08,31.15,31.20,31.32,31.45,31.47,31.49,31.50,31.51,30.94,30.99,31.00,31.07,31.07,30.75,30.75,30.76,30.80,31.70,31.80,31.80,31.99,32.06,32.14,32.22,32.13,32.24,32.36,32.46,32.58,32.12,32.20,32.27,32.34,32.10,31.30,31.37,31.44],
+    note:"Son: ~31,4 mlr$ (23 Haz) · 19 Haz 31,3 · tepe 32,6 (11 Haz)."
   },
-  // TCMB toplam rezervler (FX+altın, mlr USD) — yalnızca teyitli noktalar
   reserves: {
     labels:["16 Oca","6 Mar","5 Haz","12 Haz"],
     values:[205.2, 197.4, 159.4, 152.1],
     note:"Teyitli haftalık değerler. 12 Haz'daki −7,3 mlr düşüşün büyük kısmı altın fiyatı kaynaklı (değerleme etkisi)."
   },
-  // Mayıs 2026 enflasyon — yıllık % (teyitli)
   inflation: {
     labels:["TÜFE","Çekirdek-C","Yİ-ÜFE"],
     values:[32.61, 30.44, 28.93],
-    note:"Mayıs 2026 yıllık. TÜFE aylık +1,71. *İleride aylık seriye çevrilebilir."
+    note:"Mayıs 2026 yıllık. TÜFE aylık +1,71."
   },
   calendar: [
-    {d:"Sal 23", r:"🌍 Küresel", e:"Haziran öncü PMI'lar (EZ/UK/ABD)", imp:"m"},
-    {d:"Sal 23", r:"🇺🇸 ABD", e:"Tüketici güveni (Conf. Board), yeni konut satışları", imp:"m"},
+    {d:"Çar 24", r:"🇺🇸 ABD", e:"Yeni konut satışları; Asya çip satışı takibi", imp:"m"},
     {d:"Per 25", r:"🇹🇷 TR", e:"TCMB haftalık rezervler + yabancı menkul kıymet giriş-çıkış", imp:"h"},
     {d:"Per 25", r:"🇺🇸 ABD", e:"Nihai 1Ç GSYİH, dayanıklı mal, işsizlik başvuruları", imp:"m"},
     {d:"Cum 26", r:"🇺🇸 ABD", e:"Mayıs PCE — HAFTANIN KİLİT VERİSİ (çek. %3,4 bek.)", imp:"h"},
@@ -140,22 +132,19 @@ const DATA = {
     {d:"23 Tem", r:"🇹🇷 TR", e:"TCMB PPK toplantısı", imp:"h"},
   ],
   notes: [
-    "<b>Günün gelişmesi — ABD'de teknoloji satışı:</b> SpaceX kaynaklı volatilite (SPCX −%16, 3 günde −%23, ~600 mlr$ kayıp; ~20 mlr$ tahvil ihracı + IPO zararları), AI/teknoloji kâr realizasyonu ve çeyreklik endeks revizyonu. Nasdaq −%1,32, S&P −%0,37; Dow +%0,29 (değere rotasyon). 10Y %4,48–4,49.",
-    "<b>Beklentiler (Sektörel, dün):</b> Hanehalkı 12-ay %46,13 (−3,38 puan, düştü); reel sektör %33,10 (sabit); piyasa %23,81. Seviyeler yüksek → 23 Tem'de temkinli duruş.",
-    "<b>Para politikası:</b> TCMB politika faizinden (%37) değil, üst banttan — %40'tan — fonluyor; efektif fonlama %40, sıkı duruş sürüyor.",
-    "<b>Enerji:</b> WTI ~74$; düşük seyir cari dengeye destek. Enerji varsayımı kalıcı iyileşirse 12 aylık açık baz patikanın (44–47 mlr$) alt bandına yönelebilir.",
-    "<b>Tüketici güveni (Haziran):</b> 87,9 (+%2,5; Mayıs 85,8) — 3 yılın zirvesi ama <100. İç talep diri.",
-    "<b>Turizm (Mayıs):</b> ziyaretçi 4,86 mn (%−3,58 y/y); Oca-May 15,23 mn (%−2,56). Yaz sezonu için uyarı.",
-    "<b>Borç stoku (Mayıs):</b> brüt 14,99 trln₺; döviz cinsi pay %51,9 — yarısından fazlası kur riskine açık.",
-    "<b>Net döviz pozisyonu:</b> 19 Haz 31,3 mlr$ (günlük −0,8); 27 Şub ~22,9 → 11 Haz tepe ~32,6 mlr$. Toplam rezerv 152,1 mlr$ (12 Haz). Per 25 haftalık veri izlenecek."
+    "<b>Günün gelişmesi — çip kaynaklı küresel satış:</b> Asya'da bellek çipi devleri çakıldı (KOSPI −%9,99; Samsung/SK Hynix −%12+), AI ticaretine şüphe arttı. ABD'ye taşındı: S&P −%1,44 (7.365), Dow yatay (51.667); Nasdaq çip ağırlığıyla daha sert (kesin kapanış teyit bekliyor). BofA faiz artışı notu da baskıladı. 10Y %4,51.",
+    "<b>Tema genişliyor:</b> Pazartesi SpaceX → Salı yarı iletkenler. Henüz konumlanma düzeltmesi (sistemik değil), ama güçlü dolar + yüksek faizle GOP'lara baskı kanalı.",
+    "<b>Beklentiler (Sektörel):</b> Hanehalkı 12-ay %46,13 (−3,38 puan); reel sektör %33,10 (sabit); piyasa %23,81. Seviyeler yüksek → 23 Tem'de temkinli.",
+    "<b>Para politikası:</b> TCMB politika faizinden (%37) değil, üst banttan — %40'tan — fonluyor; efektif fonlama %40.",
+    "<b>PMI:</b> ABD imalat PMI 55,7 (4 yılın zirvesi, beklenti üstü); bileşik büyüme ~%1 (2Ç) ile ılımlı.",
+    "<b>Net döviz pozisyonu:</b> ~31,4 mlr$ (23 Haz; 19 Haz 31,3). Toplam rezerv 152,1 mlr$ (12 Haz). Per 25 haftalık veri izlenecek.",
+    "<b>Enerji & altın:</b> Brent ~77$; altın 4.089$ ile 4.100 altına indi (güçlü dolar, DXY 101,4). Altındaki düşüş TCMB rezerv değerlemesi için izlenmeli."
   ]
 };
 </script>
 
-<!-- KPI KARTLARI -->
 <div class="grid kpis" id="kpiGrid"></div>
 
-<!-- GRAFİKLER -->
 <h2>Piyasa Hareketleri & TCMB Döviz Pozisyonu</h2>
 <div class="grid two">
   <div class="chartbox"><canvas id="movesChart"></canvas></div>
@@ -168,7 +157,6 @@ const DATA = {
   <div class="chartbox"><canvas id="cpiChart"></canvas></div>
 </div>
 
-<!-- TAKVİM + NOTLAR -->
 <h2>Makro Takvim & SPINN Notları</h2>
 <div class="grid three">
   <div class="card">
@@ -188,7 +176,6 @@ const DATA = {
 </footer>
 
 <script>
-// ---- Render KPI cards ----
 document.getElementById('asof').textContent = DATA.asof;
 const kg = document.getElementById('kpiGrid');
 DATA.kpis.forEach(k=>{
@@ -199,20 +186,15 @@ DATA.kpis.forEach(k=>{
     <div class="chg ${k.dir}">${arrow} ${k.chg}</div>
     <div class="meta">${k.meta}</div></div>`);
 });
-
-// ---- Calendar ----
 const cb = document.getElementById('calBody');
 DATA.calendar.forEach(c=>{
   const lbl = c.imp==='h'?'Yüksek':c.imp==='m'?'Orta':'Düşük';
   cb.insertAdjacentHTML('beforeend',
    `<tr><td><b>${c.d}</b></td><td>${c.r}</td><td>${c.e}</td><td><span class="pill ${c.imp}">${lbl}</span></td></tr>`);
 });
-
-// ---- Notes ----
 const nb = document.getElementById('notesBox');
 DATA.notes.forEach(n=> nb.insertAdjacentHTML('beforeend',`<div class="note">${n}</div>`));
 
-// ---- Charts ----
 const gridc = '#2a3450', txtc = '#94a3c4';
 Chart.defaults.color = txtc; Chart.defaults.font.family = "'Segoe UI',sans-serif";
 
@@ -240,7 +222,6 @@ new Chart(document.getElementById('fxposChart'),{
    scales:{x:{grid:{color:gridc},ticks:{maxTicksLimit:12,autoSkip:true}},y:{grid:{color:gridc}}}}
 });
 
-// Rezervler (çizgi)
 new Chart(document.getElementById('resChart'),{
   type:'line',
   data:{labels:DATA.reserves.labels,
@@ -253,7 +234,6 @@ new Chart(document.getElementById('resChart'),{
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc}}}}
 });
 
-// Enflasyon (bar)
 new Chart(document.getElementById('cpiChart'),{
   type:'bar',
   data:{labels:DATA.inflation.labels,
