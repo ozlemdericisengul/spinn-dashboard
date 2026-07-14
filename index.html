@@ -78,7 +78,7 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 9 Temmuz 2026 (Perşembe)</div>
+    <div>Kapanış ref.: 13 Temmuz 2026 (Pazartesi)</div>
   </div>
 </header>
 
@@ -88,26 +88,26 @@
 <!-- ============================================================= -->
 <script>
 const DATA = {
-  asof: "10 Temmuz 2026, Cuma",
+  asof: "14 Temmuz 2026, Salı",
   kpis: [
-    {label:"USD/TRY", val:"46,77", chg:"%+0,04 (yatay)", dir:"flat", meta:"9 Tem · önceki 46,75"},
-    {label:"BIST 100", val:"14.105", chg:"%-0,60 (küreselden ayrıştı)", dir:"down", meta:"9 Tem · USD bazında 3,02"},
-    {label:"5Y CDS", val:"~220 bps", chg:"düşük risk bölgesi", dir:"flat", meta:"7 Tem son kote · jeopolitik prim izlenecek"},
-    {label:"TR 10Y getiri", val:"%33,80", chg:"2Y·5Y·10Y ikinci gün ↑", dir:"down", meta:"2Y %40,81 (↑) · 5Y %38,47 (↑)"},
+    {label:"USD/TRY", val:"~47,00", chg:"%+0,05 (sınırlı yukarı)", dir:"down", meta:"13 Tem · euro/TL 53,7 dolayında · TL'de kontrollü aşınma"},
+    {label:"BIST 100", val:"14.092", chg:"%-1,60 (cuma toparlanması geri verildi)", dir:"down", meta:"13 Tem · USD bazında ~3,00 · küresel risk-off"},
+    {label:"5Y CDS", val:"~225 bps", chg:"düşük risk bölgesi", dir:"flat", meta:"son kote · enerji kaynaklı dış denge riski izlenecek"},
+    {label:"TR 10Y getiri", val:"%33,80", chg:"son kotasyon", dir:"flat", meta:"2Y ~40,7 · 5Y ~38,2 · risk-off ile yukarı baskı"},
     {label:"Efektif Fonlama", val:"%40", chg:"üst banttan", dir:"flat", meta:"politika faizi %37 · PPK 23 Tem"},
     {label:"TÜFE (yıllık)", val:"%32,11", chg:"Haziran · aylık +0,99", dir:"down", meta:"çekirdek %29,84 · Yİ-ÜFE %28,09"},
-    {label:"TCMB Brüt Rezerv", val:"159,7 mlr$", chg:"150 mlr$ ÜZERİNDE (+10,5)", dir:"up", meta:"3 Tem · altın 97,7 + döviz 62,0 · şok öncesi"},
+    {label:"TCMB Brüt Rezerv", val:"159,7 mlr$", chg:"3 Tem (şok öncesi)", dir:"up", meta:"altın 97,7 + döviz 62,0 · yeni veri 16 Tem Perşembe"},
     {label:"TCMB Net Rezerv", val:"50,2 mlr$", chg:"son teyitli", dir:"flat", meta:"8 Tem· kamu mevduatı hariç 58,7"},
     {label:"TCMB Döviz Pozisyonu", val:"35,4 mlr$", chg:"8 Tem son nokta", dir:"flat", meta:"açık pozisyon (VIOP short ~5,1 mlr$)"},
-    {label:"ABD Çekirdek PCE", val:"%3,4", chg:"Ekim 2023'ten yüksek", dir:"down", meta:"Mayıs · manşet %4,1"},
+    {label:"ABD Haziran TÜFE", val:"bugün 15:30", chg:"önceki %4,2 · konsensüs %3,8", dir:"flat", meta:"HENÜZ açıklanmadı · haftanın ana verisi"},
     {label:"ABD JOLTS", val:"7,59 mn", chg:"2 yıl zirvesi", dir:"down", meta:"Mayıs · beklenti 7,30"},
-    {label:"S&P 500", val:"7.543,64", chg:"%+0,81 (çip ralisi)", dir:"up", meta:"9 Tem · +60,93"},
-    {label:"Nasdaq Bileşik", val:"26.206,89", chg:"%+1,30 (yarı iletken)", dir:"up", meta:"9 Tem · Micron +%4,5"},
-    {label:"Dow Jones", val:"52.487,41", chg:"%+0,27 (+139)", dir:"up", meta:"9 Tem"},
-    {label:"ABD 10Y", val:"%4,55", chg:"yatay (petrol geriledi)", dir:"flat", meta:"9 Tem · 2Y %4,19"},
-    {label:"Altın", val:"~4.075$", chg:"yatay / hafif zayıf", dir:"flat", meta:"9 Tem · güçlü dolar baskısı"},
-    {label:"Brent", val:"~76$", chg:"78'den geri çekildi", dir:"down", meta:"9 Tem web · bu sabah 75,80 · Hürmüz primi azaldı"},
-    {label:"Fed Funds", val:"%3,50–3,75", chg:"dört toplantı sabit", dir:"flat", meta:"FedWatch 29 Tem %74,9 sabit · artırım %25,1"},
+    {label:"S&P 500", val:"7.515,34", chg:"%-0,79 (çip öncülüğünde satış)", dir:"down", meta:"13 Tem · enerji şoku risk-off"},
+    {label:"Nasdaq Bileşik", val:"25.873,18", chg:"%-1,55 (Micron, Nvidia geriledi)", dir:"down", meta:"13 Tem · SK Hynix Seul'de rekor kayıp"},
+    {label:"Dow Jones", val:"52.498,64", chg:"%-0,26 (enerji hisseleri destekledi)", dir:"down", meta:"13 Tem · -138,4"},
+    {label:"ABD 10Y", val:"%4,585", chg:"iki haftanın zirvesi", dir:"up", meta:"13 Tem · enerji kaynaklı enflasyon endişesi"},
+    {label:"Altın", val:"~4.002$", chg:"düşüş sürdü", dir:"down", meta:"yükselen reel getiri + güçlü dolar jeopolitik primi bastırdı"},
+    {label:"Brent", val:"~84,84$", chg:"pzt +~%10, bu sabah +%1,85", dir:"up", meta:"14 Tem · Trump'ın %20 Hürmüz geçiş bedeli · WTI 79,78$"},
+    {label:"Fed Funds", val:"%3,50–3,75", chg:"dört toplantı sabit", dir:"flat", meta:"FedWatch 29 Tem: 25bp artırım ihtimali %34→%41+ (petrol şoku)"},
   ],
   // Önemli günlük/haftalık değişimler (grafik) — % cinsinden
   moves: {
@@ -125,7 +125,7 @@ const DATA = {
   reserves: {
     labels:["16 Oca","6 Mar","5 Haz","12 Haz","19 Haz","26 Haz","3 Tem"],
     values:[205.2, 197.4, 159.4, 152.1, 157.2, 149.2, 159.7],
-    note:"3 Tem: brüt 159,7 mlr$ (tek haftada +10,5) — 150 mlr$ eşiğinin belirgin ÜZERİNE döndü (altın 97,7 + döviz 62,0). ANCAK bu veri 8-9 Tem jeopolitik şoku ÖNCESİ; şokun döviz talebine etkisi gelecek haftanın verisinde görünecek."
+    note:"3 Tem: brüt 159,7 mlr$ (tek haftada +10,5) — 150 mlr$ eşiğinin belirgin ÜZERİNDE (altın 97,7 + döviz 62,0). Bu veri 8-9 Tem şoku ÖNCESİ; şokun etkisi 16 Tem Perşembe açıklanacak 10 Tem haftası verisinde okunacak."
   },
   // Haziran 2026 enflasyon — yıllık % (teyitli, TÜİK 3 Tem)
   inflation: {
@@ -134,19 +134,25 @@ const DATA = {
     note:"Haziran 2026 yıllık. TÜFE aylık +0,99 (beklenti altı); çekirdek 29,84; Yİ-ÜFE 28,09. Disinflasyon sürüyor."
   },
   calendar: [
-    {d:"Cum 10 Tem", r:"🇹🇷 TR", e:"Yoğun veri akışı yok — jeopolitik başlıklar izleniyor", imp:"l"},
-    {d:"Süregelen", r:"🌍 Global", e:"ABD-İran / Hürmüz başlıkları + Brent — piyasa yönü", imp:"h"},
-    {d:"Gelecek hafta", r:"🇹🇷 TR", e:"Haftalık rezerv verisi — 8-9 Tem şoku sonrası İLK okuma", imp:"h"},
+    {d:"Sal 14 Tem", r:"🇺🇸 ABD", e:"Haziran TÜFE (TSİ 15:30) — önceki %4,2 · konsensüs %3,8", imp:"h"},
+    {d:"Sal 14 Tem", r:"🇺🇸 ABD", e:"FOMC tutanakları — Fed içi ayrışma izlenecek", imp:"m"},
+    {d:"Çar 15 Tem", r:"🇺🇸 ABD", e:"Haziran ÜFE + Empire State imalat endeksi", imp:"m"},
+    {d:"Per 16 Tem", r:"🇹🇷 TR", e:"TCMB haftalık rezervler (10 Tem haftası) — şok sonrası İLK okuma", imp:"h"},
+    {d:"Per 16 Tem", r:"🇺🇸 ABD", e:"Perakende satışlar + Philadelphia Fed", imp:"m"},
+    {d:"17 Tem", r:"🇹🇷 TR", e:"Fitch Türkiye kredi değerlendirmesi", imp:"h"},
+    {d:"19 Tem", r:"🇹🇷 TR", e:"İthalatta ilave gümrük vergisi (İGV) yürürlüğe giriyor", imp:"m"},
+    {d:"Süregelen", r:"🌍 Global", e:"Hürmüz'de %20 geçiş bedeli / abluka + Brent — piyasa yönü", imp:"h"},
     {d:"23 Tem", r:"🇹🇷 TR", e:"TCMB PPK toplantısı", imp:"h"},
-    {d:"29 Tem", r:"🇺🇸 ABD", e:"FOMC faiz kararı — FedWatch %74,9 sabit", imp:"h"},
+    {d:"24 Tem", r:"🇹🇷 TR", e:"Moody's Türkiye kredi değerlendirmesi", imp:"h"},
+    {d:"29 Tem", r:"🇺🇸 ABD", e:"FOMC faiz kararı — 25bp artırım ihtimali %41'e yükseldi", imp:"h"},
   ],
   notes: [
-    "<b>Günün teması — küresel toparlanma:</b> Risk iştahı jeopolitik başlıklara rağmen toparlandı. Nasdaq +%1,30 (26.207), S&P +%0,81 (7.544), Dow +%0,27 (52.487). Micron +%4,5, Sandisk +%7,6 ile çip ralisi ve Brent'in 76$'a gerilemesi destek oldu; piyasa Hürmüz'de kalıcı kesinti beklemiyor.",
-    "<b>Türkiye küresel raliden ayrıştı:</b> BİST-100 -%0,60 → 14.105 (USD bazı 3,02); USD/TRY 46,77 yatay; gösterge 2Y %40,81'e, 5Y %38,47'ye, 10Y %33,80'e ikinci gün yükseldi. Jeopolitik prim yurt içi fiyatlamada hâlâ etkili.",
-    "<b>Rezervde güçlü sıçrama (3 Tem):</b> Brüt rezerv 149,2 → 159,7 mlr$ (+10,5), 150 eşiğinin ÜZERİNE. Döviz +7,7 (62,0), altın +2,8 (97,7). ANCAK veri 8-9 Tem şoku ÖNCESİ — döviz talebi etkisi gelecek haftanın verisinde okunacak.",
-    "<b>Brent 78'den 76'ya geriledi:</b> İki günlük yükseliş kırıldı; bu sabah ~75,80$. ABD 10Y %4,55 yatay, DXY 101. Altın 4.075$ bandında yatay — güvenli liman alımı yerine güçlü dolar baskın çıktı.",
-    "<b>Fed sabit fiyatlanıyor:</b> CME FedWatch 29 Tem için sabiti %74,9, çeyrek puan artırımı %25,1, indirimi ~%0 fiyatlıyor. Politika faizi dört toplantıdır %3,50–3,75 bandında.",
-    "<b>Yorumum — Kırılganlığa mola:</b> Dünkü toparlanmayı jeopolitik riskin ortadan kalktığı bir düze çıkış değil piyasanın Hürmüz senaryosunu yeniden ve daha ölçülü fiyatladığı bir ayarlama olarak okuyorum, petrolün 76 dolar civarında mı kalıcılaşacağı yoksa yeniden 80'e mi tırmanacağı önümüzdeki günlerin asıl sorusu olacak.  "
+    "<b>Hürmüz'de tarife şoku:</b> Trump pazartesi Hürmüz'den geçen tüm kargoya %20 geçiş bedeli getireceğini açıkladı ve İran gemiciliğine ablukayı yeniden uygulamaya koydu. Brent pazartesi ~%10 sıçradı, bu sabah 84,84$ (+%1,85), WTI 79,78$. Cuma 76$ olan varil üç günde 84$'ı aştı.",
+    "<b>Wall Street satıldı:</b> S&P 500 -%0,79 (7.515), Nasdaq -%1,55 (25.873) çip öncülüğünde geriledi (Micron, Nvidia; SK Hynix Seul'de rekor kayıp); Dow enerji hisseleriyle -%0,26'da kaldı. ABD 10Y %4,585 ile iki haftanın zirvesinde, altın 4.002$'a düştü.",
+    "<b>Fed artırım ihtimali yükseliyor:</b> CME FedWatch'te 29 Tem için 25bp artırım ihtimali pazar %34'ten %41'in üzerine çıktı; indirim fiyatlanmıyor. Enerji kaynaklı enflasyon endişesi, sabit senaryosunu korurken artırım tarafını besliyor.",
+    "<b>BİST cuma toparlanmasını geri verdi:</b> BİST-100 pazartesi -%1,60 → 14.092 (USD bazı ~3,00); küresel risk-off ve enerji şoku etkili. USD/TRY ~47,00; TL'de kontrollü aşınma sürüyor. 5Y CDS ~225 bps.",
+    "<b>TCMB fonlama görüşüm:</b> 23 Tem'de politika faizi %37'de sabit; haftalık repo ve fonlamanın zamanla %40'ın ALTINA gerilemesini bekliyorum. Ne var ki Brent'in 76'dan 84$'a çıkması bu beklentimin petrol-enflasyon dayanağını belirgin biçimde bozdu; beklentimi koruyorum, riski bir kademe daha yukarı çektim.",
+    "<b>Haftanın sınavları:</b> Bugün 15:30 ABD Haziran TÜFE'si (önceki %4,2, konsensüs %3,8), perşembe 10 Tem haftası rezerv verisi (şok sonrası İLK fotoğraf), 17 Tem Fitch ve 24 Tem Moody's Türkiye değerlendirmeleri, 19 Tem İGV yürürlüğü. Hepsi disinflasyon-eksenli baz senaryomun testi."
   ]
 };
 </script>
