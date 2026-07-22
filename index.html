@@ -78,7 +78,7 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 20 Temmuz 2026 (Pazartesi)</div>
+    <div>Kapanış ref.: 21 Temmuz 2026 (Salı)</div>
   </div>
 </header>
 
@@ -88,25 +88,25 @@
 <!-- ============================================================= -->
 <script>
 const DATA = {
-  asof: "21 Temmuz 2026, Salı",
+  asof: "22 Temmuz 2026, Çarşamba",
   kpis: [
-    {label:"USD/TRY", val:"~47,09", chg:"hafif artış", dir:"down", meta:"20 Tem · interbank ~47,09 · euro/TL 53,85 · kontrollü değer kaybı sürüyor"},
-    {label:"BIST 100", val:"14.070,98", chg:"%+0,64 (20 Tem kapanış)", dir:"up", meta:"USD bazı ~2,99 · hacim 186,1 mlr TL · küresel dalgadan yine ayrıştı"},
-    {label:"5Y CDS", val:"~233 bps", chg:"düşük risk bölgesi", dir:"flat", meta:"son kote · Brent/rezerv kaynaklı dış denge riski izlenecek"},
-    {label:"TR 10Y getiri", val:"%34,8", chg:"son kote", dir:"flat", meta:"2Y %41,8 · eğri ters"},
-    {label:"Efektif Fonlama", val:"%40", chg:"üst banttan", dir:"flat", meta:"politika faizi %37 · PPK 23 Tem"},
+    {label:"USD/TRY", val:"~47,09", chg:"%+0,23 (21 Tem)", dir:"down", meta:"21 Tem kapanış · euro/TL 53,85 · EUR/USD 1,1435 · kontrollü değer kaybı"},
+    {label:"BIST 100", val:"13.974,14", chg:"%−0,69 (21 Tem)", dir:"down", meta:"USD bazı ~2,97 $ · 14.000 altına döndü · PPK öncesi temkin"},
+    {label:"5Y CDS", val:"~233 bps", chg:"son kote (17 Tem)", dir:"flat", meta:"düşük risk bölgesi · Brent/rezerv kaynaklı dış denge riski"},
+    {label:"TR 2Y getiri", val:"%41,81", chg:"12 Haz'dan en yüksek kapanış", dir:"down", meta:"gün içi %42 test · önceki %41,77 · 10Y %34,8 · eğri ters"},
+    {label:"Efektif Fonlama", val:"%40", chg:"üst banttan", dir:"flat", meta:"politika faizi %37 · PPK 23 Tem (piyasa: sabit)"},
     {label:"TÜFE (yıllık)", val:"%32,11", chg:"Haziran · aylık +0,99", dir:"down", meta:"çekirdek %29,84 · Yİ-ÜFE %28,09"},
-    {label:"Fitch Notu", val:"BB- / Durağan", chg:"teyit (17 Tem)", dir:"flat", meta:"görünüm gerekçesi: İran savaşından bu yana rezerv erimesi"},
-    {label:"TCMB Brüt Rezerv", val:"163,3 mlr$", chg:"10 Tem · +3,6 haftalık", dir:"up", meta:"altın 96,2 + döviz 67,1 · şok öncesi fotoğraf · 17 Tem haftası 24 Tem'de"},
-    {label:"TCMB Net Rezerv", val:"~47,0 mlr$", chg:"son veri 17 Tem", dir:"down", meta:"bir günde 4,7 milyar dolar düşüş"},
-    {label:"TCMB Döviz Pozisyonu", val:"~33,8 mlr$", chg:"son veri 17 Tem", dir:"down", meta:"açık pozisyon (VIOP short ~4,2 mlr$)"},
-    {label:"S&P 500", val:"7.443,28", chg:"%-0,19 (20 Tem)", dir:"down", meta:"20 Tem · İran endişesi"},
-    {label:"Nasdaq Bileşik", val:"25.508,07", chg:"%-0,05 (20 Tem)", dir:"down", meta:"20 Tem · çip hafif toparlandı"},
-    {label:"Dow Jones", val:"51.839,26", chg:"%-0,59 (-307)", dir:"down", meta:"20 Tem"},
-    {label:"ABD 10Y", val:"%4,60", chg:"hafif yükseldi", dir:"flat", meta:"20 Tem"},
-    {label:"Altın", val:"~4.022$", chg:"%+0,36", dir:"up", meta:"21 Tem · güvenli liman talebi"},
-    {label:"Brent", val:"~90,7$", chg:"%+3 (Hürmüz)", dir:"up", meta:"21 Tem · 88'den 90'a · geçiş durdu, terminal vuruldu"},
-    {label:"Fed Funds", val:"%3,50–3,75", chg:"dört toplantı sabit", dir:"flat", meta:"FedWatch 29 Tem: sabit ~%86,7 · artırım ~%13,3"},
+    {label:"Kredi Notu", val:"BB- / Durağan", chg:"Moody's 24 Tem", dir:"flat", meta:"Fitch teyit (17 Tem) · gerekçe rezerv erimesi · sırada Moody's"},
+    {label:"TCMB Brüt Rezerv", val:"163,3 mlr$", chg:"10 Tem · +3,6 haftalık", dir:"up", meta:"altın 96,2 + döviz 67,1 · 17 Tem haftası 24 Tem'de"},
+    {label:"TCMB Net Rezerv", val:"~49,9 mlr$", chg:"20 Tem", dir:"flat", meta:"Hazine dahil 56,2 mlr$ · swap hariç"},
+    {label:"TCMB Döviz Pozisyonu", val:"~36,4 mlr$", chg:"20 Tem", dir:"flat", meta:"açık pozisyon −16,6 mlr$ · VIOP short 4,2 mlr$"},
+    {label:"S&P 500", val:"7.509,20", chg:"%+0,89 (21 Tem)", dir:"up", meta:"21 Tem · çip/bellek ralisi"},
+    {label:"Nasdaq Bileşik", val:"25.837", chg:"%+1,29 (21 Tem)", dir:"up", meta:"Micron +%12 · SanDisk +%14 · 3 günlük düşüş kırıldı"},
+    {label:"Dow Jones", val:"52.224,64", chg:"%+0,74 (21 Tem)", dir:"up", meta:"21 Tem"},
+    {label:"ABD 10Y", val:"%4,63", chg:"+3 bp (21 Tem)", dir:"flat", meta:"21 Tem"},
+    {label:"Altın", val:"~4.083$", chg:"%+1,75 (21 Tem)", dir:"up", meta:"21 Tem · güvenli liman talebi"},
+    {label:"Brent", val:"~91,10$", chg:"%+2,11 (21 Tem)", dir:"up", meta:"Hürmüz akışı savaş öncesinin ~%15'i · 100$ riski"},
+    {label:"Fed Funds", val:"%3,50–3,75", chg:"dört toplantı sabit", dir:"flat", meta:"FedWatch 29 Tem: sabit ~%83,4 · artırım ~%16,6"},
   ],
   // Önemli günlük/haftalık değişimler (grafik) — % cinsinden
   moves: {
@@ -118,13 +118,13 @@ const DATA = {
   fxposition: {
     labels:["27.02","02.03","03.03","04.03","05.03","06.03","09.03","10.03","11.03","12.03","13.03","16.03","17.03","18.03","19.03","23.03","24.03","25.03","26.03","27.03","30.03","31.03","01.04","02.04","03.04","06.04","07.04","08.04","09.04","10.04","13.04","14.04","15.04","16.04","17.04","20.04","21.04","22.04","24.04","27.04","28.04","29.04","30.04","04.05","05.05","06.05","07.05","08.05","11.05","12.05","13.05","14.05","15.05","18.05","20.05","21.05","22.05","25.05","26.05","01.06","02.06","03.06","04.06","05.06","08.06","09.06","10.06","11.06","12.06","15.06","16.06","17.06","18.06","19.06","22.06","23.06","24.06","25.06"],
     values:[22.94,23.19,23.44,23.44,23.44,23.44,23.44,23.44,23.44,23.49,23.74,23.80,23.83,23.92,24.30,24.84,25.21,25.59,26.34,27.13,28.08,29.17,29.88,30.26,30.52,30.75,31.14,31.29,31.37,31.43,31.46,31.53,31.57,31.64,31.42,31.42,31.44,31.56,31.08,31.15,31.20,31.32,31.45,31.47,31.49,31.50,31.51,30.94,30.99,31.00,31.07,31.07,30.75,30.75,30.76,30.80,31.70,31.80,31.80,31.99,32.06,32.14,32.22,32.13,32.24,32.36,32.46,32.58,32.12,32.20,32.27,32.34,32.10,31.30,31.37,31.44,31.51,31.58],
-    note:"Son: ~31,6 mlr$ (25 Haz) · 19 Haz 31,3 · tepe 32,6 (11 Haz)."
+    note:"Haziran sonu serisi (25 Haz'a kadar). Güncel toplam döviz pozisyonu ~36,4 mlr$ (20 Tem); açık pozisyon −16,6 mlr$, VIOP forward short 4,2 mlr$."
   },
   // TCMB toplam rezervler (FX+altın, mlr USD) — yalnızca teyitli noktalar
   reserves: {
     labels:["16 Oca","6 Mar","5 Haz","12 Haz","19 Haz","26 Haz","3 Tem","10 Tem"],
     values:[205.2, 197.4, 159.4, 152.1, 157.2, 149.2, 159.7, 163.3],
-    note:"10 Tem: brüt 163,3 mlr$ (+3,6 haftalık) — beklediğim erime GELMEDİ (altın 96,2 + döviz 67,1). Fitch, 17 Tem'de görünümü Durağan tutarken gerekçeyi rezerv erimesine bağladı; şokun en sert dönemini kapsayacak 17 Tem haftası verisi 24 Tem'de — asıl test orada."
+    note:"10 Tem: brüt 163,3 mlr$ (+3,6 haftalık; altın 96,2 + döviz 67,1) — şok öncesi fotoğraf. Swap hariç net rezerv ~49,9 mlr$ (20 Tem). Şokun en sert bölümünü kapsayacak 17 Tem haftası verisi 24 Tem'de, Moody's kararıyla aynı gün açıklanacak — asıl test orada."
   },
   // Haziran 2026 enflasyon — yıllık % (teyitli, TÜİK 3 Tem)
   inflation: {
@@ -133,20 +133,19 @@ const DATA = {
     note:"Haziran 2026 yıllık. TÜFE aylık +0,99 (beklenti altı); çekirdek 29,84; Yİ-ÜFE 28,09. Disinflasyon sürüyor."
   },
   calendar: [
-    {d:"Cum 17 Tem", r:"🇹🇷 TR", e:"Fitch: BB- notu Durağan görünümle teyit — gerekçe İran savaşı sonrası rezerv erimesi", imp:"h"},
-    {d:"Süregelen", r:"🌍 Global", e:"Hürmüz krizi tırmandı: Brent 90$ sınırına (+%3); Karadeniz'de terminale saldırı", imp:"h"},
-    {d:"Sal 21 Tem", r:"🌍 Global", e:"Dev teknoloji bilançoları haftası; Asya çip öncülüğünde toparlandı", imp:"m"},
-    {d:"23 Tem", r:"🇹🇷 TR", e:"TCMB PPK — beklentim: %37 sabit + haftalık repo · + Temmuz tüketici güveni", imp:"h"},
+    {d:"Çar 22 Tem", r:"🇺🇸 ABD", e:"Mevcut konut satışları (Haz) + EIA haftalık ham petrol stokları", imp:"m"},
+    {d:"Süregelen", r:"🌍 Global", e:"Hürmüz ablukası: geçişler savaş öncesinin ~%15'i; Brent 91,10$ (+%2,11); 100$ riski", imp:"h"},
+    {d:"Sal 21 Tem", r:"🌍 Global", e:"Wall Street çip/bellek ralisiyle 3 günlük düşüşü kırdı (Micron +%12, SanDisk +%14)", imp:"m"},
+    {d:"23 Tem", r:"🇹🇷 TR", e:"TCMB PPK — piyasa %37 sabit bekliyor; beklentim %37 sabit + haftalık repo · + Temmuz tüketici güveni", imp:"h"},
     {d:"24 Tem", r:"🇹🇷 TR", e:"Moody's Türkiye değerlendirmesi + 17 Tem haftası rezerv verisi (şok sonrası ilk)", imp:"h"},
-    {d:"29 Tem", r:"🇺🇸 ABD", e:"FOMC faiz kararı — FedWatch: sabit ~%86,7 / artırım ~%13,3", imp:"h"},
+    {d:"29 Tem", r:"🇺🇸 ABD", e:"FOMC faiz kararı — FedWatch: sabit ~%83,4 / artırım ~%16,6", imp:"h"},
   ],
   notes: [
-    "<b>Petrol primi geri döndü:</b> Brent, Hürmüz'de ticari trafiğin durması ve Karadeniz'de terminale yönelik saldırıyla 88'den 90 dolar sınırına (~%3) tırmandı. Cuma günkü rahatlama bir günde silindi; ithal enflasyon ve cari denge kanalı yeniden en kritik dışsal değişken.",
-    "<b>BİST yine ayrıştı:</b> BİST-100 pazartesi +%0,64 ile 14.070'e (USD bazı ~2,99; hacim 186,1 mlr TL) — güne düşüşle başlayıp toparlandı. Küresel dalga ve petrol riskine rağmen gelen bu dayanıklılığı, yabancı akımları zayıflarsa sınanacak bir ayrışma olarak izliyorum.",
-    "<b>Fitch: BB- / Durağan:</b> Fitch notu teyit etti; görünüm gerekçesinde İran savaşından bu yana rezerv erimesini öne çıkardı — aylardır işaretlediğim risk artık bir kuruluşun temel gerekçesi. Orta vadeli görünüm yapıcı (TÜFE 2026 %29,5; brüt rezerv yıl sonu 167 mlr$; büyüme %2,8).",
-    "<b>Dünden kalanlar:</b> Wall Street pazartesiyi hafif ekside kapattı (S&P -%0,19, Nasdaq -%0,05, Dow -%0,59; İran endişesi). Asya bu sabah dört günün ardından ilk kez, çip öncülüğünde toparlandı (Nikkei +%2,2). CME FedWatch 29 Tem: sabit %86,7 / artırım %13,3.",
-    "<b>TCMB görüşüm:</b> 23 Temmuz PPK'da faizin %37'de sabit tutulmasını, fonlamanın %40'tan devam etmesini bekliyorum. Petrol 90 doların üzerinde kalıcı olur ve rezerv erimesi hızlanırsa, fonlama normalizasyonu gecikecektir.",
-    "<b>İzlediğim riskler:</b> Hürmüz'de tırmanışın Brent'i 90$ üzerinde tutması; 24 Tem'de açıklanacak 17 Tem haftası rezerv verisinde döviz erimesi; Moody's sürprizi; dev teknoloji bilançolarının çip oynaklığını körükleyip BİST'e yabancı akımını zayıflatması; ABD 10Y %4,60 ve sağlam doların EM için finansal koşulları sıkılaştırması.",
+    "<b>Çip ralisi Wall Street'i çıkardı:</b> Nasdaq +%1,29 (25.837) ile üç günlük düşüşü kırdı; Micron +%12, SanDisk +%14 bellek-çip kanadını sürükledi. S&P +%0,89, Dow +%0,74. Asya bu sabah temayı sürdürdü (Kospi +%5); ABD vadelileri büyük teknoloji bilançoları öncesi yatay.",
+    "<b>Petrol şoku derinleşti:</b> Brent +%2,11 ile 91,10 dolara. Hürmüz'de geçişler geçen haftaki ablukanın ardından savaş öncesinin ~%15'ine indi; İran bir tankere saldırdı. Analistler çatışma sürerse 100 doları yeniden gündeme getiriyor — ithal enflasyon ve cari denge kanalı yeniden en kritik dışsal değişken.",
+    "<b>Yurt içinde PPK öncesi temkin:</b> BİST-100 −%0,69 ile 13.974'e (USD bazı ~2,97$), 14.000 altına döndü. İki yıllık gösterge faiz 12 Haziran'dan bu yana en yüksek kapanış %41,81'e çıktı (gün içi %42 test, önceki %41,77) — piyasa PPK öncesi dengeyi sınıyor.",
+    "<b>TCMB görüşüm:</b> 23 Temmuz'da faizin %37'de sabit tutulmasını, haftalık repo ihalelerinin açılmasını ve ortalama fonlamanın en erken son çeyrekte %40'ın altına gerilemesini bekliyorum. Bu senaryo büyük ölçüde petrolün geri çekilmesine ve 17 Tem rezerv verisine bağlı; Brent 91$'da ve Hürmüz ablukası derinleşti.",
+    "<b>Fed & izlediğim riskler:</b> CME FedWatch 29 Tem: sabit ~%83,4 / artırım ~%16,6 (petrolle artırım ihtimali yukarı kıpırdadı). Riskler: Brent 90$ üzeri kalıcılığı; 24 Tem rezerv verisi + Moody's sürprizi; iki yıllık faizdeki yükselişin sürmesi; ABD 10Y %4,63 ve sağlam doların EM finansal koşullarını sıkması.",
   ]
 };
 </script>
