@@ -78,78 +78,382 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 16 Temmuz 2026 (Perşembe)</div>
+    <div>Kapanış ref.: 30 Temmuz 2026 (Perşembe)</div>
   </div>
 </header>
 
-<!-- ============================================================= -->
-<!--  GÜNLÜK GÜNCELLEME ALANI: Sadece aşağıdaki DATA objesini       -->
-<!--  düzenleyerek panoyu her gün güncelleyebilirsiniz.            -->
-<!-- ============================================================= -->
+<!-- ============================================================== -->
+<!-- GÜNLÜK GÜNCELLEME ALANI: Sadece aşağıdaki DATA objesini        -->
+<!-- düzenleyerek panoyu her gün güncelleyebilirsiniz.              -->
+<!-- ============================================================== -->
 <script>
 const DATA = {
-  asof: "17 Temmuz 2026, Cuma",
-  kpis: [
-    {label:"USD/TRY", val:"~46,97", chg:"yatay", dir:"flat", meta:"16 Tem · interbank ~46,97 · euro/TL 53,85 · kontrollü aşınma"},
-    {label:"BIST 100", val:"14.251", chg:"%+1,22 (16 Tem kapanış)", dir:"up", meta:"USD bazı ~3,03 · holding +%2,37 öncü · küresel çip satışından ayrıştı"},
-    {label:"5Y CDS", val:"~230 bps", chg:"düşük risk bölgesi", dir:"flat", meta:"son kote 14 Tem · enerji kaynaklı dış denge riski izlenecek"},
-    {label:"TR 10Y getiri", val:"%34,4", chg:"son kote 14 Tem", dir:"flat", meta:"2Y %41,15 · 5Y %38,47 · eğri ters"},
-    {label:"Efektif Fonlama", val:"%40", chg:"üst banttan", dir:"flat", meta:"politika faizi %37 · PPK 23 Tem"},
-    {label:"TÜFE (yıllık)", val:"%32,11", chg:"Haziran · aylık +0,99", dir:"down", meta:"çekirdek %29,84 · Yİ-ÜFE %28,09"},
-    {label:"TCMB Brüt Rezerv", val:"163,3 mlr$", chg:"10 Tem · +3,6 haftalık", dir:"up", meta:"altın 96,2 + döviz 67,1 · beklenen erime GELMEDİ · şok öncesi fotoğraf"},
-    {label:"TCMB Net Rezerv", val:"~50,2 mlr$", chg:"son teyit 8 Tem", dir:"flat", meta:"10 Tem brüt açıklandı; net ayrıntı için bekleniyor"},
-    {label:"TCMB Döviz Pozisyonu", val:"~35,4 mlr$", chg:"son teyit 8 Tem", dir:"flat", meta:"açık pozisyon (VIOP short ~5,1 mlr$)"},
-    {label:"ABD Haziran TÜFE", val:"%3,5", chg:"beklenti %3,8 · önceki %4,2", dir:"down", meta:"14 Tem · aylık -0,4 · geriye dönük (petrol yansımadı)"},
-    {label:"ABD Haziran ÜFE", val:"%5,5", chg:"beklenti %6,2 · aylık -0,3", dir:"down", meta:"15 Tem · enerji -%6,4"},
-    {label:"S&P 500", val:"7.533,77", chg:"%-0,51 (çip satışı)", dir:"down", meta:"16 Tem · yarı iletken satışı"},
-    {label:"Nasdaq Bileşik", val:"25.881,95", chg:"%-1,47 (çip satışı)", dir:"down", meta:"16 Tem · SK Hynix -%13 · Alphabet -%4"},
-    {label:"Dow Jones", val:"52.552,97", chg:"%-0,20 (-105,7)", dir:"down", meta:"16 Tem"},
-    {label:"ABD 10Y", val:"%4,57", chg:"hafif geriledi", dir:"flat", meta:"16 Tem"},
-    {label:"Altın", val:"~4.010$", chg:"%-1 geri çekildi", dir:"down", meta:"16 Tem · 4.060'tan geriledi"},
-    {label:"Brent", val:"~84,6$", chg:"zirveden geri çekildi", dir:"down", meta:"16 Tem · Hürmüz tırmanışına rağmen · 86'dan indi"},
-    {label:"Fed Funds", val:"%3,50–3,75", chg:"dört toplantı sabit", dir:"flat", meta:"FedWatch 29 Tem: sabit ~%63,7 · artırım ~%36,3"},
+  "asof": "31 Temmuz 2026, Cuma",
+  "kpis": [
+    {
+      "label": "USD/TRY",
+      "val": "47,33",
+      "chg": "~yatay (31 Tem)",
+      "dir": "flat",
+      "meta": "31 Tem sabahı · dün 47,31 · Euro/TL 54,23 · EUR/USD 1,146"
+    },
+    {
+      "label": "BIST 100",
+      "val": "13.292,93",
+      "chg": "%−1,55 (30 Tem)",
+      "dir": "down",
+      "meta": "USD bazı ~2,81 $ · bankacılık öncülüğünde satış · hacim 162,4 mlr TL"
+    },
+    {
+      "label": "5Y CDS",
+      "val": "~239 bps",
+      "chg": "28 Tem · yatay",
+      "dir": "flat",
+      "meta": "risk primi · şahin Fed sonrası izlenecek · 30 Tem yenilenmedi"
+    },
+    {
+      "label": "TR 2Y getiri",
+      "val": "%42,16",
+      "chg": "30 Tem · +22 bp",
+      "dir": "down",
+      "meta": "gün içi ~%41,4 (17 Tem'den düşük) sonrası yükseldi · rally duraksadı · 5Y %39,32"
+    },
+    {
+      "label": "Efektif Fonlama",
+      "val": "%40,00",
+      "chg": "PPK 23 Tem sabit",
+      "dir": "flat",
+      "meta": "politika faizi %37 · fiili fonlama %40,00 · haftalık repo açılmadı"
+    },
+    {
+      "label": "TÜFE (yıllık)",
+      "val": "%32,11",
+      "chg": "Haziran · aylık +0,99",
+      "dir": "down",
+      "meta": "çekirdek %29,84 · Yİ-ÜFE %28,09 · temmuz TÜFE ~3 Ağu"
+    },
+    {
+      "label": "TCMB Brüt Rezerv",
+      "val": "162,6 mlr$",
+      "chg": "24 Tem · +2,1 haftalık",
+      "dir": "up",
+      "meta": "altın 100,2 (+5,1) · döviz 62,4 (−3,0) · artış tümüyle altın"
+    },
+    {
+      "label": "TCMB Net Rezerv",
+      "val": "~51,1 mlr$",
+      "chg": "24 Tem · haftalık +",
+      "dir": "up",
+      "meta": "swap hariç · 17 Tem'de ~50,7'den yükseldi"
+    },
+    {
+      "label": "TCMB Döviz Pozisyonu",
+      "val": "~37,3 mlr$",
+      "chg": "28 Tem",
+      "dir": "flat",
+      "meta": "VIOP forward short ~3,8 mlr$"
+    },
+    {
+      "label": "S&P 500",
+      "val": "7.437,63",
+      "chg": "%+1,66 (30 Tem)",
+      "dir": "up",
+      "meta": "Microsoft +%16 · yarı iletken · Çarşamba satışını geri aldı"
+    },
+    {
+      "label": "Nasdaq Bileşik",
+      "val": "25.122,18",
+      "chg": "%+2,80 (30 Tem)",
+      "dir": "up",
+      "meta": "Microsoft rekor günlük değer · Amazon saat dışı yükseldi"
+    },
+    {
+      "label": "Dow Jones",
+      "val": "52.208,06",
+      "chg": "%+1,19 (30 Tem)",
+      "dir": "up",
+      "meta": "+613,92 puan · teknoloji öncülüğünde toparlanma"
+    },
+    {
+      "label": "ABD 10Y",
+      "val": "~%4,68",
+      "chg": "30 Tem · yükseldi",
+      "dir": "flat",
+      "meta": "uzun uç gergin · 30Y 2007'den yüksek · şahin Fed"
+    },
+    {
+      "label": "Altın",
+      "val": "4.061,50 $",
+      "chg": "%+~0,6 (30 Tem)",
+      "dir": "up",
+      "meta": "zayıf dolar + jeopolitik · rezerv altını +5,1 mlr$"
+    },
+    {
+      "label": "Brent",
+      "val": "~90 $",
+      "chg": "gün içi ~92,6'dan geri",
+      "dir": "down",
+      "meta": "İran/Orta Doğu primi · OPEC+ arz kararı 2 Ağu"
+    },
+    {
+      "label": "Fed Funds",
+      "val": "%3,50–3,75",
+      "chg": "16 Eyl FOMC",
+      "dir": "flat",
+      "meta": "FedWatch: Eylül ~%81 ARTIŞ ihtimali (bir hafta önce indirim masadaydı) · petrol kaynaklı"
+    }
   ],
-  // Önemli günlük/haftalık değişimler (grafik) — % cinsinden
-  moves: {
-    labels:["Russell 2000","Nasdaq","S&P 500","Dow"],
-    values:[22.0, 12.8, 9.5, 8.9],
-    note:"2026 ilk yarı getirileri (%). 2. çeyrek 2020'den beri en güçlü çeyrek (AI endişeleri hafifledi + jeopolitik yumuşama)."
+  "moves": {
+    "labels": [
+      "Russell 2000",
+      "Nasdaq",
+      "S&P 500",
+      "Dow"
+    ],
+    "values": [
+      22.0,
+      12.8,
+      9.5,
+      8.9
+    ],
+    "note": "2026 ilk yarı getirileri (%). İkinci yarı; büyük teknoloji bilanço oynaklığı ve Hürmüz-Kızıldeniz kaynaklı enerji primiyle daha oynak seyrediyor."
   },
-  // TCMB Döviz Pozisyonu (Net_Reserves L kolonu, 27 Şubat'tan beri, mlr USD) — Kaynak: TCMB/EVDS
-  fxposition: {
-    labels:["27.02","02.03","03.03","04.03","05.03","06.03","09.03","10.03","11.03","12.03","13.03","16.03","17.03","18.03","19.03","23.03","24.03","25.03","26.03","27.03","30.03","31.03","01.04","02.04","03.04","06.04","07.04","08.04","09.04","10.04","13.04","14.04","15.04","16.04","17.04","20.04","21.04","22.04","24.04","27.04","28.04","29.04","30.04","04.05","05.05","06.05","07.05","08.05","11.05","12.05","13.05","14.05","15.05","18.05","20.05","21.05","22.05","25.05","26.05","01.06","02.06","03.06","04.06","05.06","08.06","09.06","10.06","11.06","12.06","15.06","16.06","17.06","18.06","19.06","22.06","23.06","24.06","25.06"],
-    values:[22.94,23.19,23.44,23.44,23.44,23.44,23.44,23.44,23.44,23.49,23.74,23.80,23.83,23.92,24.30,24.84,25.21,25.59,26.34,27.13,28.08,29.17,29.88,30.26,30.52,30.75,31.14,31.29,31.37,31.43,31.46,31.53,31.57,31.64,31.42,31.42,31.44,31.56,31.08,31.15,31.20,31.32,31.45,31.47,31.49,31.50,31.51,30.94,30.99,31.00,31.07,31.07,30.75,30.75,30.76,30.80,31.70,31.80,31.80,31.99,32.06,32.14,32.22,32.13,32.24,32.36,32.46,32.58,32.12,32.20,32.27,32.34,32.10,31.30,31.37,31.44,31.51,31.58],
-    note:"Son: ~31,6 mlr$ (25 Haz) · 19 Haz 31,3 · tepe 32,6 (11 Haz)."
+  "fxposition": {
+    "labels": [
+      "27.02",
+      "02.03",
+      "03.03",
+      "04.03",
+      "05.03",
+      "06.03",
+      "09.03",
+      "10.03",
+      "11.03",
+      "12.03",
+      "13.03",
+      "16.03",
+      "17.03",
+      "18.03",
+      "19.03",
+      "23.03",
+      "24.03",
+      "25.03",
+      "26.03",
+      "27.03",
+      "30.03",
+      "31.03",
+      "01.04",
+      "02.04",
+      "03.04",
+      "06.04",
+      "07.04",
+      "08.04",
+      "09.04",
+      "10.04",
+      "13.04",
+      "14.04",
+      "15.04",
+      "16.04",
+      "17.04",
+      "20.04",
+      "21.04",
+      "22.04",
+      "24.04",
+      "27.04",
+      "28.04",
+      "29.04",
+      "30.04",
+      "04.05",
+      "05.05",
+      "06.05",
+      "07.05",
+      "08.05",
+      "11.05",
+      "12.05",
+      "13.05",
+      "14.05",
+      "15.05",
+      "18.05",
+      "20.05",
+      "21.05",
+      "22.05",
+      "25.05",
+      "26.05",
+      "01.06",
+      "02.06",
+      "03.06",
+      "04.06",
+      "05.06",
+      "08.06",
+      "09.06",
+      "10.06",
+      "11.06",
+      "12.06",
+      "15.06",
+      "16.06",
+      "17.06",
+      "18.06",
+      "19.06",
+      "22.06",
+      "23.06",
+      "24.06",
+      "25.06"
+    ],
+    "values": [
+      22.94,
+      23.19,
+      23.44,
+      23.44,
+      23.44,
+      23.44,
+      23.44,
+      23.44,
+      23.44,
+      23.49,
+      23.74,
+      23.8,
+      23.83,
+      23.92,
+      24.3,
+      24.84,
+      25.21,
+      25.59,
+      26.34,
+      27.13,
+      28.08,
+      29.17,
+      29.88,
+      30.26,
+      30.52,
+      30.75,
+      31.14,
+      31.29,
+      31.37,
+      31.43,
+      31.46,
+      31.53,
+      31.57,
+      31.64,
+      31.42,
+      31.42,
+      31.44,
+      31.56,
+      31.08,
+      31.15,
+      31.2,
+      31.32,
+      31.45,
+      31.47,
+      31.49,
+      31.5,
+      31.51,
+      30.94,
+      30.99,
+      31.0,
+      31.07,
+      31.07,
+      30.75,
+      30.75,
+      30.76,
+      30.8,
+      31.7,
+      31.8,
+      31.8,
+      31.99,
+      32.06,
+      32.14,
+      32.22,
+      32.13,
+      32.24,
+      32.36,
+      32.46,
+      32.58,
+      32.12,
+      32.2,
+      32.27,
+      32.34,
+      32.1,
+      31.3,
+      31.37,
+      31.44,
+      31.51,
+      31.58
+    ],
+    "note": "Haziran sonu serisi (25 Haz'a kadar). Güncel toplam döviz pozisyonu ~37,3 mlr$ (28 Tem); VIOP forward short ~3,8 mlr$."
   },
-  // TCMB toplam rezervler (FX+altın, mlr USD) — yalnızca teyitli noktalar
-  reserves: {
-    labels:["16 Oca","6 Mar","5 Haz","12 Haz","19 Haz","26 Haz","3 Tem","10 Tem"],
-    values:[205.2, 197.4, 159.4, 152.1, 157.2, 149.2, 159.7, 163.3],
-    note:"10 Tem: brüt 163,3 mlr$ (+3,6 haftalık) — beklediğim erime GELMEDİ (altın 96,2 + döviz 67,1). Bu veri en sert tırmanıştan (orta-Tem ABD saldırıları) ÖNCE; asıl test 24 Tem'de açıklanacak 17 Tem haftası verisi."
+  "reserves": {
+    "labels": [
+      "16 Oca",
+      "6 Mar",
+      "5 Haz",
+      "12 Haz",
+      "19 Haz",
+      "26 Haz",
+      "3 Tem",
+      "10 Tem",
+      "17 Tem",
+      "24 Tem"
+    ],
+    "values": [
+      205.2,
+      197.4,
+      159.4,
+      152.1,
+      157.2,
+      149.2,
+      159.7,
+      163.3,
+      160.5,
+      162.6
+    ],
+    "note": "24 Tem: brüt 162,6 mlr$ (haftalık +2,1). Artışın tamamı altından: altın 100,2 (+5,1), döviz 62,4 (−3,0). İkinci haftadır süren döviz erimesini altın değerlemesi gölgeliyor. Net rezerv 51,1. Altının brüt içindeki payı %59,2'den %61,6'ya çıktı."
   },
-  // Haziran 2026 enflasyon — yıllık % (teyitli, TÜİK 3 Tem)
-  inflation: {
-    labels:["TÜFE","Çekirdek-C","Yİ-ÜFE"],
-    values:[32.11, 29.84, 28.09],
-    note:"Haziran 2026 yıllık. TÜFE aylık +0,99 (beklenti altı); çekirdek 29,84; Yİ-ÜFE 28,09. Disinflasyon sürüyor."
+  "inflation": {
+    "labels": [
+      "TÜFE",
+      "Çekirdek-C",
+      "Yİ-ÜFE"
+    ],
+    "values": [
+      32.11,
+      29.84,
+      28.09
+    ],
+    "note": "Haziran 2026 yıllık. TÜFE aylık +0,99 (beklenti altı); çekirdek 29,84; Yİ-ÜFE 28,09. Disinflasyon sürüyor; temmuz TÜFE ~3 Ağu."
   },
-  calendar: [
-    {d:"Per 16 Tem", r:"🇹🇷 TR", e:"TCMB rezervi 10 Tem haftası: brüt 163,3 mlr$ (+3,6) — erime YOK", imp:"h"},
-    {d:"Cum 17 Tem", r:"🇺🇸 ABD", e:"Konut başlangıçları + sanayi üretimi + Michigan güven & enflasyon beklentisi (TSİ 15:30–17:00)", imp:"m"},
-    {d:"Cum 17 Tem", r:"🇹🇷 TR", e:"Fitch Türkiye kredi değerlendirmesi (mevcut BB-) — akşam", imp:"h"},
-    {d:"19 Tem", r:"🇹🇷 TR", e:"İthalatta ilave gümrük vergisi (İGV) yürürlüğe giriyor", imp:"m"},
-    {d:"Süregelen", r:"🌍 Global", e:"Hürmüz krizi tırmanıyor (ABD-İran, tanker vuruşları) · küresel çip satışı", imp:"h"},
-    {d:"23 Tem", r:"🇹🇷 TR", e:"TCMB PPK — beklentim: %37 sabit + haftalık repo", imp:"h"},
-    {d:"24 Tem", r:"🇹🇷 TR", e:"Moody's Türkiye değerlendirmesi + 17 Tem haftası rezerv verisi", imp:"h"},
-    {d:"29 Tem", r:"🇺🇸 ABD", e:"FOMC faiz kararı — FedWatch: sabit ~%63,7 / artırım ~%36,3", imp:"h"},
+  "calendar": [
+    {
+      "d": "Cum 31 Tem",
+      "r": "ABD",
+      "e": "Ay sonu veri akışı hafif; odak bilanço sezonu (Amazon sonrası) ve Fed beklentisi — takvim doğrulanmadı",
+      "imp": "d"
+    },
+    {
+      "d": "Paz 2 Ağu",
+      "r": "Küresel",
+      "e": "OPEC+ toplantısı — Eylül üretim kararı (~+188 bin v/g bek., sonrası sabit)",
+      "imp": "m"
+    },
+    {
+      "d": "~3 Ağu",
+      "r": "TR",
+      "e": "Temmuz TÜFE (TÜİK)",
+      "imp": "h"
+    },
+    {
+      "d": "Per 6 Ağu",
+      "r": "TR",
+      "e": "TCMB haftalık rezerv (31 Tem haftası) — 14:30",
+      "imp": "m"
+    }
   ],
-  notes: [
-    "<b>Küresel çip satışı derinleşti:</b> Nasdaq -%1,47 (25.882), S&P 500 -%0,51 (7.534), Dow -%0,20; SK Hynix -%13, Micron/AMD -%5, Alphabet -%4 (Gemini 3.5 Pro gecikmesi). TSMC'nin 2026 yatırımını 60-64 mlr$'a çıkarması arz fazlası korkusunu besledi; satış Asya'ya taşındı (Kospi -%7,9, bu sabah yeniden -%6).",
-    "<b>BİST küreselden ayrıştı:</b> Borsa İstanbul dün +%1,22 ile 14.251'e çıktı (USD bazı ~3,03); yükselişi holding (+%2,37) ve kimya-petrol taşıdı, bankacılık hafif ekside. Küresel risk-off ve Orta Doğu tırmanışına rağmen gelen bu yerel dayanıklılığı, yabancı akımları zayıflarsa sınanacak bir ayrışma olarak izliyorum.",
-    "<b>Rezerv erimedi, arttı:</b> 10 Tem haftası brüt rezerv 159,7'den 163,3 mlr$'a (+3,6); döviz +5,1, altın -1,5 (fiyat etkisi). Beklediğim erime GELMEDİ. Ama bu fotoğraf en sert tırmanıştan (orta-Tem ABD saldırıları) önce; asıl test 24 Tem'de açıklanacak 17 Tem haftası verisi.",
-    "<b>Petrol zirveden geri çekildi:</b> Jeopolitik tırmanırken (ABD gece İran'ın ihracat terminaline yakın tanker vurdu, İran Kuveyt/Ürdün üslerini hedef aldı, Trump 'ateşkes bitti' dedi) Brent 86'dan 84,6$'a indi; piyasa tam kesintiden çok geçiş aksamasını fiyatlıyor. Altın 4.010$, ABD 10Y %4,57.",
-    "<b>Fed'de artırım ihtimali canlı:</b> CME FedWatch'te 29 Tem için sabit ~%63,7, 25 bp artırım ~%36,3; petrol kaynaklı fiyat riski artırım fiyatlamasını diri tutuyor. Politika faizi dört toplantıdır %3,50-3,75. Bugün 17.00'de Michigan enflasyon beklentileri bu patikayı yeniden fiyatlatabilir.",
-    
+  "notes": [
+    "<b>Wall Street sert toparlandı:</b> Microsoft +%16 (tek günde ~450 mlr$ değer, tarihi rekor) ve yarı iletken rallisiyle Nasdaq %2,80 (25.122,18), S&P %1,66 (7.437,64), Dow %1,19 (+613,92 → 52.208,06) yükseldi; Çarşamba'nın Fed kaynaklı satışı fazlasıyla geri alındı. Amazon %37 gelir büyümesiyle kapanış sonrası %10 yükseldi.",
+    "<b>Büyüme yavaşladı, enflasyon inatçı:</b> ABD 2Ç öncü büyümesi %1,5 (bek. %2,1) ile ıskaladı ancak tüketim ve yatırım hala kuvvetli; çeyreklik manşet PCE %5,1'e tırmandı, Haziran çekirdek PCE %3,3 ile beklentiyle uyumlu. Zayıf büyüme + beklentiye paralel enflasyon faiz beklentisini şahinleştirdi.",
+    "<b>Fed beklentisi:</b> CME FedWatch'te 16 Eylül için faiz ARTIŞI olasılığı ~%63 (bir hafta önce indirim masadaydı). Buna rağmen DXY 101,3'ten 100,8'e geriledi.",
+    "<b>BİST düştü, tahvil rallisi duraksadı:</b> BİST-100 %1,55 düşüşle 13.292,93'e (dolar bazı ~2,81 $) geriledi (bankacılık öncülüğünde, hacim 162,4 mlr TL). Gösterge 2Y faiz gün içi ~%41,4 sonrası %42,16'ya yükselerek kapandı — iki günlük dezenflasyon rallisi kısa sürdü. Dolar/TL 47,33, fonlama %40,00.",
+    "<b>Rezervde başrol altının:</b> Brüt rezerv 24 Tem'de +2,1 mlr$ ile 162,6 mlr$'a çıktı; ama artışın tamamı altından (100,2; +5,1 mlr$), döviz rezervi 3,0 mlr$ eridi (62,4). İkinci haftadır süren döviz erimesini altın değerlemesi gölgeliyor. Net rezerv 51,1 mlr$.",
+    "<b>SPINN hesabı — altına bağımlılık artıyor:</b> Altının brüt rezervdeki payı bir haftada %59,2'den %61,6'ya çıktı. Altın ~100 mlr$'la brüt rezervin ~%62'si; her %1 altın oynaklığı ~1,0 mlr$ değerleme salınımı. 'Rezerv arttı' başlığı giderek daha çok altın fiyatına dayanıyor, kırılganlık artıyor."
   ]
 };
 </script>
