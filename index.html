@@ -88,34 +88,34 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "11 Ağustos 2026, Salı",
+  "asof": "12 Ağustos 2026, Çarşamba",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "47,626",
-      "chg": "%+0,22 (10 Ağu)",
+      "val": "47,651",
+      "chg": "%+0,05 (11 Ağu)",
       "dir": "down",
-      "meta": "10 Ağu 47,523 · EUR/TL 55,042"
+      "meta": "11 Ağu 47,626 · EUR/TL 54,969"
     },
     {
       "label": "BIST 100",
-      "val": "13.811,60",
-      "chg": "%+0,23 (10 Ağu)",
-      "dir": "up",
-      "meta": "USD bazı 2,91 $ · hacim 188,6 mlr TL"
+      "val": "13.704,52",
+      "chg": "%−0,78 (11 Ağu)",
+      "dir": "down",
+      "meta": "USD bazı 2,88 $ · madencilik −%7,45"
     },
     {
       "label": "5Y CDS",
-      "val": "227,7 bps",
-      "chg": "6 Ağu · −1,8 bp",
+      "val": "226,4 bps",
+      "chg": "7 Ağu · −1,2 bp",
       "dir": "flat",
-      "meta": "7-10 Ağu için teyitli kotasyon yok"
+      "meta": "10-11 Ağu için teyitli kotasyon yok"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%41,59",
-      "chg": "10 Ağu · yatay",
-      "dir": "flat",
+      "val": "%41,76",
+      "chg": "11 Ağu · +17 bp",
+      "dir": "down",
       "meta": "5Y %38,93 (7 Ağu) · 10Y %34,95 (6 Ağu)"
     },
     {
@@ -123,7 +123,7 @@ const DATA = {
       "val": "%40,00",
       "chg": "PPK 23 Tem sabit",
       "dir": "flat",
-      "meta": "politika faizi %37 · mevduat %39,6"
+      "meta": "politika faizi %37 · ER 13 Ağu 10:30"
     },
     {
       "label": "TÜFE (yıllık)",
@@ -141,66 +141,66 @@ const DATA = {
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "58,6 mlr$",
-      "chg": "7 Ağu · −0,7",
-      "dir": "flat",
-      "meta": "6 Ağu 59,3 · 3 Ağu 48,1'den sıçradı"
+      "val": "60,4 mlr$",
+      "chg": "10 Ağu · +1,8",
+      "dir": "up",
+      "meta": "7 Ağu 58,6 · 6 Ağu 59,3"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "45,7 mlr$",
-      "chg": "7 Ağu · −0,6",
-      "dir": "flat",
-      "meta": "VIOP forward short 3,1 mlr$ (10 Ağu)"
+      "val": "47,4 mlr$",
+      "chg": "10 Ağu · +1,7",
+      "dir": "up",
+      "meta": "VIOP forward short 3,1 mlr$ (11 Ağu)"
     },
     {
       "label": "S&P 500",
-      "val": "7.753,11",
-      "chg": "%−0,06 (10 Ağu)",
+      "val": "7.728,20",
+      "chg": "%−0,32 (11 Ağu)",
       "dir": "down",
-      "meta": "rekor sonrası hafif geri çekilme"
+      "meta": "üçüncü seans eksi · Alphabet −%3,1"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.605,36",
-      "chg": "%−0,32 (10 Ağu)",
+      "val": "26.459,35",
+      "chg": "%−0,55 (11 Ağu)",
       "dir": "down",
-      "meta": "−85 puan · Apple ve Nvidia %2 eksi"
+      "meta": "Oracle −%4,0 · Amazon −%1,9"
     },
     {
       "label": "Dow Jones",
-      "val": "53.975,98",
-      "chg": "%−0,11 (10 Ağu)",
+      "val": "53.791,85",
+      "chg": "%−0,34 (11 Ağu)",
       "dir": "down",
-      "meta": "enerji hisseleri gün içi %4,5 arttı"
+      "meta": "DAX %+0,24 ile rekor kırdı"
     },
     {
       "label": "ABD 10Y",
-      "val": "%4,65",
-      "chg": "10 Ağu · yatay",
+      "val": "%4,69",
+      "chg": "11 Ağu · −3 bp",
       "dir": "flat",
-      "meta": "petrol sıçramasına rağmen tepkisiz"
+      "meta": "10 Ağu %4,72 · TÜFE öncesi"
     },
     {
       "label": "Altın",
-      "val": "4.342 $",
-      "chg": "10 Ağu · yükseldi",
+      "val": "4.373 $",
+      "chg": "12 Ağu sabahı · yükseldi",
       "dir": "up",
-      "meta": "temmuz sonundan bu yana en yüksek"
+      "meta": "10 Ağu kapanış 4.340,50 $"
     },
     {
       "label": "Brent",
-      "val": "87,72 $",
-      "chg": "10 Ağu · %+5,0",
+      "val": "88,72 $",
+      "chg": "11 Ağu · %+1,14",
       "dir": "up",
-      "meta": "Hürmüz anlaşmasına dair kuşku"
+      "meta": "beşinci yükseliş seansı · gün içi 87 $"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
       "chg": "16 Eyl FOMC",
       "dir": "flat",
-      "meta": "Eyl sabit ~%63 · artırım ~1/3 (10 Ağu)"
+      "meta": "Eyl artırım ~%50 · sabit ~%50 (11 Ağu)"
     }
   ],
   "moves": {
@@ -327,7 +327,8 @@ const DATA = {
       "04.08",
       "05.08",
       "06.08",
-      "07.08"
+      "07.08",
+      "10.08"
     ],
     "values": [
       70.13,
@@ -437,7 +438,8 @@ const DATA = {
       38.57,
       42.75,
       46.29,
-      45.7
+      45.7,
+      47.41
     ]
   },
   "reserves": {
@@ -484,12 +486,6 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "Sal 11 Ağu",
-      "r": "TR",
-      "e": "Ticaret satış hacmi ve ciro endeksleri (Haz) — 10:00",
-      "imp": "d"
-    },
-    {
       "d": "Çar 12 Ağu",
       "r": "ABD",
       "e": "TÜFE (Tem) — 15:30 · haftanın ana verisi",
@@ -504,7 +500,7 @@ const DATA = {
     {
       "d": "Per 13 Ağu",
       "r": "TR",
-      "e": "TCMB ödemeler dengesi (Haz) — 10:00",
+      "e": "TCMB Enflasyon Raporu 2026-III — 10:30",
       "imp": "h"
     },
     {
@@ -514,6 +510,12 @@ const DATA = {
       "imp": "h"
     },
     {
+      "d": "Pzt 17 Ağu",
+      "r": "TR",
+      "e": "Merkezi yönetim bütçe gerçekleşmeleri (Tem)",
+      "imp": "d"
+    },
+    {
       "d": "16 Eyl",
       "r": "ABD",
       "e": "FOMC faiz kararı ve nokta grafiği",
@@ -521,10 +523,11 @@ const DATA = {
     }
   ],
   "notes": [
-    "<b>Brent iki hafta zirvesinde:</b> İran, Umman'la geçiş anlaşmasının son aşamada olduğunu ama boğazın ABD koşulları karşılamadan açılmayacağını duyurdu; Brent %5 artışla 87,72 dolara çıktı, dördüncü seans yükseldi.",
-    "<b>Sanayi üretimi daraldı:</b> Haziranda takvim etkisinden arındırılmış endeks yıllık %1,4 geriledi, aylık yalnızca %0,1 arttı. Yüksek teknoloji %20,3, sermaye malları %4,8, dayanıklı tüketim %4,4 düştü.",
-    "<b>BİST ılımlı yükseldi:</b> Endeks %0,23 artışla 13.811,60'a çıktı (2,91 $), hacim 188,6 mlr TL. Bilişim %4,05 ile en çok kazandıran, elektrik %1,88 ile en çok kaybettiren sektör oldu.",
-    "<b>Tahvil primi fiyatlamadı:</b> Altın 4.342 dolarla temmuz sonundan beri en yüksek kapanışı yaparken ABD 10 yıllığı %4,65'te yatay kaldı — piyasa jeopolitik primi kalıcı enflasyon değil geçici arz riski okuyor."
+    "<b>Tahvilde satış:</b> İki yıllık gösterge 17 baz puan yükselerek %41,76'ya çıktı; önceki üç seansta %41,57-41,59 bandındaydı. Satış, Enflasyon Raporu'nun bir gün öncesine denk geldi.",
+    "<b>Enflasyon Raporu yarın:</b> TCMB Başkanı Karahan 2026-III raporunu 13 Ağustos 10:30'da İFM'de tanıtacak. Yıl sonu tahmin aralığı ve ara hedef patikası korunacak mı, kritik soru bu.",
+    "<b>ABD TÜFE bugün 15:30:</b> Konsensüs manşette aylık %0,1 ve yıllık %3,4, çekirdekte %0,2 ve %2,5. Haziranda manşet %0,4 gerilemişti; konsensüs tutarsa iki aylık birikimli değişim eksi %0,3 olur.",
+    "<b>FedWatch başa baş:</b> 16 Eylül için artırım ve sabit kalma olasılıkları 11 Ağustos itibarıyla %50 civarında eşitlendi; bir gün önce sabit kalma ~%63'tü.",
+    "<b>BİST'te madencilik-altın tutarsızlığı:</b> Endeks %0,78 düşüşle 13.704,52'ye indi (2,88 $). Madencilik %7,45 kaybederken altın rekora yakın seyretti; bilişim %2,56 ile en çok kazandıran oldu."
   ]
 };
 </script>
