@@ -88,40 +88,40 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "14 Ağustos 2026, Cuma",
+  "asof": "18 Ağustos 2026, Salı",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "47,686",
-      "chg": "13 Ağu · +%0,07",
+      "val": "47,721",
+      "chg": "17 Ağu · +%0,07",
       "dir": "down",
-      "meta": "EUR/TL 54,975"
+      "meta": "EUR/TL 55,139 · bu sabah 47,811"
     },
     {
       "label": "BIST 100",
-      "val": "14.132,23",
-      "chg": "%+0,16 (13 Ağu)",
-      "dir": "up",
-      "meta": "USD bazı 2,96 $ · hacim 196,2 mlr TL"
+      "val": "14.132,06",
+      "chg": "%−0,28 (17 Ağu)",
+      "dir": "down",
+      "meta": "USD bazı 2,96 $ · hacim 165,7 mlr TL"
     },
     {
       "label": "5Y CDS",
-      "val": "224,6 bps",
-      "chg": "11 Ağu · −1,8 bps",
+      "val": "221,6 bps",
+      "chg": "13 Ağu · −2,0 bps",
       "dir": "down",
-      "meta": "7 Ağu 226,4 bps"
+      "meta": "11 Ağu 224,6 bps"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%41,41",
-      "chg": "13 Ağu · −22 bps",
+      "val": "%41,02",
+      "chg": "17 Ağu · −20 bps",
       "dir": "down",
-      "meta": "10Y %34,80 · 5Y %38,80"
+      "meta": "10Y %35,05 · 5Y %38,90"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%40,00",
-      "chg": "13 Ağu · sabit",
+      "chg": "17 Ağu · sabit",
       "dir": "flat",
       "meta": "politika faizi %37 · PPK 23 Tem"
     },
@@ -130,7 +130,7 @@ const DATA = {
       "val": "%31,75",
       "chg": "Temmuz · aylık +1,78",
       "dir": "down",
-      "meta": "TCMB 2026 tahmini %26 → %28"
+      "meta": "TCMB 2026 tahmini %28"
     },
     {
       "label": "TCMB Brüt Rezerv",
@@ -141,66 +141,66 @@ const DATA = {
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "64,9 mlr$",
-      "chg": "12 Ağu · +1,0",
-      "dir": "up",
-      "meta": "Hazine dahil 71,3 mlr$"
+      "val": "62,4 mlr$",
+      "chg": "14 Ağu · −1,2",
+      "dir": "down",
+      "meta": "Hazine dahil 68,5 mlr$"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "51,7 mlr$",
-      "chg": "12 Ağu · +0,9",
-      "dir": "up",
-      "meta": "3 Ağu'dan beri +16,8 mlr$"
+      "val": "49,4 mlr$",
+      "chg": "14 Ağu · −1,2",
+      "dir": "down",
+      "meta": "12 Ağu zirvesinden −2,3 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.799",
-      "chg": "%+0,65 (13 Ağu)",
-      "dir": "up",
-      "meta": "rekor kapanış · ÜFE soğudu"
+      "val": "7.745",
+      "chg": "%−0,52 (17 Ağu)",
+      "dir": "down",
+      "meta": "uzun uç satıldı · İran endişesi"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.803",
-      "chg": "%+0,81 (13 Ağu)",
-      "dir": "up",
-      "meta": "çekirdek ÜFE %0,2 · beklenti %0,3"
+      "val": "26.645",
+      "chg": "%−0,32 (17 Ağu)",
+      "dir": "down",
+      "meta": "perakende bilançoları bekleniyor"
     },
     {
       "label": "Dow Jones",
-      "val": "53.840",
-      "chg": "%+0,13 (13 Ağu)",
-      "dir": "up",
-      "meta": "ÜFE aylık %0,0 · beklenti +%0,2"
+      "val": "53.460",
+      "chg": "%−0,51 (17 Ağu)",
+      "dir": "down",
+      "meta": "−272,63 puan"
     },
     {
       "label": "ABD 10Y",
-      "val": "%4,65",
-      "chg": "13 Ağu · geriledi",
-      "dir": "down",
-      "meta": "12 Ağu %4,68"
+      "val": "%4,69",
+      "chg": "17 Ağu · yatay",
+      "dir": "flat",
+      "meta": "30Y çok yıllık zirvede"
     },
     {
       "label": "Altın",
-      "val": "4.354 $",
-      "chg": "%−1,23 (13 Ağu)",
-      "dir": "down",
-      "meta": "10 haftalık zirveden geri döndü"
+      "val": "4.397 $",
+      "chg": "%+0,4 (17 Ağu)",
+      "dir": "up",
+      "meta": "4.400 dolara yaklaştı"
     },
     {
       "label": "Brent",
-      "val": "87,18 $",
-      "chg": "%+0,13 (14 Ağu sabah)",
-      "dir": "up",
-      "meta": "88 doların altında tutunuyor"
+      "val": "88,31 $",
+      "chg": "%−0,24 (17 Ağu)",
+      "dir": "down",
+      "meta": "WTI ~85 $ · ateşkes 16 Ağu bitti"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
       "chg": "16 Eyl FOMC",
       "dir": "flat",
-      "meta": "Eyl artırım ~%32,5 · 12 Ağu %40"
+      "meta": "Eyl artırım ~%30 · 13 Ağu %32,5"
     }
   ],
   "moves": {
@@ -330,7 +330,9 @@ const DATA = {
       "07.08",
       "10.08",
       "11.08",
-      "12.08"
+      "12.08",
+      "13.08",
+      "14.08"
     ],
     "values": [
       70.1,
@@ -443,9 +445,10 @@ const DATA = {
       45.9,
       47.6,
       50.8,
-      51.7
-    ],
-    "note": "Toplam döviz pozisyonu 12 Ağustos'ta 51,7 mlr$. 3 Ağustos'taki 34,9 mlr$'lık dipten yedi iş gününde 16,8 mlr$ artış; aynı dönemde net rezerv de 48,1'den 64,9 mlr$'a çıktı."
+      51.7,
+      50.6,
+      49.4
+    ]
   },
   "reserves": {
     "labels": [
@@ -493,22 +496,28 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "Cum 14 Ağu",
+      "d": "Sal 18 Ağu",
       "r": "TR",
-      "e": "TCMB Piyasa Katılımcıları Anketi (Ağu) — 10:00",
+      "e": "Konut Fiyat Endeksi (Tem) — 10:00",
+      "imp": "d"
+    },
+    {
+      "d": "Sal 18 Ağu",
+      "r": "ABD",
+      "e": "Konut başlangıçları ve inşaat izinleri (Tem) — 15:30",
+      "imp": "d"
+    },
+    {
+      "d": "Sal 18 Ağu",
+      "r": "ABD",
+      "e": "Sanayi üretimi ve kapasite kullanımı (Tem)",
+      "imp": "d"
+    },
+    {
+      "d": "Çar 19 Ağu",
+      "r": "ABD",
+      "e": "FOMC toplantı tutanakları",
       "imp": "h"
-    },
-    {
-      "d": "Cum 14 Ağu",
-      "r": "TR",
-      "e": "Sanayi üretimi ve perakende satışlar (Haz)",
-      "imp": "d"
-    },
-    {
-      "d": "Pzt 17 Ağu",
-      "r": "TR",
-      "e": "Merkezi yönetim bütçe gerçekleşmeleri (Tem)",
-      "imp": "d"
     },
     {
       "d": "Per 20 Ağu",
@@ -530,11 +539,12 @@ const DATA = {
     }
   ],
   "notes": [
-    "<b>Rezervde asıl haber döviz ayağı:</b> Brüt rezerv 7 Ağu haftasında 13,9 mlr$ artarak 178,4 mlr$'a çıktı. Altın +6,7, döviz +7,2 mlr$. Döviz ayağı 63,8'den 71,0 mlr$'a yükseldi.",
-    "<b>Altın artışı neredeyse tümüyle değerleme:</b> Ons 4.052,20'den 4.301,86 dolara çıktı; fiyat etkisi 6,2 mlr$, miktar etkisi 0,5 mlr$. Miktar etkisinin karşılığı 118 bin ons, yaklaşık 3,7 ton fiziki alım.",
-    "<b>Birikim yükümlülük kaynaklı değil:</b> Net rezerv 31 Tem'deki 49,9 mlr$'dan 7 Ağu'da 58,6 mlr$'a çıktı — gayrisafi döviz artışından hızlı. 12 Ağu itibarıyla net rezerv 64,9, döviz pozisyonu 51,7 mlr$.",
-    "<b>Enflasyon Raporu:</b> 2026 yıl sonu tahmini %26'dan %28'e çekildi; 2027 %15 ve 2028 %9 ara hedefleri korundu. Gıda tahmini %26,3'ten %28,5'e. Gerekçe motorin, doğal gaz ve enerji dışı emtia.",
-       "<b>ABD'de ikinci soğuk veri:</b> Temmuz ÜFE aylık %0,0 (beklenti +%0,2), çekirdek %0,2, yıllık %4,7. FedWatch'ta 16 Eylül artırım olasılığı %32,5'e indi; 12 Ağu %40, bir hafta önce %44'tü."
+    "<b>Eğri dikleşti:</b> 2Y %41,02'ye 20 bps gerilerken 10Y %35,05'e 25 bps yükseldi. 2Y-10Y negatif farkı 13 Ağu'daki 661 bps'ten 597 bps'e indi — iki seansta 64 bps düzelme.",
+    "<b>Uzun uç politika faizinden ayrıştı:</b> FedWatch'ta 16 Eylül artırım olasılığı %30'a inerken (13 Ağu %32,5) ABD 30 yıllık getirisi çok yıllık zirve gördü. Hareket vade primi kaynaklı.",
+    "<b>Döviz pozisyonunda geri alım:</b> Toplam FX pozisyonu 12 Ağu'daki 51,7 mlr$ zirvesinden 14 Ağu'da 49,4 mlr$'a indi. İki seansta −2,3 mlr$, 3–12 Ağu birikiminin (+16,8) yaklaşık %14'ü.",
+    "<b>Net brütten hızlı düştü:</b> Analitik brüt 186,8'den 185,9 mlr$'a (−0,9), net rezerv 63,5'ten 62,4 mlr$'a (−1,2) indi. Aradaki 0,3 mlr$ yükümlülük artışına işaret ediyor.",
+    "<b>BİST'te kayıp finans ağırlıklı:</b> Endeks %0,28 düşüşle 14.132,06. Banka −%1,09, holding −%0,60. En çok kazandıran finansal kiralama-faktoring +%4,19, kaybettiren inşaat −%3,38.",
+    "<b>Petrol 88 dolar bandında:</b> Brent %0,24 düşüşle 88,31 $, WTI +%0,6 ile 85 $. ABD-İran geçici ateşkesi 16 Ağustos'ta sona erdi; Hürmüz'ün açılmasında ilerleme yok."
   ]
 };
 </script>
