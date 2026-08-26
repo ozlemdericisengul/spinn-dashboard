@@ -88,42 +88,42 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "25 Ağustos 2026, Salı",
+  "asof": "26 Ağustos 2026, Çarşamba · 10:35 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "48,039",
-      "chg": "21 Ağu kapanış · haftalık +%0,34",
+      "val": "48,012",
+      "chg": "26 Ağu 10:21 · +%0,04",
       "dir": "down",
-      "meta": "24 Ağu açılış 48,083 · EVDS 47,847"
+      "meta": "25 Ağu 47,992 · EUR/TL 55,989"
     },
     {
       "label": "BIST 100",
-      "val": "14.501,49",
-      "chg": "%−0,09 (24 Ağu)",
+      "val": "14.473,42",
+      "chg": "%−0,19 (25 Ağu)",
       "dir": "down",
-      "meta": "USD bazı 3,02 $ · hacim 206,0 mlr TL"
+      "meta": "USD bazı 3,02 $ · hacim 197,4 mlr TL"
     },
     {
       "label": "5Y CDS",
-      "val": "220,3 bps",
-      "chg": "20 Ağu · 220–222 bandı",
+      "val": "220,0 bps",
+      "chg": "24 Ağu · −0,5 bps",
       "dir": "flat",
-      "meta": "24 Ağu için teyitli veri yok"
+      "meta": "21 Ağu 220,5 · 20 Ağu 220,3"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%40,10",
-      "chg": "24 Ağu 13:00 · −69 bps",
+      "val": "%40,05",
+      "chg": "25 Ağu · −20 bps",
       "dir": "up",
-      "meta": "21 Ağu %40,79 · 10Y %34,77"
+      "meta": "24 Ağu %40,25 · 10Y %34,49"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "24 Ağu · yeni",
-      "dir": "flat",
-      "meta": "politika faizi %37 · PPK 23 Tem"
+      "chg": "25 Ağu · EVDS teyitli",
+      "dir": "up",
+      "meta": "21 Ağu %40 · haftalık repoya geçiş"
     },
     {
       "label": "TÜFE (yıllık)",
@@ -137,77 +137,77 @@ const DATA = {
       "val": "183,5 mlr$",
       "chg": "14 Ağu · +5,1 haftalık",
       "dir": "up",
-      "meta": "altın 108,3 · döviz 75,2 mlr$"
+      "meta": "analitik bilanço 192,0 (24 Ağu)"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "67,1 mlr$",
-      "chg": "14 Ağu · +4,2 haftalık",
-      "dir": "up",
-      "meta": "analitik bilanço 65,3 (20 Ağu)"
+      "val": "62,3 mlr$",
+      "chg": "24 Ağu · −0,8 günlük",
+      "dir": "down",
+      "meta": "Hazine dahil 68,5 mlr$"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "53,5 mlr$",
-      "chg": "20 Ağu · +2,3",
-      "dir": "up",
-      "meta": "19 Ağu 51,2 · 18 Ağu 52,7 mlr$"
+      "val": "51,2 mlr$",
+      "chg": "24 Ağu · −0,5",
+      "dir": "down",
+      "meta": "21 Ağu 51,7 · 20 Ağu 53,5 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.652,86",
-      "chg": "%−0,28 (24 Ağu)",
-      "dir": "down",
-      "meta": "satış çip hisselerinde yoğunlaştı"
+      "val": "7.677,28",
+      "chg": "%+0,32 (25 Ağu)",
+      "dir": "up",
+      "meta": "+24,42 puan"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "25.980,19",
-      "chg": "%−0,76 (24 Ağu)",
-      "dir": "down",
-      "meta": "Micron −%5,8 · AMD −%3'ten fazla"
+      "val": "26.151,30",
+      "chg": "%+0,66 (25 Ağu)",
+      "dir": "up",
+      "meta": "+171,11 puan"
     },
     {
       "label": "Dow Jones",
-      "val": "53.417,16",
-      "chg": "%+0,26 (24 Ağu)",
+      "val": "53.577,40",
+      "chg": "%+0,30 (25 Ağu)",
       "dir": "up",
-      "meta": "+140,15 puan"
+      "meta": "+160,24 puan · üç günlük seri"
     },
     {
       "label": "ABD 10Y",
-      "val": "%4,72",
-      "chg": "24 Ağu · −2 bps",
+      "val": "%4,64",
+      "chg": "25 Ağu · −6 bps",
       "dir": "up",
-      "meta": "30Y %5,3 civarında"
+      "meta": "2Y %4,17 (−7 bps) · DAX 26.266"
     },
     {
       "label": "Altın",
-      "val": "4.662,68 $",
-      "chg": "%+1,04 (24 Ağu)",
-      "dir": "up",
-      "meta": "21 Ağu'ya göre +%1,76"
+      "val": "4.625,65 $",
+      "chg": "%−0,18 (25 Ağu)",
+      "dir": "down",
+      "meta": "21 Ağu 4.581,95 $'a göre +%0,95"
     },
     {
       "label": "Brent",
-      "val": "92,06 $",
-      "chg": "%−2,50 (24 Ağu)",
+      "val": "87,27 $",
+      "chg": "%−3,61 (25 Ağu)",
       "dir": "down",
-      "meta": "WTI 84,89 $ · yaptırım paketi"
+      "meta": "21 Ağu 94,39 $ · iki günde −%7,5"
     },
     {
       "label": "DXY",
-      "val": "99 altı",
-      "chg": "24 Ağu · kaynaklar 98,6–99,0",
-      "dir": "up",
-      "meta": "20 Ağu 99,35 · EUR/USD 1,168"
+      "val": "98,95",
+      "chg": "26 Ağu 10:21 · +0,07",
+      "dir": "down",
+      "meta": "25 Ağu 98,88 · EUR/USD 1,1662"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
-      "chg": "16 Eyl FOMC",
+      "chg": "15-16 Eyl FOMC",
       "dir": "flat",
-      "meta": "Eyl artırım %31,6 (20 Ağu)"
+      "meta": "Eyl artırım %40,4 (25 Ağu)"
     }
   ],
   "moves": {
@@ -343,7 +343,9 @@ const DATA = {
       "17.08",
       "18.08",
       "19.08",
-      "20.08"
+      "20.08",
+      "21.08",
+      "24.08"
     ],
     "values": [
       70.13,
@@ -462,7 +464,9 @@ const DATA = {
       50.49,
       52.71,
       51.15,
-      53.5
+      53.5,
+      51.71,
+      51.24
     ]
   },
   "reserves": {
@@ -513,21 +517,15 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "Sal 25 Ağu",
+      "d": "Çar 26 Ağu",
       "r": "ABD",
-      "e": "Case-Shiller konut fiyat endeksi (16:00)",
-      "imp": "d"
-    },
-    {
-      "d": "Sal 25 Ağu",
-      "r": "ABD",
-      "e": "Tüketici güveni, yeni konut satışları, Richmond Fed (17:00)",
-      "imp": "d"
+      "e": "Temmuz PCE ve kişisel gelir/harcama (15:30) — konsensüs manşet %3,6",
+      "imp": "h"
     },
     {
       "d": "Çar 26 Ağu",
       "r": "ABD",
-      "e": "Temmuz PCE, dayanıklı mal siparişleri, 2Ç GSYH 2. tahmini",
+      "e": "2Ç GSYH 2. tahmini, dayanıklı mal siparişleri, şirket kârları (15:30)",
       "imp": "h"
     },
     {
@@ -562,12 +560,13 @@ const DATA = {
     }
   ],
   "notes": [
-    "<b>Yaptırım geldi, petrol düştü:</b> 'Operation Economic Outcast' Çin'i muaf tutmuyor; buna rağmen Brent %2,5 kayıpla 92,06, WTI 84,89 $. Paket varil akışını değil satış ve tahsilat kanallarını hedefliyor.",
-    "<b>Altın petrolün tersine gitti:</b> Spot altın %1,04 artışla 4.662,68 $, mayıs ortasından beri en yüksek bölge. Enerji kaynaklı enflasyon hedge'i değil, mali risk primi fiyatlanıyor.",
-    "<b>BİST'te rotasyon seansı:</b> Endeks %0,09 kayıpla 14.501,49 ama bankacılık +%3,77, bilişim −%4,08. Hacim 206,0 mlr TL'ye çıktı; karşılığı tahvilde: gösterge bileşik getiri %40,79'dan %40,10'a.",
-    "<b>TCMB normalleşti:</b> TCMB 1 milyar TL'lik sembolik bir repo ihalesi açtı, AOFM %40'tan %37,0'ye geriledi, para piyasası faizi %36,93.",
-    "<b>Beklentiler ayrıştı:</b> Sektörel enflasyon beklentilerinde piyasa katılımcılarının enflasyon beklentisi hafif geriledi, reel sektör ve hanehalkınınki arttı.",
-      ]
+    "<b>Petrol iki günde %7,5 düştü:</b> Brent 21 Ağu'daki 94,39 $'dan 87,27 $'a indi (25 Ağu −%3,61). Yaptırım paketi ikincil yaptırımlara takvim vermedi, büyük Çin bankalarını listelemedi; varil akışına dokunmayan paket prim boşalttı.",
+    "<b>Asıl ölçü iki petrol arasındaki fark:</b> Hürmüz'den geçmek zorunda olan Brent ile karadaki WTI arasındaki fark 7,16 $'dan 4,76–5,83 $'a indi. Boğaza hiç girmeyen Murban'a ödenen güvence farkı da 11 $'ın üzerinden kabaca yarıya düştü.",
+    "<b>BİST dipten döndü:</b> Gün içi 14.341,93'ten 131,49 puan toparlanıp %0,19 kayıpla 14.473,42'de kapandı. Hacim 197,4 mlr TL; ikinci yarıda 102,7 mlr TL. Toparlanma hacmin arttığı bölümde geldi.",
+    "<b>Fonlama %37'de teyitlendi:</b> EVDS ağırlıklı fonlama maliyetini 24 ve 25 Ağustos için %37,00 gösteriyor (21 Ağu %40). Haftalık repoya geçiş fiilî. Tahvil tarafında karşılığı sınırlı: TR 2Y %40,25'ten %40,05'e, 20 bps.",
+    "<b>Rezervde brüt-net ayrışması:</b> 24 Ağu analitik bilançoda brüt 192,0 mlr$ (+0,8), net 62,3 mlr$ (−0,8), döviz pozisyonu 51,2 mlr$ (−0,5). Fark, döviz yükümlülüklerinin 1,55 mlr$ artmasından; 0,28'i altın swap.",
+    "<b>SPINN hesabı — crack:</b> Cuma'dan salıya Brent 7,12 $ düştü; aynı hafta ABD motorini galonda 15 sent (varilde 6,30 $) arttı. Rafineri marjı kabaca 13,4 $ genişledi. Ucuz ham petrol TÜFE'ye tam geçmez."
+  ]
 };
 </script>
 
