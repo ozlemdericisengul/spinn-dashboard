@@ -88,21 +88,21 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "26 Ağustos 2026, Çarşamba · 10:35 TSİ",
+  "asof": "27 Ağustos 2026, Perşembe · 10:10 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "48,012",
-      "chg": "26 Ağu 10:21 · +%0,04",
+      "val": "48,029",
+      "chg": "27 Ağu · +%0,04",
       "dir": "down",
-      "meta": "25 Ağu 47,992 · EUR/TL 55,989"
+      "meta": "26 Ağu 48,012 · EUR/TL 56,039"
     },
     {
       "label": "BIST 100",
-      "val": "14.473,42",
-      "chg": "%−0,19 (25 Ağu)",
-      "dir": "down",
-      "meta": "USD bazı 3,02 $ · hacim 197,4 mlr TL"
+      "val": "14.610,92",
+      "chg": "%+0,95 (26 Ağu)",
+      "dir": "up",
+      "meta": "USD bazı 3,04 $ · +137,50 puan"
     },
     {
       "label": "5Y CDS",
@@ -113,17 +113,17 @@ const DATA = {
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%40,05",
-      "chg": "25 Ağu · −20 bps",
+      "val": "%39,98",
+      "chg": "26 Ağu · −7 bps",
       "dir": "up",
-      "meta": "24 Ağu %40,25 · 10Y %34,49"
+      "meta": "30 Haziran'dan beri ilk kez %40 altı"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "25 Ağu · EVDS teyitli",
+      "chg": "27 Ağu · dördüncü gün",
       "dir": "up",
-      "meta": "21 Ağu %40 · haftalık repoya geçiş"
+      "meta": "21 Ağu %40 · haftalık repo rejimi"
     },
     {
       "label": "TÜFE (yıllık)",
@@ -137,77 +137,77 @@ const DATA = {
       "val": "183,5 mlr$",
       "chg": "14 Ağu · +5,1 haftalık",
       "dir": "up",
-      "meta": "analitik bilanço 192,0 (24 Ağu)"
+      "meta": "analitik bilanço 193,1 (25 Ağu)"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "62,3 mlr$",
-      "chg": "24 Ağu · −0,8 günlük",
-      "dir": "down",
-      "meta": "Hazine dahil 68,5 mlr$"
+      "val": "63,3 mlr$",
+      "chg": "25 Ağu · +1,1 günlük",
+      "dir": "up",
+      "meta": "Hazine dahil 69,5 mlr$"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "51,2 mlr$",
-      "chg": "24 Ağu · −0,5",
-      "dir": "down",
-      "meta": "21 Ağu 51,7 · 20 Ağu 53,5 mlr$"
+      "val": "52,4 mlr$",
+      "chg": "25 Ağu · +1,2",
+      "dir": "up",
+      "meta": "24 Ağu 51,2 · 21 Ağu 51,7 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.677,28",
-      "chg": "%+0,32 (25 Ağu)",
-      "dir": "up",
-      "meta": "+24,42 puan"
+      "val": "7.675,70",
+      "chg": "%−0,02 (26 Ağu)",
+      "dir": "down",
+      "meta": "−1,58 puan · Nvidia öncesi yatay"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.151,30",
-      "chg": "%+0,66 (25 Ağu)",
-      "dir": "up",
-      "meta": "+171,11 puan"
+      "val": "26.130,20",
+      "chg": "%−0,08 (26 Ağu)",
+      "dir": "down",
+      "meta": "−21,10 puan · çip satışı"
     },
     {
       "label": "Dow Jones",
-      "val": "53.577,40",
-      "chg": "%+0,30 (25 Ağu)",
-      "dir": "up",
-      "meta": "+160,24 puan · üç günlük seri"
+      "val": "53.463,88",
+      "chg": "%−0,21 (26 Ağu)",
+      "dir": "down",
+      "meta": "−113,52 puan · üç günlük seri bitti"
     },
     {
       "label": "ABD 10Y",
-      "val": "%4,64",
-      "chg": "25 Ağu · −6 bps",
-      "dir": "up",
-      "meta": "2Y %4,17 (−7 bps) · DAX 26.266"
+      "val": "%4,66",
+      "chg": "26 Ağu · +2 bps",
+      "dir": "down",
+      "meta": "2Y %4,19 (+2) · DAX 26.286"
     },
     {
       "label": "Altın",
-      "val": "4.625,65 $",
-      "chg": "%−0,18 (25 Ağu)",
+      "val": "4.621,05 $",
+      "chg": "%−0,10 (26 Ağu)",
       "dir": "down",
-      "meta": "21 Ağu 4.581,95 $'a göre +%0,95"
+      "meta": "14 Ağu 4.349,90 $'a göre +%6,2"
     },
     {
       "label": "Brent",
-      "val": "87,27 $",
-      "chg": "%−3,61 (25 Ağu)",
+      "val": "86,94 $",
+      "chg": "%−0,38 (26 Ağu)",
       "dir": "down",
-      "meta": "21 Ağu 94,39 $ · iki günde −%7,5"
+      "meta": "27 Ağu sabahı 86,56 $ · TTF 64,36"
     },
     {
       "label": "DXY",
-      "val": "98,95",
-      "chg": "26 Ağu 10:21 · +0,07",
+      "val": "98,90",
+      "chg": "27 Ağu · −0,05",
       "dir": "down",
-      "meta": "25 Ağu 98,88 · EUR/USD 1,1662"
+      "meta": "26 Ağu 98,95 · EUR/USD 1,1668"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
       "chg": "15-16 Eyl FOMC",
       "dir": "flat",
-      "meta": "Eyl artırım %40,4 (25 Ağu)"
+      "meta": "Eyl artırım ~1/3 (%28-36, 26 Ağu)"
     }
   ],
   "moves": {
@@ -345,7 +345,8 @@ const DATA = {
       "19.08",
       "20.08",
       "21.08",
-      "24.08"
+      "24.08",
+      "25.08"
     ],
     "values": [
       70.13,
@@ -466,7 +467,8 @@ const DATA = {
       51.15,
       53.5,
       51.71,
-      51.24
+      51.24,
+      52.43
     ]
   },
   "reserves": {
@@ -517,33 +519,33 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "Çar 26 Ağu",
-      "r": "ABD",
-      "e": "Temmuz PCE ve kişisel gelir/harcama (15:30) — konsensüs manşet %3,6",
-      "imp": "h"
-    },
-    {
-      "d": "Çar 26 Ağu",
-      "r": "ABD",
-      "e": "2Ç GSYH 2. tahmini, dayanıklı mal siparişleri, şirket kârları (15:30)",
+      "d": "Per 27 Ağu",
+      "r": "TR",
+      "e": "TCMB haftalık rezerv (21 Ağu haftası) — 14:30. Beklentim 188,5-189 mlr$",
       "imp": "h"
     },
     {
       "d": "Per 27 Ağu",
-      "r": "TR",
-      "e": "TCMB haftalık rezerv (21 Ağu haftası) — 14:30",
+      "r": "ABD",
+      "e": "Haftalık işsizlik başvuruları (15:30) ve bekleyen konut satışları (17:00)",
+      "imp": "o"
+    },
+    {
+      "d": "Per 27-29 Ağu",
+      "r": "ABD",
+      "e": "Jackson Hole Sempozyumu — tema: finansal yenilik, ödemeler ve politika",
       "imp": "h"
     },
     {
       "d": "Cum 28 Ağu",
       "r": "ABD",
-      "e": "Jackson Hole — Warsh'ın başkan olarak ilk açılış konuşması",
+      "e": "Warsh'ın başkan olarak ilk Jackson Hole açılış konuşması (17:00 TSİ)",
       "imp": "h"
     },
     {
       "d": "9 Eyl",
       "r": "ABD",
-      "e": "Genişletilmiş uzun vadeli geri alım operasyonları başlıyor",
+      "e": "Genişletilmiş uzun vadeli Hazine geri alım operasyonları başlıyor",
       "imp": "h"
     },
     {
@@ -560,12 +562,11 @@ const DATA = {
     }
   ],
   "notes": [
-    "<b>Petrol iki günde %7,5 düştü:</b> Brent 21 Ağu'daki 94,39 $'dan 87,27 $'a indi (25 Ağu −%3,61). Yaptırım paketi ikincil yaptırımlara takvim vermedi, büyük Çin bankalarını listelemedi; varil akışına dokunmayan paket prim boşalttı.",
-    "<b>Asıl ölçü iki petrol arasındaki fark:</b> Hürmüz'den geçmek zorunda olan Brent ile karadaki WTI arasındaki fark 7,16 $'dan 4,76–5,83 $'a indi. Boğaza hiç girmeyen Murban'a ödenen güvence farkı da 11 $'ın üzerinden kabaca yarıya düştü.",
-    "<b>BİST dipten döndü:</b> Gün içi 14.341,93'ten 131,49 puan toparlanıp %0,19 kayıpla 14.473,42'de kapandı. Hacim 197,4 mlr TL; ikinci yarıda 102,7 mlr TL. Toparlanma hacmin arttığı bölümde geldi.",
-    "<b>Fonlama %37'de teyitlendi:</b> EVDS ağırlıklı fonlama maliyetini 24 ve 25 Ağustos için %37,00 gösteriyor (21 Ağu %40). Haftalık repoya geçiş fiilî. Tahvil tarafında karşılığı sınırlı: TR 2Y %40,25'ten %40,05'e, 20 bps.",
-    "<b>Rezervde brüt-net ayrışması:</b> 24 Ağu analitik bilançoda brüt 192,0 mlr$ (+0,8), net 62,3 mlr$ (−0,8), döviz pozisyonu 51,2 mlr$ (−0,5). Fark, döviz yükümlülüklerinin 1,55 mlr$ artmasından; 0,28'i altın swap.",
-    "<b>SPINN hesabı — crack:</b> Cuma'dan salıya Brent 7,12 $ düştü; aynı hafta ABD motorini galonda 15 sent (varilde 6,30 $) arttı. Rafineri marjı kabaca 13,4 $ genişledi. Ucuz ham petrol TÜFE'ye tam geçmez."
+    "<b>Gösterge getiri %40'ın altına indi:</b> TR 2Y %39,98 — 30 Haziran'dan (%39,96) beri ilk. 24 Ağu'ya göre 27 bps aşağıda. 5Y %38,03'ten %37,73'e; 10Y %34,51 ile yerinde. Gevşeme ön ve orta uçta toplandı.",
+    "<b>Temmuz PCE manşette sürprizli:</b> Yıllık %3,7, konsensüs %3,6 idi; çekirdek %3,3 (aylık +%0,2) beklentiye paralel. Eylül artırım olasılığı %40,4'ten kabaca üçte bire (%36) geriledi.",
+    "<b>Nvidia beklentiyi aştı:</b> 2Ç geliri 96,2 mlr$ (yıllık +%106) vs konsensüs 92,07; HBK 2,22 $ vs 2,09; brüt marj %75,0. Kapanış öncesi çip satışıyla Nasdaq 26.130,20'ye indi; ABD vadelileri artıda.",
+    "<b>Rezervde brüt-net ayrışması kapandı:</b> 25 Ağu analitik bilançoda brüt 193,1 mlr$ (+1,1), net 63,3 (+1,1), döviz pozisyonu 52,4 (+1,2). Yükümlülükler 129,7 mlr$'da yatay (+37 mn$); artışın tamamı nete geçti.",
+    "<b>SPINN hesabı — rezerv beklentisi:</b> Analitik brüt 14→21 Ağu +5,3 mlr$. Altın %5,34 arttı; 108,3 mlr$'lık stokta fiyat etkisi +5,78 mlr$. Artışın tamamı değerleme; döviz bacağı ~0,5 mlr$ azalmış görünüyor. Beklentim 189-190 milyar dolar civarı."
   ]
 };
 </script>
