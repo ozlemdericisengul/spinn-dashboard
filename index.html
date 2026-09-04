@@ -78,7 +78,7 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 30 Temmuz 2026 (Perşembe)</div>
+    <div>Kapanış ref.: 3 Eylül 2026 (Perşembe)</div>
   </div>
 </header>
 
@@ -88,126 +88,126 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "2 Eylül 2026, Çarşamba · 05:20 TSİ",
+  "asof": "4 Eylül 2026, Cuma · 05:20 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "48,189",
-      "chg": "1 Eyl 48,073 · +%0,24",
+      "val": "48,224",
+      "chg": "4 Eyl · 3 Eyl 48,208 · +%0,03",
       "dir": "down",
-      "meta": "EUR/TL 55,877 · EUR/USD 1,1595"
+      "meta": "EUR/TL 55,971 · EUR/USD 1,1607"
     },
     {
       "label": "BIST 100",
-      "val": "14.229,01",
-      "chg": "%−0,73 (1 Eyl)",
+      "val": "13.932,46",
+      "chg": "%−0,84 (3 Eyl)",
       "dir": "down",
-      "meta": "USD bazı 2,95 $ · hacim 195,8 mlr TL"
+      "meta": "USD bazı 2,89 $ · SPK sonrası −%4,84"
     },
     {
       "label": "5Y CDS",
-      "val": "217,3 bps",
-      "chg": "28 Ağu · yatay",
+      "val": "218,5 bps",
+      "chg": "1 Eyl · +1,0 bps",
       "dir": "flat",
-      "meta": "27 Ağu 217,3 · 26 Ağu 218,0"
+      "meta": "31 Ağu 217,5 · 28 Ağu 217,3"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%39,84",
-      "chg": "1 Eyl · −12 bps",
+      "val": "%39,64",
+      "chg": "3 Eyl · −32 bps",
       "dir": "up",
-      "meta": "5Y %37,78 · 10Y %34,37 (28 Ağu)"
+      "meta": "5Y %37,80 · 10Y %34,29 (3 Eyl)"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "1 Eyl · yedinci gün",
+      "chg": "3 Eyl · dokuzuncu gün",
       "dir": "up",
-      "meta": "bileşik ≈%44,75 · 2Y makası −491 bp"
+      "meta": "2Y ile makas 264 bp"
     },
     {
       "label": "TÜFE (yıllık)",
-      "val": "%31,75",
-      "chg": "Temmuz · ağustos yarın 10:00",
-      "dir": "down",
-      "meta": "TCMB 2026 tahmini %28"
+      "val": "%31,51",
+      "chg": "Ağustos · aylık %1,84",
+      "dir": "up",
+      "meta": "Temmuz %31,75 · Yİ-ÜFE %27,95"
     },
     {
       "label": "TCMB Brüt Rezerv",
-      "val": "188,5 mlr$",
-      "chg": "21 Ağu · yeni veri 3 Eylül",
-      "dir": "up",
-      "meta": "altın 114,2 · döviz 74,2 mlr$"
+      "val": "188,2 mlr$",
+      "chg": "28 Ağu · −0,25 haftalık",
+      "dir": "down",
+      "meta": "altın 117,1 (+2,9) · döviz 71,1 (−3,1)"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "62,1 mlr$",
-      "chg": "31 Ağu · −1,0 günlük",
+      "val": "59,4 mlr$",
+      "chg": "2 Eyl · −0,3 günlük",
       "dir": "down",
-      "meta": "Hazine dahil 68,3 · brüt 189,4"
+      "meta": "Hazine dahil 65,3 · brüt 183,5"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "51,3 mlr$",
-      "chg": "31 Ağu · −1,1",
+      "val": "48,3 mlr$",
+      "chg": "2 Eyl · −0,3",
       "dir": "down",
-      "meta": "28 Ağu 52,4 · 27 Ağu 53,5 mlr$"
+      "meta": "1 Eyl 48,6 · 27 Ağu 53,5 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.631,47",
-      "chg": "%−0,71 (1 Eyl)",
-      "dir": "down",
-      "meta": "−54,67 puan · petrol kaynaklı satış"
+      "val": "7.747,71",
+      "chg": "%+1,06 (3 Eyl)",
+      "dir": "up",
+      "meta": "Waller güvercin sinyali"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.099,77",
-      "chg": "%−1,03 (1 Eyl)",
-      "dir": "down",
-      "meta": "−271 puan · megacap teknolojide satış"
+      "val": "26.584,06",
+      "chg": "%+1,40 (3 Eyl)",
+      "dir": "up",
+      "meta": "getiri tırmanışı durdu"
     },
     {
       "label": "Dow Jones",
-      "val": "52.766,88",
-      "chg": "%−0,79 (1 Eyl)",
-      "dir": "down",
-      "meta": "−419,02 puan · risk iştahı zayıf"
+      "val": "53.686,11",
+      "chg": "%+1,18 (3 Eyl)",
+      "dir": "up",
+      "meta": "+624,16 puan"
     },
     {
       "label": "ABD 10Y",
-      "val": "%4,79",
-      "chg": "1 Eyl · +4 bps",
-      "dir": "down",
-      "meta": "Oca 2025'ten yüksek · bu sabah %4,82"
+      "val": "%4,78",
+      "chg": "3 Eyl · −1 bps",
+      "dir": "up",
+      "meta": "2Y %4,35 · 2s10s 40→43 bp açıldı"
     },
     {
       "label": "Altın",
-      "val": "4.341,02 $",
-      "chg": "%−2,25 (1 Eyl)",
-      "dir": "down",
-      "meta": "bu sabah 4.308,06 $ · 19 Ağu'dan düşük"
+      "val": "~4.480 $",
+      "chg": "3 Eyl · %+3,7",
+      "dir": "up",
+      "meta": "dolar ve ABD getirileri geri çekildi"
     },
     {
       "label": "Brent",
-      "val": "94,65 $",
-      "chg": "%+4,58 (1 Eyl)",
-      "dir": "up",
-      "meta": "2 Eyl 96,66 $ · aylık +%15,4"
+      "val": "~96,0 $",
+      "chg": "3 Eyl · 95,8-96,2 bandı",
+      "dir": "flat",
+      "meta": "Hürmüz'de geçiş hacmi toparlıyor"
     },
     {
       "label": "DXY",
-      "val": "99,49",
-      "chg": "2 Eyl · dosya değeri",
-      "dir": "up",
-      "meta": "EUR/USD 1,1595"
+      "val": "99,14",
+      "chg": "4 Eyl · 3 Eyl 99,70",
+      "dir": "down",
+      "meta": "USD/JPY 156,26 · seansta −%1,95"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
       "chg": "16 Eyl FOMC",
       "dir": "flat",
-      "meta": "Eylül artırım olasılığı %66 (1 Eyl)"
+      "meta": "Eylül artırım olasılığı %50,2 (3 Eyl)"
     }
   ],
   "moves": {
@@ -350,7 +350,9 @@ const DATA = {
       "26.08",
       "27.08",
       "28.08",
-      "31.08"
+      "31.08",
+      "01.09",
+      "02.09"
     ],
     "values": [
       70.1,
@@ -476,7 +478,9 @@ const DATA = {
       53.7,
       53.5,
       52.4,
-      51.3
+      51.3,
+      48.6,
+      48.3
     ]
   },
   "reserves": {
@@ -494,7 +498,8 @@ const DATA = {
       "31 Tem",
       "7 Ağu",
       "14 Ağu",
-      "21 Ağu"
+      "21 Ağu",
+      "28 Ağu"
     ],
     "values": [
       205.2,
@@ -510,9 +515,10 @@ const DATA = {
       164.4,
       178.4,
       183.5,
-      188.5
+      188.5,
+      188.2
     ],
-    "note": "21 Ağu: brüt 188,5 mlr$ (haftalık +4,9). Altın 114,2 (+5,9), döviz 74,2 (−0,9) — haftanın artışının tamamı altın değerlemesinden. 12 aylık ayrıştırma: brüt +12,1 mlr$; altın +29,0, döviz −16,9. Altının brüt rezerv içindeki payı bir yılda %48,3'ten %60,6'ya çıktı; ons fiyatında %10'luk gerileme bugün stokun %6,1'ini siler, bir yıl önce %4,8'ini silerdi. Yıl başına göre brüt rezerv hâlâ 5,4 mlr$ aşağıda."
+    "note": "28 Ağu: brüt 188,2 mlr$ (haftalık −0,25) — Mart sonundan bu yana ilk gerileme. Kırılım manşetin tersini söylüyor: altın 117,1 (+2,9), döviz 71,1 (−3,1). SPINN hesabı TCMB ile uyumlu: ons 21 Ağu 4.581,95 → 28 Ağu 4.602,00 $, yani +%0,44; 114,2 mlr$ altın bacağına miktar sabit varsayımıyla fiyat etkisi ≈+0,5 mlr$. Artık 2,37 mlr$, aynı varsayımla ≈16 tonluk fiziki alıma karşılık geliyor. Yıl başına göre brüt hâlâ 5,7 mlr$ aşağıda; döviz bacağı −5,9."
   },
   "inflation": {
     "labels": [
@@ -521,35 +527,17 @@ const DATA = {
       "Yİ-ÜFE"
     ],
     "values": [
-      31.75,
-      30.98,
-      27.83
+      31.51,
+      30.68,
+      27.95
     ],
-    "note": "Temmuz 2026 yıllık. TÜFE aylık +1,78 (Haziran'da %32,11'di); B endeksi aylık +1,66; Yİ-ÜFE aylık +1,52. 12 aylık ortalama %31,90."
+    "note": "Ağustos 2026 yıllık. TÜFE aylık +1,84 (Temmuz %31,75'ti); Yİ-ÜFE aylık +2,57 ve yıllık %27,83'ten %27,95'e yükseldi. Giyim-ayakkabı %3,54 gerileyerek manşeti 0,24 puan aşağı çekti; bu katkı olmasa aylık %2,08, yıllığa çevrilince %28,0 olurdu."
   },
   "calendar": [
     {
-      "d": "Çar 2 Eyl",
-      "r": "ABD",
-      "e": "ADP özel sektör istihdamı (ağustos)",
-      "imp": "h"
-    },
-    {
-      "d": "Per 3 Eyl",
-      "r": "TR",
-      "e": "Ağustos TÜFE ve Yİ-ÜFE — TÜİK, 10:00",
-      "imp": "h"
-    },
-    {
-      "d": "Per 3 Eyl",
-      "r": "TR",
-      "e": "Haftalık para ve banka istatistikleri, rezervler — TCMB, 14:30",
-      "imp": "h"
-    },
-    {
       "d": "Cum 4 Eyl",
       "r": "ABD",
-      "e": "Ağustos tarım dışı istihdam ve işsizlik oranı",
+      "e": "Ağustos tarım dışı istihdam ve işsizlik — 15:30, konsensüs 53 bin / %4,1",
       "imp": "h"
     },
     {
@@ -559,9 +547,27 @@ const DATA = {
       "imp": "h"
     },
     {
+      "d": "10 Eyl",
+      "r": "TR",
+      "e": "4 Eylül haftası resmî rezervler — altın kaybının göründüğü veri",
+      "imp": "h"
+    },
+    {
       "d": "16 Eyl",
       "r": "ABD",
-      "e": "FOMC faiz kararı — artırım olasılığı %66",
+      "e": "FOMC faiz kararı — artırım olasılığı %50,2 (3 Eyl)",
+      "imp": "h"
+    },
+    {
+      "d": "18 Eyl",
+      "r": "Japonya",
+      "e": "BoJ faiz kararı — taşıma işlemi kapatmalarının asıl referansı",
+      "imp": "h"
+    },
+    {
+      "d": "23 Eyl",
+      "r": "TR",
+      "e": "TCMB PPK faiz kararı — politika faizi %37,00",
       "imp": "h"
     },
     {
@@ -569,15 +575,21 @@ const DATA = {
       "r": "TR",
       "e": "Döviz dönüşüm desteğinde yeni prim ve katma değer formülü yürürlükte",
       "imp": "h"
+    },
+    {
+      "d": "31 Eki",
+      "r": "TR",
+      "e": "SPK fon uyumu ilk eşiği — aşımın üçte biri kapatılacak (2/3: 30 Kas, tamamı: 31 Ara)",
+      "imp": "h"
     }
   ],
   "notes": [
-    "<b>Petrol şoku Hormuz kaynaklı:</b> ABD'nin İran hedeflerine yeni saldırıları ve İran'ın karşılığı sonrası Brent salı %4,58 artışla 94,65 $, bu sabah 96,66 $ — altı haftanın zirvesi, aylık +%15,4.",
-    "<b>SPINN hesabı — enerji faturası:</b> Brent bir ayda varil başına 12,9 $ arttı. Günlük net ithalat kabaca 1 mn varil <i>varsayımıyla</i> yıllık ek fatura ≈4,7 mlr$; ağustosta üç haftada biriken 24,0 mlr$ rezervin ~beşte biri.",
-    "<b>Bu bir arz işlemi, jeopolitik risk işlemi değil:</b> Petrol %4,6 yükselirken altın %2,25 düştü. Piyasa Hormuz'u güvenli liman talebi değil, doğrudan enflasyon ve daha sıkı Fed olarak fiyatlıyor.",
-    "<b>Fed fiyatlaması sertleşiyor:</b> Eylül artırım olasılığı %66; ABD 10 yıllığı beşinci seansta yükselerek %4,79'a, Ocak 2025'ten beri en yükseğe çıktı, bu sabah %4,82. Bugün ADP, cuma tarım dışı istihdam.",
-    "<b>BİST'te madencilik hikâyesi yerli değil:</b> Endeks %0,73 kayıpla 14.229,01, hacim 195,8 mlr TL. Madencilik −%5,72 (altındaki düşüşün yansıması), finansal kiralama +%4,92, bankacılık +%0,52. İSO imalat PMI 47,7'den 48,1'e.",
-    "<b>Rezervlerde ikinci düşüş günü:</b> 31 Ağu analitik bilanço: brüt 189,4 (−1,8), net 62,1 (−1,0), döviz pozisyonu 51,3 mlr$ (−1,1). Pozisyon 27 Ağu'dan beri 2,2 mlr$ eridi; altın 28 Ağu'dan beri %6,4 düştü."
+    "<b>BİST'teki satışın adresi mevzuat:</b> SPK'nın 28 Ağustos tarihli 52/1589 kararı fon pozisyonlarını fiili dolaşıma bağladı; 84 hisse en az bir kez taban gördü. Endeks o kapanıştan bu yana dört seansta −%4,84.",
+    "<b>Uyum takvimi yılın kalanını belirliyor:</b> 29 Ağustos aşımları tavan sayılıyor ve artırılamıyor. Aşımın 1/3'ü 31 Ekim'e, 2/3'ü 30 Kasım'a, tamamı 31 Aralık'a kadar kapatılacak — yerli kurumsal alıcı fiilen dışarıda.",
+    "<b>Waller olasılığı 13 puan indirdi:</b> Dezenflasyon sinyallerine atıfla faizi sabit tutmayı destekleyeceğini söyledi. Eylül artırım olasılığı %63,2'den %50,2'ye indi; S&P +%1,06, Nasdaq +%1,40, Dow +%1,18. 2s10s 40→43 bp açıldı.",
+    "<b>Yen taşıma işlemi çözülüyor:</b> USD/JPY seansta −%1,95 ile 156,26. Dolar/TL yatayken TL, yen karşısında %2,03 kaybetti — TL'nin aylık 1,49 puanlık taşıma birikiminin ~1,4 ayı tek seansta silindi.",
+    "<b>SPINN hesabı — TCMB haftada ~16 ton altın almış:</b> 28 Ağustos haftasında altın bacağı +2,87 mlr$. Ons +%0,44 ile fiyat etkisi ≈+0,5 mlr$; artık 2,37 mlr$, miktar sabit varsayımıyla ≈16 tonluk fiziki alım.",
+    "<b>Ağustos TÜFE %1,84 — desteği mevsimsel:</b> Yıllık %31,75'ten %31,51'e. Giyim-ayakkabı −%3,54 ile manşeti 0,24 puan aşağı çekti; bu katkı olmasa aylık %2,08, yıllık tempo %28,0. Yİ-ÜFE aylık %2,57."
   ]
 };
 </script>
@@ -690,7 +702,7 @@ new Chart(document.getElementById('cpiChart'),{
     datasets:[{data:DATA.inflation.values,
       backgroundColor:['#f5b942','#9b7dff','#4f8cff'],borderRadius:5}]},
   options:{plugins:{legend:{display:false},
-    title:{display:true,text:'Enflasyon — Temmuz 2026 (yıllık %)',color:'#e8edf7',font:{size:14}},
+    title:{display:true,text:'Enflasyon — Ağustos 2026 (yıllık %)',color:'#e8edf7',font:{size:14}},
     subtitle:{display:true,text:DATA.inflation.note,color:txtc,font:{size:10}}},
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc},ticks:{callback:v=>v+'%'}}}}
 });
