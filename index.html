@@ -78,7 +78,7 @@
   </div>
   <div class="asof">
     <div>Veri tarihi: <b id="asof">—</b></div>
-    <div>Kapanış ref.: 3 Eylül 2026 (Perşembe)</div>
+    <div>Kapanış ref.: 8 Eylül 2026 (Salı)</div>
   </div>
 </header>
 
@@ -88,42 +88,42 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "8 Eylül 2026, Salı · 05:20 TSİ",
+  "asof": "9 Eylül 2026, Çarşamba · 05:20 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "48,347",
-      "chg": "8 Eyl · 7 Eyl 48,233 · +%0,24",
+      "val": "48,373",
+      "chg": "9 Eyl · 8 Eyl 48,347 · +%0,05",
       "dir": "down",
-      "meta": "EUR/TL 56,185 · EUR/USD 1,1621"
+      "meta": "EUR/TL 56,180 · EUR/USD 1,1614"
     },
     {
       "label": "BIST 100",
-      "val": "14.151,59",
-      "chg": "%+0,99 (7 Eyl)",
+      "val": "14.405,25",
+      "chg": "%+1,79 (8 Eyl)",
       "dir": "up",
-      "meta": "USD bazı 2,93 $ · SPK sonrası −%3,35"
+      "meta": "USD bazı 2,98 $ · hacim 254,6 mlr ₺"
     },
     {
       "label": "5Y CDS",
-      "val": "218,7 bps",
-      "chg": "3 Eyl (son veri) · −0,5 bps",
-      "dir": "flat",
-      "meta": "2 Eyl 219,2 · 1 Eyl 218,5"
+      "val": "216,0 bps",
+      "chg": "7 Eyl (son veri) · düştü",
+      "dir": "down",
+      "meta": "4 Eyl 218,710:03 AM 9/9/2026"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%39,59",
-      "chg": "7 Eyl · +3 bps",
-      "dir": "flat",
-      "meta": "10Y %34,20 · 5Y %37,80 (3 Eyl)"
+      "val": "%39,68",
+      "chg": "8 Eyl · +9 bps",
+      "dir": "down",
+      "meta": "10Y %34,20 (7 Eyl) · 5Y %37,91"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "7 Eyl · on birinci gün",
+      "chg": "8 Eyl · 2Y makası 268 bp",
       "dir": "up",
-      "meta": "2Y ile makas 259 bp"
+      "meta": "gecelik %40'tan −458 bp bileşik"
     },
     {
       "label": "TÜFE (yıllık)",
@@ -141,73 +141,73 @@ const DATA = {
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "61,8 mlr$",
-      "chg": "4 Eyl · +0,9 günlük",
-      "dir": "up",
-      "meta": "Hazine dahil 67,8 · brüt 186,9"
+      "val": "61,5 mlr$",
+      "chg": "7 Eyl · −0,3 günlük",
+      "dir": "down",
+      "meta": "Hazine dahil 67,4 · brüt 186,1"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
       "val": "49,7 mlr$",
-      "chg": "4 Eyl · +0,2",
-      "dir": "up",
+      "chg": "4 Eyl (son teyitli değer)",
+      "dir": "flat",
       "meta": "3 Eyl 49,5 · 2 Eyl 48,3 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.718,60",
-      "chg": "%−0,38 (4 Eyl)",
+      "val": "7.673,52",
+      "chg": "%−0,58 (8 Eyl)",
       "dir": "down",
-      "meta": "7 Eyl ABD kapalı — İşçi Bayramı"
+      "meta": "Kharg kaynaklı enerji primi"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.506,99",
-      "chg": "%−0,29 (4 Eyl)",
+      "val": "26.421,41",
+      "chg": "%−0,32 (8 Eyl)",
       "dir": "down",
-      "meta": "162 binlik istihdam sürprizi"
+      "meta": "üç endeksin en dayanıklısı"
     },
     {
       "label": "Dow Jones",
-      "val": "53.414,25",
-      "chg": "%−0,51 (4 Eyl)",
+      "val": "52.786,07",
+      "chg": "%−1,18 (8 Eyl)",
       "dir": "down",
-      "meta": "−271,86 puan"
+      "meta": "−628,18 puan"
     },
     {
       "label": "ABD 10Y",
       "val": "%4,78",
-      "chg": "4 Eyl · +1 bps",
+      "chg": "4 Eyl (son veri)",
       "dir": "flat",
       "meta": "2Y %4,37 · 2s10s 41 bp"
     },
     {
       "label": "Altın",
-      "val": "4.411,61 $",
-      "chg": "8 Eyl · 7 Eyl 4.434,68 $",
+      "val": "4.404,15 $",
+      "chg": "7 Eyl (son veri)",
       "dir": "down",
-      "meta": "istihdam sonrası Fed baskısı"
+      "meta": "Fed artırım olasılığı baskısı"
     },
     {
       "label": "Brent",
-      "val": "97,29 $",
-      "chg": "7 Eyl · %+1,05",
-      "dir": "down",
-      "meta": "TL bazı 4.704 ₺/varil · ayda +%10,9"
+      "val": "100,00 $",
+      "chg": "9 Eyl · salı 99 $ gördü",
+      "dir": "up",
+      "meta": "TL bazı 4.806 ₺ · 4 seansta +%4,4"
     },
     {
       "label": "DXY",
-      "val": "98,90",
-      "chg": "8 Eyl · 7 Eyl 98,98",
+      "val": "98,86",
+      "chg": "9 Eyl · 8 Eyl 98,90",
       "dir": "flat",
-      "meta": "USD/JPY 154,59 · 3 Eyl'den −%3,0"
+      "meta": "EUR/USD 1,1614"
     },
     {
       "label": "Fed Funds",
       "val": "%3,50–3,75",
       "chg": "16 Eyl FOMC",
       "dir": "flat",
-      "meta": "artırım olasılığı %60-65 (4 Eyl)"
+      "meta": "artırım olasılığı %56 (8 Eyl)"
     }
   ],
   "moves": {
@@ -539,12 +539,6 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "Bu hafta",
-      "r": "TR",
-      "e": "TÜİK temmuz sanayi üretim endeksi — 10.00",
-      "imp": "m"
-    },
-    {
       "d": "9 Eyl",
       "r": "ABD",
       "e": "Genişletilmiş uzun vadeli Hazine geri alım operasyonları başlıyor",
@@ -553,8 +547,14 @@ const DATA = {
     {
       "d": "10 Eyl",
       "r": "TR",
-      "e": "TCMB PPK faiz kararı — 14.00; ankette 20 ekonomistin 18'i %37'de sabit bekliyor",
+      "e": "TCMB PPK faiz kararı — 14.00; AA Finans anketinde 25 ekonomistin 24'ü %37'de sabit bekliyor",
       "imp": "h"
+    },
+    {
+      "d": "10 Eyl",
+      "r": "TR",
+      "e": "TÜİK işsizlik oranı — 10.00",
+      "imp": "m"
     },
     {
       "d": "10 Eyl",
@@ -571,7 +571,7 @@ const DATA = {
     {
       "d": "16 Eyl",
       "r": "ABD",
-      "e": "FOMC faiz kararı — artırım olasılığı %60-65 (4 Eyl)",
+      "e": "FOMC faiz kararı — 25 bp artırım olasılığı %56 (8 Eyl)",
       "imp": "h"
     },
     {
@@ -594,12 +594,12 @@ const DATA = {
     }
   ],
   "notes": [
-    "<b>Tanker savaşı tırmandı:</b> Hafta sonu ABD üç İran tankerini vurdu, İran Hürmüz'de üç tanker ve ABD bağlantılı üç gemiyi hedef aldığını açıkladı. Brent pazartesi %1,05 artışla 97,29 dolara çıktı, son bir aylık kazanç %10,91; şu an 99 dolar üzeri seyrediyor.",
-    "<b>SPINN hesabı — TL cinsinden petrol enflasyonu geçti:</b> Brent 3 Eylül'de 4.604,8 ₺/varilken bu sabah 4.703,6 ₺. Üç seansta +%2,15; Ağustos aylık TÜFE %1,84 idi. Artışın 1,9 puanı dolar fiyatından, 0,3 puanı kurdan.",
-    "<b>ABD kapalı, Asya coştu:</b> İşçi Bayramı'nda sahne Asya'nın oldu; Nikkei %2,12, Kospi %4,61 yükseldi, sürükleyen yapay zekâ hisseleriydi. Avrupa'da Stoxx 600 yatay, en iyi sektör %1,29 ile petrol-gaz.",
-    "<b>BİST dört seanslık satışı kırdı:</b> Endeks %0,99 artışla 14.151,59; SPK kararı sonrası kayıp %4,84'ten %3,35'e indi. Liderlik değişti: BİST 30 %1,73, sanayi %1,81 yükselirken mali yalnız %0,37, teknoloji %0,07.",
-    "<b>Rezervde yön ve bileşim birlikte iyileşti:</b> 4 Eylül'de brüt 186,9 (+0,7), net 61,8 (+0,9), döviz pozisyonu 49,7 mlr$ (+0,2). Netin brütten fazla artması yükümlülükten: altın swap stoku 0,73 mlr$ azaldı.",
-    "<b>Hazine ağustosta fazla verdi:</b> Nakit dengesi 49,8 mlr ₺ fazla (geçen yıl Ağustos 84,2 mlr ₺ açık). Faiz dışı fazla 209,6 mlr ₺, faiz ödemesi 159,8 mlr ₺ — faiz dışı fazla faiz yükünü 1,31 katıyla karşıladı (geçen yıl 3 katıydı)."
+    "<b>Ayrışma günü:</b> Dow %1,18, S&P 500 %0,58 düşerken BİST 100 %1,79 artışla 14.405,25'ten, günün en yükseğinden kapandı. Farkı tek sektör taşıdı: bankacılık endeksi %4,32 yükseldi, bilişim %2,39 geriledi.",
+    "<b>SPINN hesabı — TL bazlı petrol:</b> Brent 3 Eylül'de 4.604,8 ₺/varilken bu sabah 4.805,8 ₺. Dört seansta +%4,37; bunun 4,0 puanı dolar fiyatından, 0,3 puanı kurdan geliyor. Ağustos aylık TÜFE %1,84 idi.",
+    "<b>SPINN hesabı — gevşeme 300 değil 458 bp:</b> Gecelik %40 basit, günlük bileşikte %49,16; haftalık repo %37 basit, bileşikte %44,58. Bileşik okuma indirimi büyütüyor. Buna karşılık 2 yıllık 9 bp artışla %39,68 — tahvil hisseye eşlik etmedi.",
+    "<b>Hazine Ağustos'ta ön finansmana geçti:</b> Ortalama vade 30,3 → 33,2 ay, ortalama maliyet %34,88 → %37,04 (+216 bp), iç borç çevirme oranı %88,4 → %106,4. Vadeyi uzatmanın bedeli maliyet artışı oldu.",
+    "<b>Rezervde seviye düştü, bileşim düzeldi:</b> 7 Eylül'de brüt 186,1 (−0,8), net 61,5 (−0,3), Hazine dahil 67,4 mlr$ (−0,4). Altın swap stoku 31 Ağustos'tan beri 1.425 mn$, yani %25,2 azaldı.",
+    "<b>Fed fiyatlaması yükseliyor:</b> 16 Eylül'de 25 bp artırım olasılığı 7 Eylül'deki %58,7'den 9 Eylül'de %60'a yükseldi; 4 Eylül'de de %60-65 bandındaydı."
   ]
 };
 </script>
