@@ -88,42 +88,42 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "18 Eylül 2026, Cuma · 05:15 TSİ",
+  "asof": "23 Eylül 2026, Çarşamba · 08:10 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "48,587",
-      "chg": "18 Eyl kaydı · 17 Eyl 48,578 · +%0,02",
+      "val": "48,732",
+      "chg": "23 Eyl kaydı · 22 Eyl 48,713 · +%0,04",
       "dir": "down",
-      "meta": "EUR/TL 55,755 · EUR/USD 1,1475"
+      "meta": "EUR/TL 55,851 · EUR/USD 1,1461"
     },
     {
       "label": "BIST 100",
-      "val": "13.509,76",
-      "chg": "%+2,95 (17 Eyl) · +387,19 puan",
-      "dir": "up",
-      "meta": "USD bazı 2,78 $ · BIST 30 %+4,16"
+      "val": "13.198,84",
+      "chg": "%−1,04 (22 Eyl) · −138,85 puan",
+      "dir": "down",
+      "meta": "USD bazı 2,71 $ · hacim 147,5 mlr ₺"
     },
     {
       "label": "5Y CDS",
-      "val": "233,0 bps",
-      "chg": "16 Eyl (son veri) · 14 Eyl 226,7",
+      "val": "244 bps",
+      "chg": "22 Eyl · 18 Eyl 232,8 · +11 bp",
       "dir": "down",
-      "meta": "11 Eyl 223,0 bps"
+      "meta": "1 Eylül 218,5'ten +25,5 bp"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%41,10",
-      "chg": "17 Eyl · 16 Eyl %40,15 · +95 bp",
-      "dir": "down",
-      "meta": "5Y %39,23 · 10Y %35,22 (16 Eyl)"
+      "val": "%39,85",
+      "chg": "22 Eyl · 21 Eyl %39,87 · −2 bp",
+      "dir": "flat",
+      "meta": "5Y %38,39 · 10Y %34,98 (21 Eyl)"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "17 Eyl · politika faizinde",
+      "chg": "22 Eyl · politika faizinde sabit",
       "dir": "flat",
-      "meta": "2Y ile makas 410 bp (16 Eyl 315)"
+      "meta": "Haftalık repo 300 mlr ₺ yenilendi"
     },
     {
       "label": "TÜFE (yıllık)",
@@ -135,79 +135,79 @@ const DATA = {
     {
       "label": "TCMB Brüt Rezerv",
       "val": "178,7 mlr$",
-      "chg": "11 Eyl · −5,52 haftalık · 3. hafta düşüş",
+      "chg": "11 Eyl · −5,52 haftalık · yeni veri 24 Eyl",
       "dir": "down",
       "meta": "altın 110,3 · döviz 68,4 mlr$"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "58,9 mlr$",
-      "chg": "16 Eyl · 15 Eyl'e göre +1,91",
-      "dir": "up",
-      "meta": "Hazine dahil 64,4 · brüt 179,6 mlr$"
+      "val": "51,8 mlr$",
+      "chg": "21 Eyl · 18 Eyl'e göre −0,75",
+      "dir": "down",
+      "meta": "Hazine dahil 57,3 · brüt 176,5 mlr$"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "46,1 mlr$",
-      "chg": "16 Eyl · 15 Eyl'e göre +1,70",
-      "dir": "up",
-      "meta": "7 günlük erime bu satırda durdu"
+      "val": "39,1 mlr$",
+      "chg": "21 Eyl · günlük −0,77",
+      "dir": "down",
+      "meta": "16-21 Eylül toplamı −7,0 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.637,76",
-      "chg": "%+1,14 (17 Eyl) · +85,95 puan",
-      "dir": "up",
-      "meta": "Çip endeksi %+3"
+      "val": "7.764,64",
+      "chg": "%−0,00 (22 Eyl) · −0,06 puan",
+      "dir": "flat",
+      "meta": "Fiilen yatay kapanış"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "25.978,42",
-      "chg": "16 Eyl kaydı · 17 Eyl kaydı yok",
-      "dir": "flat",
-      "meta": "17 Eyl teyitli kapanış kaydı yok"
+      "val": "27.244,28",
+      "chg": "%+0,45 (22 Eyl) · +122,19 puan",
+      "dir": "up",
+      "meta": "Üst üste ikinci rekor kapanış"
     },
     {
       "label": "Dow Jones",
-      "val": "51.778,04",
-      "chg": "%+0,61 (17 Eyl) · +316,14 puan",
-      "dir": "up",
-      "meta": "Fed sonrası ilk toparlanma günü"
+      "val": "51.863,69",
+      "chg": "%−0,36 (22 Eyl) · −185,14 puan",
+      "dir": "down",
+      "meta": "21 Eyl 52.048,83"
     },
     {
       "label": "ABD 10Y",
-      "val": "%5,00",
-      "chg": "17 Eyl · 8 günlük yükseliş kırıldı",
-      "dir": "up",
-      "meta": "Tem 2007'den beri en yüksek bölge"
+      "val": "%4,959",
+      "chg": "22 Eyl · 1 bp'den az düşüş",
+      "dir": "flat",
+      "meta": "2Y %4,743 · 30Y %5,296"
     },
     {
       "label": "Altın",
-      "val": "4.332,55 $",
-      "chg": "16 Eyl kaydı · yeni satır yok",
-      "dir": "flat",
-      "meta": "17 Eyl teyitli kapanış kaydı yok"
+      "val": "4.337 $",
+      "chg": "22 Eyl 18.20 · 21 Eyl 4.343 $",
+      "dir": "down",
+      "meta": "4.400 $ geri alınamadı"
     },
     {
       "label": "Brent",
-      "val": "103,61 $",
-      "chg": "%−2,10 (17 Eyl) · 15 Eyl 109,21 $",
+      "val": "99,9 $",
+      "chg": "%−0,4 (22 Eyl) · beşinci düşüş seansı",
       "dir": "up",
-      "meta": "TL bazı 5.034 ₺/varil (−%4,2)"
+      "meta": "15 Eyl 109,21 $'dan %−8,5"
     },
     {
       "label": "DXY",
-      "val": "100,09",
-      "chg": "18 Eyl kaydı · 17 Eyl 99,56",
-      "dir": "up",
-      "meta": "Haftalardır ilk kez 100 üzeri"
+      "val": "100,33",
+      "chg": "23 Eyl kaydı · 22 Eyl 100,21",
+      "dir": "flat",
+      "meta": "Dolar sertleşiyor"
     },
     {
       "label": "Fed Funds",
       "val": "%3,75–4,00",
       "chg": "16 Eyl · +25 bp, oybirliğiyle 12-0",
       "dir": "up",
-      "meta": "28 Eki artırım olasılığı %55,1"
+      "meta": "28 Eki artırım olasılığı %59,7 (22 Eyl)"
     }
   ],
   "moves": {
@@ -362,7 +362,10 @@ const DATA = {
       "11.09",
       "14.09",
       "15.09",
-      "16.09"
+      "16.09",
+      "17.09",
+      "18.09",
+      "21.09"
     ],
     "values": [
       70.13,
@@ -497,10 +500,13 @@ const DATA = {
       47.98,
       48.68,
       48.27,
-      46.21,
-      45.47,
+      46.2,
+      45.46,
       44.4,
-      46.1
+      46.1,
+      40.65,
+      39.83,
+      39.07
     ]
   },
   "reserves": {
@@ -561,51 +567,71 @@ const DATA = {
     {
       "d": "17 Eyl",
       "r": "TR",
-      "e": "TCMB TL likidite duyurusu — haftalık repo ihalesi 300 mlr ₺'ye çıkarıldı",
+      "e": "SPK 2026/60 — 7 portföy şirketinin TEFAS fonları işleme kapatıldı, 131 fon tasfiyede",
       "imp": "h"
     },
     {
-      "d": "17 Eyl",
+      "d": "22 Eyl",
       "r": "TR",
-      "e": "TCMB 11 Eylül haftası resmî rezervler — brüt 178,7 mlr$, −5,52",
+      "e": "Fon soruşturması: Tezmen, Turhan, Öztürk ve Alkin kardeşler tutuklandı; 14 kişi daha gözaltında",
       "imp": "h"
     },
     {
-      "d": "18 Eyl",
+      "d": "22 Eyl",
       "r": "TR",
-      "e": "TCMB haftalık repo ihalesi — miktarın 300 mlr ₺'de kalıp kalmadığı izlenecek",
+      "e": "TÜİK tüketici güven endeksi 91,9 (+%1,3) — Temmuz 2018'den beri en yüksek",
+      "imp": "h"
+    },
+    {
+      "d": "22 Eyl",
+      "r": "TR",
+      "e": "TCMB 22 ve 24 Eylül vadeli iki miktar ihalesiyle 300 mlr ₺ repo fonlamasını yeniledi",
+      "imp": "h"
+    },
+    {
+      "d": "23 Eyl",
+      "r": "Küresel",
+      "e": "S&P Global öncü PMI'lar — Almanya 10.30, Euro Bölgesi 11.00, İngiltere 11.30, ABD 16.45",
       "imp": "h"
     },
     {
       "d": "24 Eyl",
       "r": "TR",
-      "e": "TCMB yabancı portföy akımları — 18 Eylül haftası, şok sonrası ilk ölçüm",
+      "e": "TCMB haftalık rezerv (18 Eyl haftası) 14.30 — dört hafta üst üste düşüş riski",
+      "imp": "h"
+    },
+    {
+      "d": "24 Eyl",
+      "r": "TR",
+      "e": "TCMB yabancı portföy akımları — carry çözülmesi tezinin asıl testi",
       "imp": "h"
     },
     {
       "d": "1 Eki",
       "r": "TR",
-      "e": "Döviz dönüşüm priminin iki katına çıkması — %6 primle dönüşüm kuru 51,31 ₺",
+      "e": "Döviz dönüşüm priminin iki katına çıkması — %6 primle dönüşüm kuru 51,50 ₺",
       "imp": "h"
     },
     {
       "d": "22 Eki",
       "r": "TR",
-      "e": "TCMB PPK faiz kararı — 100 baz puan indirim imkanı bulabilecek mi, politika faizi %37",
+      "e": "TCMB PPK faiz kararı indirim olasılığı halen var, politika faizi %37",
       "imp": "h"
     },
     {
       "d": "28 Eki",
       "r": "ABD",
-      "e": "Fed FOMC — CME FedWatch'ta 25 bp artırım olasılığı %55,1 (17 Eyl)",
+      "e": "Fed FOMC — CME FedWatch'ta 25 bp artırım olasılığı yarı yarıya",
       "imp": "h"
     }
   ],
   "notes": [
-    "<b>TCMB'den miktar hamlesi:</b> Haftalık repo ihalesi 1 mlr ₺'den 300 mlr ₺'ye çıkarıldı; ayrıca bankalararası borçlanma limitleri güncellendi ve teminat iskonto oranları düşürüldü.",
-    "<b>Hisse aldı, tahvil almadı:</b> BİST %+2,95 ile 13.509,76 (2,78 $), önceki günkü kaybın yarısı geri geldi. Buna karşılık 2Y bileşik getiri 95 bp artışla %41,10. 2Y getiri ile efektif fonlama arası 315 bp'den 410 bp'ye çıktı. Hareket kısa uçta: 5Y yalnız 4 bp oynadı.",
-    "<b>Petrol primi çözüldü:</b> Brent %−2,10 ile 103,61 $. TL bazı 5.034 ₺/varil, dünkü 5.257 ₺'ye göre %−4,2 — Eylül'de ilk kez dolar bazlı düşüş lirada silinmedi.",
-    "<b>Rezervde erime durdu:</b> 16 Eylül satırında brüt 179,6 (+1,93), net 58,9 (+1,91), döviz pozisyonu 46,1 mlr$ (+1,70). Yükümlülükler 120,7 mlr$'da yatay; artışın tamamı nete geçti."
+    "<b>Fon krizi derinleşti:</b> Salı gecesi Tezmen, Turhan, Öztürk ve Alkin kardeşler tutuklandı, 14 kişi daha gözaltına alındı. 17 Eylül'deki SPK kararıyla 7 portföy şirketinin TEFAS fonları kapalı, 131 fon tasfiyede.",
+    "<b>Risk açılışta:</b> Kapanmadan önce iade talebi veren fon fiyatından çıkıyor, sonra veren tasfiye kuyruğuna giriyor. Bu asimetri sağlıklı fonlarda da erken çıkışı tetikleyip bulaşma yaratabilir.",
+    "<b>Carry çözülmesi mi, dolarizasyon mu?</b> Banka munzamları 100 milyar dolardan 104 milyar dolara yükseldi ama Eylül başında da bu civardaydı, kur yatay — ciddi bir yerleşik dolarizasyonu görünmüyor. Fondan çıkan lira sistemde park ediyor gibi görünüyor, CDS ise 25,5 bp yukarıda.",
+    "<b>Rezerv — 21 Eylül satırı:</b> brüt 176,5, net 51,8, Hazine dahil 57,3, döviz pozisyonu 39,1 mlr$. Günlük değişim sırasıyla −0,6 / −0,8 / −0,8 / −0,8 mlr$",
+    "<b>SPINN hesabı — kaybın %57'si yükümlülükten:</b> 16-21 Eylül'de net rezerv 7,0 mlr$ azaldı; brüt 3,1 mlr$ düşerken döviz yükümlülükleri 4,0 mlr$ arttı. ",
+    "<b>SPINN hesabı — güven artışının %80'i tek kalemden:</b> Tüketici güveni 91,9. 1,15 puanlık artışın 0,93 puanı dayanıklı tüketim harcama düşüncesinden (105,1→108,8); mevcut maddi durum 75,4'ten 75,3'e indi."
   ]
 };
 </script>
