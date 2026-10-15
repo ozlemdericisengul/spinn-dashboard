@@ -88,126 +88,126 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "14 Ekim 2026, Çarşamba · 07:30 TSİ",
+  "asof": "15 Ekim 2026, Perşembe · 11:15 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "49,279",
-      "chg": "14 Eki · 13 Eki 49,247 · +%0,07",
+      "val": "49,390",
+      "chg": "14 Eki serbest piyasa · %+0,02",
       "dir": "down",
-      "meta": "EUR/TL 55,113 · yeni zirve"
+      "meta": "TCMB 49,2794 · EUR/TL 54,98"
     },
     {
       "label": "BIST 100",
-      "val": "12.250,68",
-      "chg": "%+0,82 (13 Eki) · +100,01 puan",
-      "dir": "up",
-      "meta": "USD bazı 2,49 $ · hacim 92,9 mlr ₺"
+      "val": "12.118,29",
+      "chg": "%−1,08 (14 Eki) · −132,39 puan",
+      "dir": "down",
+      "meta": "USD bazı 2,45 $ · hacim 86,1 mlr ₺"
     },
     {
       "label": "5Y CDS",
-      "val": "243,3 bps",
-      "chg": "12 Eki · 13 Eki teyidi yok",
+      "val": "243,92 bps",
+      "chg": "13 Eki · 14 Eki teyidi yok",
       "dir": "flat",
-      "meta": "8 Eki 248,4 · haber eşiği 247 bps"
+      "meta": "fon soruşturması risk primi riski"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%39,54",
-      "chg": "13 Eki · 12 Eki %39,52 · +2 bp",
+      "val": "%39,56",
+      "chg": "14 Eki · 13 Eki %39,54 · +2 bp",
       "dir": "down",
-      "meta": "10Y %35,37 (8 Eki) · 5Y %38,47"
+      "meta": "10Y %35,44 · 5Y %38,99 (14 Eki)"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
       "chg": "13 Eki · politika faizine eşit",
       "dir": "flat",
-      "meta": "20 Eki repo 20 mlr ₺ · teklif 83,7"
+      "meta": "21 Eki repo 50 mlr ₺ · teklif 176,9"
     },
     {
       "label": "TÜFE (yıllık)",
       "val": "%29,73",
       "chg": "Eylül · aylık %1,84 · B %29,00 C %28,70",
       "dir": "up",
-      "meta": "ana eğilim yıllıklandırılmış %23,7"
+      "meta": "Tarım-ÜFE Eylül yıllık %12,93"
     },
     {
       "label": "TCMB Brüt Rezerv",
       "val": "167,4 mlr$",
-      "chg": "2 Eki haftası · −3,82 · altıncı düşüş",
+      "chg": "2 Eki haftası · bugün 14.30 yayın",
       "dir": "down",
-      "meta": "altın 107,1 · döviz 60,3 mlr$"
+      "meta": "önizlemem ≈171,5 mlr$ · yayın 14.30"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "52,5 mlr$",
-      "chg": "12 Eki · 9 Eki'ye göre +0,17",
-      "dir": "up",
-      "meta": "Hazine dahil 59,6 · brüt 174,5"
+      "val": "52,3 mlr$",
+      "chg": "13 Eki · 12 Eki'ye göre −0,11",
+      "dir": "down",
+      "meta": "Hazine dahil 59,5 · brüt 175,9"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "36,1 mlr$",
-      "chg": "12 Eki · günlük +0,19",
+      "val": "36,2 mlr$",
+      "chg": "13 Eki · günlük +0,09",
       "dir": "up",
       "meta": "27 Şub'da 70,1 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.805,45",
-      "chg": "%−0,02 (13 Eki) · −1,79 puan",
+      "val": "7.718,94",
+      "chg": "%−1,11 (14 Eki) · −86,51 puan",
       "dir": "down",
-      "meta": "banka bilançosu ↔ bellek satışı"
+      "meta": "sağlık %+2,44 · teknoloji %−3,00"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "27.204,38",
-      "chg": "%−0,15 (13 Eki) · −41,52 puan",
+      "val": "26.692,87",
+      "chg": "%−1,88 (14 Eki) · −511,51 puan",
       "dir": "down",
-      "meta": "Micron %−5,19 · WDC %−7,71"
+      "meta": "Russell 2000 %−1,93 · VIX 16,82"
     },
     {
       "label": "Dow Jones",
-      "val": "51.670,10",
-      "chg": "%−0,35 (13 Eki) · −180,45 puan",
+      "val": "51.621,48",
+      "chg": "%−0,09 (14 Eki) · −48,62 puan",
       "dir": "down",
-      "meta": "JPM beklenti altı, hisse %+1,02"
+      "meta": "defansif rotasyon Dow'u korudu"
     },
     {
       "label": "ABD 10Y",
-      "val": "%5,22",
-      "chg": "14 Eki · günlük ≈−1 bp",
-      "dir": "flat",
-      "meta": "dosyada son kapanış 9 Eki %5,24"
+      "val": "%5,278",
+      "chg": "14 Eki · günlük +6 bp'den fazla",
+      "dir": "down",
+      "meta": "30Y %5,59 · 2Y %4,72"
     },
     {
       "label": "Altın",
-      "val": "4.185,65 $",
-      "chg": "14 Eki · %+0,34 · önceki 4.171,53",
-      "dir": "up",
+      "val": "4.087 $",
+      "chg": "14 Eki 18.20 · kilo altın %−1,78",
+      "dir": "down",
       "meta": "dosyada 12 Eki 4.173,85 $"
     },
     {
       "label": "Brent",
-      "val": "106,89 $",
-      "chg": "14 Eki · %+1,13 · 13 Eki 105,77",
+      "val": "105,90 $",
+      "chg": "14 Eki · %+0,19 · Aralık vadeli",
       "dir": "down",
-      "meta": "WTI 95,10 $ · tamponsuz pompa"
+      "meta": "ABD TÜFE'sinde benzin %+9,1"
     },
     {
       "label": "DXY",
       "val": "102,22",
-      "chg": "14 Eki · 13 Eki 102,23 · yatay",
+      "chg": "14 Eki · dün itibarıyla",
       "dir": "flat",
-      "meta": "EUR/USD 1,1184"
+      "meta": "EUR/USD 1,1184 → 1,1118"
     },
     {
       "label": "Fed Funds",
       "val": "%3,75–4,00",
       "chg": "16 Eyl · +25 bp, 12-0",
       "dir": "up",
-      "meta": "28 Eki artırım %21,6 (FedWatch)"
+      "meta": "28 Eki artırım %34 (FedWatch)"
     }
   ],
   "moves": {
@@ -380,7 +380,8 @@ const DATA = {
       "07.10",
       "08.10",
       "09.10",
-      "12.10"
+      "12.10",
+      "13.10"
     ],
     "values": [
       70.13,
@@ -536,9 +537,10 @@ const DATA = {
       33.68,
       35.12,
       35.93,
-      36.13
+      36.13,
+      36.22
     ],
-    "note": "Son satır 12 Ekim: toplam döviz pozisyonu 36,13 mlr$, günlük +192,5 mn$. 2 Ekim'den 12 Ekim'e +3,12 mlr$. 27 Şubat'taki 70,13 mlr$'a göre birikimli −34,00 mlr$. Seri ~2 iş günü gecikmelidir."
+    "note": "Son satır 13 Ekim: toplam döviz pozisyonu 36,22 mlr$, günlük +88,9 mn$. 2 Ekim'den 13 Ekim'e +3,21 mlr$. 27 Şubat'taki 70,13 mlr$'a göre birikimli −33,91 mlr$. Seri ~2 iş günü gecikmelidir."
   },
   "reserves": {
     "labels": [
@@ -601,45 +603,49 @@ const DATA = {
     "note": "Eylül 2026 yıllık. TÜFE aylık +1,84 (anket ortalaması %2,18; ağustos yıllık %31,51'di) ve yıllık oran Kasım 2021'den beri ilk kez %30'un altında. Yİ-ÜFE aylık +2,07 (ağustos +2,57), yıllık %27,95'ten %27,38'e indi. Aylık kırılımda gıda %0,20 geriledi, ulaştırma %2,79 ve konut %2,71 arttı; benzindeki ÖTV adımı 1 Ekim'de yürürlüğe girdiği için eylül verisinde yok. Çekirdek göstergede kaynak endeks tipini (B/C) belirtmedi."
   },
   "calendar": [
-       {
-      "d": "14 Eki",
-      "r": "ABD",
-      "e": "15.30 — ABD Eylül tüketici enflasyonu. Önceki aylık %0,4, yıllık %3,4. Konsensüs rakamını teyit edemedim. 28 Ekim FOMC için haftanın tek gerçek fiyatlama olayı. Henüz açıklanmadı",
-      "imp": "h"
-    },
     {
-      "d": "14 Eki",
-      "r": "DÜNYA",
-      "e": "04.30 Çin Eylül TÜFE (önceki aylık %0,4, yıllık %0,8) · 06.00 Çin dış ticaret dengesi (önceki 119,1 mlr$) · 05.10 ve 11.30 ECB Başkanı Lagarde konuşmaları · 23.30 API ham petrol stokları",
-      "imp": "m"
+      "d": "15 Eki",
+      "r": "TR",
+      "e": "14.30 — TCMB haftalık uluslararası rezervler (9 Ekim haftası). Günlük analitik bilançodaki 2-9 Ekim değişiminden (+4,17 mlr$) türettiğim önizlemem ≈171,5-171,6 mlr$; gerçekleşirse altı haftalık düşüş serisi kırılır. Henüz açıklanmadı",
+      "imp": "h"
     },
     {
       "d": "15 Eki",
       "r": "TR",
-      "e": "TCMB haftalık uluslararası rezervler (9 Ekim haftası). Günlük analitik bilançodan türettiğim önizlemem ≈171,6 mlr$ — altı haftalık düşüş serisinin kırılması",
+      "e": "11.00 Eylül bütçe dengesi (önceki +12,9 mlr ₺) · 10.00 TÜİK Ağustos ücretli çalışan, inşaat ve hizmet üretim endeksleri ile Eylül motorlu taşıt verileri. Henüz açıklanmadı",
+      "imp": "m"
+    },
+    {
+      "d": "15 Eki",
+      "r": "ABD",
+      "e": "15.30 — Eylül ÜFE (önceki aylık %0,4, yıllık %5,4; gıda-enerji-ticaret hariç yıllık %4,7), perakende satışlar (önceki aylık %1,2, konsensüs %0,3), haftalık işsizlik başvuruları, Empire State (önceki 7,6) ve Philadelphia Fed (önceki 37,8). Henüz açıklanmadı",
       "imp": "h"
+    },
+    {
+      "d": "15 Eki",
+      "r": "DÜNYA",
+      "e": "05.55 Fed Bowman · 23.30 Fed Hammack konuşmaları · 12.00 Euro Bölgesi sanayi üretimi (önceki aylık %−0,1) ve Çin M2 (önceki %7,5) · Brüksel'de AB Liderler Zirvesi",
+      "imp": "m"
     },
     {
       "d": "16 Eki",
       "r": "TR",
-      "e": "S&P Global Ratings Türkiye değerlendirmesi. Mevcut not BB-, görünüm durağan; ankette 18 analistin tamamı notun, 16'sı görünümün korunmasını bekliyor",
+      "e": "S&P Global Ratings Türkiye değerlendirmesi. Mevcut not BB-, görünüm durağan",
       "imp": "h"
     },
     {
       "d": "22 Eki",
       "r": "TR",
-      "e": "TCMB Para Politikası Kurulu. Politika faizi %37,00. Beklentim 100 baz puanlık indirim — gerekçem enflasyon patikası değil, sterilizasyon yükünün faiz sabitken taşınamaz hâle gelmesi",
+      "e": "TCMB Para Politikası Kurulu. Politika faizi %37,00. Beklentim 100 baz puanlık indirim — gerekçem enflasyon patikası değil, rezerv birikimiyle doğan sterilizasyon yükünün faiz sabitken taşınamaz hâle gelmesi",
       "imp": "h"
     }
   ],
   "notes": [
-    "<b>Günün tezi:</b> Rezerv biriktiren merkez bankası karşılığı lirayı geri çekmek zorundadır. Dün rekor kıran 1,44 trilyon ₺'lik gecelik çekiş bu faturadır ve politika faizi hiç değişmediği hâlde fiili duruşu sıkılaştırıyor.",
-    "<b>Haftalık repo stoku küçülüyor:</b> 6 Ekim'de açılan 100 mlr ₺ dün vade doldurdu, yerine 20 mlr ₺ kondu — günün net repo akımı −80 mlr ₺. Vadesi gelmemiş ihaleler toplamı 501'den 421 mlr ₺'ye indi. Bugün 100 mlr ₺ daha doluyor.",
-        "<b>Cari fazlanın asıl haberi çekirdekte:</b> Altın ve enerji hariç fazla 4,97'den 8,21 mlr$'a çıktı. Altın+enerji yükü Temmuz'da 4,93, Ağustos'ta 4,16 mlr$ — iyileşme altından değil çekirdekten geliyor, enerji yükü de hafifledi.",
-    "<b>Finansmanda rahatsız eden kalem:</b> Portföyde 1,03 mlr$ net çıkış varken net hata noksan +4,5 mlr$ ile ayın en büyük tek finansman satırı. Rezerv, portföy girişiyle değil kaynağı adlandırılamayan bir girişle birikti.",
-    "<b>Brüt ve net birlikte arttı:</b> 12 Ekim satırında brüt 174,50 mlr$ (+0,69), net 52,46 (+0,17), Hazine dahil 59,65 (+0,10). Aritmetik kapanıyor: döviz yükümlülükleri 121,52'den 122,04'e, +0,52 mlr$. Altın swapı +26,2 mn$.",
-    "<b>Fed'de yön seviyeden önemli:</b> 28 Ekim artırım olasılığı 12 Ekim'deki %19'dan %21,6'ya çıktı (FedWatch'ta sabit kalma %78,4); Aralık'ta 25 bp artırım %70,8. Ağustos PCE yıllık %3,4, çekirdek %3,0.",
-    "<b>Brent aynı yerden ikinci kez döndü:</b> 13 Ekim'i %−0,83 ile 105,77 $'dan kapattı, bu sabah %+1,13 ile 106,89 $. Hürmüz primi kaybolmadı. Ekim'deki enerji sıçraması dün açıklanan Ağustos cari dengesinde henüz yok."
+    "<b>Günün tezi:</b> Dün BİST'i düşüren şey ABD enflasyonu değil, fon soruşturmasının düzenleyicinin eski yönetimine uzanmasıydı; bu yerli bir risk primi kalemi olduğu için 22 Ekim'de TCMB'nin elini dışarıdan gelenden fazla bağlıyor.",
+    "<b>Rezerv önizlemem (bugün 14.30):</b> Günlük analitik brüt 2 Ekim'de 169,64, 9 Ekim'de 173,81 mlr$ — haftalık +4,17. Bunu 2 Ekim resmî seviyesi 167,39'a eklersem ≈171,5 mlr$. Altı haftalık 21,06 mlr$ kaybın %19,8'i geri alınır.",
+    "<b>Kırılım testi:</b> 2 Ekim yayınında brütün %63,96'sı altındı; altında her %1 hareket brütü ≈1,07 mlr$ oynatıyor. +4,17'nin tamamı değerleme olsaydı altının ≈%3,9 artması gerekirdi. Bugün kırılıma bakacağım.",
+    "<b>İki yön aynı anda doğru:</b> TCMB'nin ilan ettiği haftalık repo tutarı 1 → 20 → 50 mlr ₺ ile büyüyor; stok ise 421'den 371 mlr ₺'ye indi, çünkü 6-9 Ekim'in 100-150 mlr ₺'lik ihaleleri vade dolduruyor. Bugün 150 mlr ₺ daha doluyor.",
+    "<b>Risk kaçışı değil, iskonto oranı:</b> Nasdaq %−1,88, Russell %−1,93 ve teknoloji %−3,00 düşerken sağlık %+2,44, temel tüketim %+2,21, enerji %+0,65 yükseldi; Dow yalnızca %−0,09. VIX %+10 ile 16,82'de kaldı.",
   ]
 };
 </script>
