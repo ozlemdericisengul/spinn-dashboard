@@ -44,6 +44,8 @@
   .pill.l{background:rgba(39,192,138,.15);color:var(--green)}
   .chartbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;min-height:300px}
   .note{background:var(--panel2);border-left:3px solid var(--purple);border-radius:6px;padding:12px 14px;font-size:13px;color:var(--txt);margin-top:12px}
+  .chartwrap{height:300px}
+  .chartcap{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--txt)}
   .note b{color:var(--purple)}
   footer{margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
   .tag{font-size:10px;padding:2px 7px;border-radius:6px;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}
@@ -88,126 +90,126 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "15 Ekim 2026, Perşembe · 11:15 TSİ",
+  "asof": "16 Ekim 2026, Cuma · 10:45 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "49,390",
-      "chg": "14 Eki serbest piyasa · %+0,02",
+      "val": "49,3315",
+      "chg": "16 Eki TCMB · 15 Eki 49,3041",
       "dir": "down",
-      "meta": "TCMB 49,2794 · EUR/TL 54,98"
+      "meta": "EUR/TL 55,3113 · serbest 49,4163"
     },
     {
       "label": "BIST 100",
-      "val": "12.118,29",
-      "chg": "%−1,08 (14 Eki) · −132,39 puan",
+      "val": "12.070,17",
+      "chg": "%−0,40 (15 Eki) · −48,12 puan",
       "dir": "down",
-      "meta": "USD bazı 2,45 $ · hacim 86,1 mlr ₺"
+      "meta": "USD bazı 2,45 $ · hacim 92,3 mlr ₺"
     },
     {
       "label": "5Y CDS",
       "val": "243,92 bps",
-      "chg": "13 Eki · 14 Eki teyidi yok",
+      "chg": "13 Eki · sonrası teyitsiz",
       "dir": "flat",
-      "meta": "fon soruşturması risk primi riski"
+      "meta": "MSCI kararı risk primi riski"
     },
     {
       "label": "TR 2Y getiri",
-      "val": "%39,56",
-      "chg": "14 Eki · 13 Eki %39,54 · +2 bp",
-      "dir": "down",
-      "meta": "10Y %35,44 · 5Y %38,99 (14 Eki)"
+      "val": "%39,51",
+      "chg": "15 Eki · 14 Eki %39,56 · −5 bp",
+      "dir": "up",
+      "meta": "5Y %38,73 (−26 bp) · 10Y %35,44"
     },
     {
       "label": "Efektif Fonlama",
       "val": "%37,00",
-      "chg": "13 Eki · politika faizine eşit",
+      "chg": "15 Eki · politika faizine eşit",
       "dir": "flat",
-      "meta": "21 Eki repo 50 mlr ₺ · teklif 176,9"
+      "meta": "22 Eki repo 50 mlr ₺ · karşılama 3,60"
     },
     {
       "label": "TÜFE (yıllık)",
       "val": "%29,73",
-      "chg": "Eylül · aylık %1,84 · B %29,00 C %28,70",
+      "chg": "Eylül · aylık %1,84",
       "dir": "up",
-      "meta": "Tarım-ÜFE Eylül yıllık %12,93"
+      "meta": "Eylül vergi geliri reel %−6,5"
     },
     {
       "label": "TCMB Brüt Rezerv",
-      "val": "167,4 mlr$",
-      "chg": "2 Eki haftası · bugün 14.30 yayın",
-      "dir": "down",
-      "meta": "önizlemem ≈171,5 mlr$ · yayın 14.30"
+      "val": "171,6 mlr$",
+      "chg": "9 Eki haftası · +4,19 mlr$",
+      "dir": "up",
+      "meta": "artışın tamamı döviz ayağından"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "52,3 mlr$",
-      "chg": "13 Eki · 12 Eki'ye göre −0,11",
+      "val": "47,3 mlr$",
+      "chg": "14 Eki · 13 Eki'ye göre −5,07",
       "dir": "down",
-      "meta": "Hazine dahil 59,5 · brüt 175,9"
+      "meta": "Hazine dahil 54,3 · brüt 171,9"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "36,2 mlr$",
-      "chg": "13 Eki · günlük +0,09",
-      "dir": "up",
+      "val": "34,2 mlr$",
+      "chg": "14 Eki · günlük −4,86",
+      "dir": "down",
       "meta": "27 Şub'da 70,1 mlr$"
     },
     {
       "label": "S&P 500",
-      "val": "7.718,94",
-      "chg": "%−1,11 (14 Eki) · −86,51 puan",
-      "dir": "down",
-      "meta": "sağlık %+2,44 · teknoloji %−3,00"
+      "val": "7.744,06",
+      "chg": "%+0,33 (15 Eki)",
+      "dir": "up",
+      "meta": "sağlık ~%+2,6 · çip endeksi %−0,88"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.692,87",
-      "chg": "%−1,88 (14 Eki) · −511,51 puan",
-      "dir": "down",
-      "meta": "Russell 2000 %−1,93 · VIX 16,82"
+      "val": "26.713,03",
+      "chg": "%+0,08 (15 Eki) · +20,16 puan",
+      "dir": "up",
+      "meta": "çip satışı üst üste 7. gün"
     },
     {
       "label": "Dow Jones",
-      "val": "51.621,48",
-      "chg": "%−0,09 (14 Eki) · −48,62 puan",
-      "dir": "down",
-      "meta": "defansif rotasyon Dow'u korudu"
+      "val": "52.177,69",
+      "chg": "%+1,08 (15 Eki) · +556,21 puan",
+      "dir": "up",
+      "meta": "savunma rotasyonu Dow'u taşıdı"
     },
     {
       "label": "ABD 10Y",
-      "val": "%5,278",
-      "chg": "14 Eki · günlük +6 bp'den fazla",
-      "dir": "down",
-      "meta": "30Y %5,59 · 2Y %4,72"
+      "val": "%5,09",
+      "chg": "15 Eki · günlük ≈−10 bp",
+      "dir": "up",
+      "meta": "30Y %5,43 · ÜFE sıcak, getiri düştü"
     },
     {
       "label": "Altın",
-      "val": "4.087 $",
-      "chg": "14 Eki 18.20 · kilo altın %−1,78",
-      "dir": "down",
-      "meta": "dosyada 12 Eki 4.173,85 $"
+      "val": "4.155,23 $",
+      "chg": "15 Eki 18.29 · %+1,20",
+      "dir": "up",
+      "meta": "gram altın 6.600,58 ₺ (%+1,23)"
     },
     {
       "label": "Brent",
-      "val": "105,90 $",
-      "chg": "14 Eki · %+0,19 · Aralık vadeli",
+      "val": "106,21 $",
+      "chg": "15 Eki 18.29 · 14 Eki 106,06",
       "dir": "down",
-      "meta": "ABD TÜFE'sinde benzin %+9,1"
+      "meta": "pompada tampon yok · Ekim TÜFE riski"
     },
     {
       "label": "DXY",
-      "val": "102,22",
-      "chg": "14 Eki · dün itibarıyla",
-      "dir": "flat",
-      "meta": "EUR/USD 1,1184 → 1,1118"
+      "val": "101,98",
+      "chg": "16 Eki · 15 Eki 102,11",
+      "dir": "up",
+      "meta": "EUR/USD 1,1196 → 1,1212"
     },
     {
       "label": "Fed Funds",
       "val": "%3,75–4,00",
       "chg": "16 Eyl · +25 bp, 12-0",
       "dir": "up",
-      "meta": "28 Eki artırım %34 (FedWatch)"
+      "meta": "28 Eki artırım %15'in altı"
     }
   ],
   "moves": {
@@ -381,7 +383,8 @@ const DATA = {
       "08.10",
       "09.10",
       "12.10",
-      "13.10"
+      "13.10",
+      "14.10"
     ],
     "values": [
       70.13,
@@ -536,11 +539,12 @@ const DATA = {
       35.46,
       33.68,
       35.12,
-      35.93,
-      36.13,
-      36.22
+      38.8,
+      38.99,
+      39.08,
+      34.22
     ],
-    "note": "Son satır 13 Ekim: toplam döviz pozisyonu 36,22 mlr$, günlük +88,9 mn$. 2 Ekim'den 13 Ekim'e +3,21 mlr$. 27 Şubat'taki 70,13 mlr$'a göre birikimli −33,91 mlr$. Seri ~2 iş günü gecikmelidir."
+    "note": "Son satır 14 Ekim: toplam döviz pozisyonu 34,22 mlr$, günlük −4.863,0 mn$ — Ekim'in en sert günlük düşüşü. 9 Ekim satırından itibaren açık pozisyon kalemi −19.340'tan −16.473 mn$'a revize edildi; seri bu nedenle dünkü panoya göre yaklaşık +2,87 mlr$ yukarı kaydı. 27 Şubat'taki 70,13 mlr$'a göre birikimli −35,91 mlr$. Seri ~2 iş günü gecikmelidir."
   },
   "reserves": {
     "labels": [
@@ -563,7 +567,8 @@ const DATA = {
       "11 Eyl",
       "18 Eyl",
       "25 Eyl",
-      "2 Eki"
+      "2 Eki",
+      "9 Eki"
     ],
     "values": [
       205.2,
@@ -585,9 +590,10 @@ const DATA = {
       178.7,
       174.4,
       171.2,
-      167.4
+      167.4,
+      171.6
     ],
-    "note": "2 Eki: brüt 167,388 mlr$, haftalık −3,816 (−%2,23) — üst üste altıncı gerileme. Kırılım: altın 109,640 → 107,062 (−2,578, −%2,35), döviz 61,564 → 60,326 (−1,238, −%2,01). Düşüşün %67,6'sı altın fiyat etkisi, %32,4'ü döviz ayağı; bu dağılım 8 Ekim sabahı kurduğum önizlemeyle (üçte iki / üçte bir) örtüşüyor ve önizlemedeki 167,1 mlr$ tahmini 0,29 mlr$ sapmayla tuttu. 21 Ağustos zirvesinden (188,45) altı haftada birikimli kayıp 21,06 mlr$ (−%11,2). Altının toplam rezerv içindeki payı %63,96. Günlük analitik bilanço 2 Eki'den 7 Eki'ye +3,85 mlr$ arttığı için 15 Ekim yayınında serinin yukarı dönmesini bekliyorum."
+    "note": "9 Eki: brüt 171,575 mlr$, haftalık +4,187 (%+2,50) — altı haftalık düşüş serisi kırıldı. Kırılım: altın 107,008 (−0,054), döviz 64,567 (+4,241). Artışın tamamı döviz ayağından; altın payı %63,96'dan %62,37'ye indi."
   },
   "inflation": {
     "labels": [
@@ -604,48 +610,72 @@ const DATA = {
   },
   "calendar": [
     {
-      "d": "15 Eki",
+      "d": "16 Eki",
       "r": "TR",
-      "e": "14.30 — TCMB haftalık uluslararası rezervler (9 Ekim haftası). Günlük analitik bilançodaki 2-9 Ekim değişiminden (+4,17 mlr$) türettiğim önizlemem ≈171,5-171,6 mlr$; gerçekleşirse altı haftalık düşüş serisi kırılır. Henüz açıklanmadı",
+      "e": "14.30 — TCMB haftalık para ve banka istatistikleri (9 Ekim haftası). Rezervin döviz ayağındaki 4,24 mlr$'lık artışın kaynağını test edecek veri bu: yurt içi yerleşiklerin parite etkisinden arındırılmış döviz mevduatı düşerse dönüşüm kanalı, düşmezse dış denge ve TCMB'nin bankalarla doğrudan işlemleri öne çıkar. Henüz açıklanmadı",
       "imp": "h"
-    },
-    {
-      "d": "15 Eki",
-      "r": "TR",
-      "e": "11.00 Eylül bütçe dengesi (önceki +12,9 mlr ₺) · 10.00 TÜİK Ağustos ücretli çalışan, inşaat ve hizmet üretim endeksleri ile Eylül motorlu taşıt verileri. Henüz açıklanmadı",
-      "imp": "m"
-    },
-    {
-      "d": "15 Eki",
-      "r": "ABD",
-      "e": "15.30 — Eylül ÜFE (önceki aylık %0,4, yıllık %5,4; gıda-enerji-ticaret hariç yıllık %4,7), perakende satışlar (önceki aylık %1,2, konsensüs %0,3), haftalık işsizlik başvuruları, Empire State (önceki 7,6) ve Philadelphia Fed (önceki 37,8). Henüz açıklanmadı",
-      "imp": "h"
-    },
-    {
-      "d": "15 Eki",
-      "r": "DÜNYA",
-      "e": "05.55 Fed Bowman · 23.30 Fed Hammack konuşmaları · 12.00 Euro Bölgesi sanayi üretimi (önceki aylık %−0,1) ve Çin M2 (önceki %7,5) · Brüksel'de AB Liderler Zirvesi",
-      "imp": "m"
     },
     {
       "d": "16 Eki",
       "r": "TR",
-      "e": "S&P Global Ratings Türkiye değerlendirmesi. Mevcut not BB-, görünüm durağan",
+      "e": "S&P Global Ratings Türkiye değerlendirmesi. Mevcut not BB-, görünüm durağan; teyit büyük ölçüde fiyatlanmış. MSCI kararının ardından asıl risk görünümün negatife dönmesi. Henüz açıklanmadı",
+      "imp": "h"
+    },
+    {
+      "d": "16 Eki",
+      "r": "TR",
+      "e": "TCMB Piyasa Katılımcıları Anketi — 12 ay sonrası ve yıl sonu enflasyon beklentileri, 22 Ekim PPK öncesi son beklenti okuması. Henüz açıklanmadı",
+      "imp": "h"
+    },
+    {
+      "d": "16 Eki",
+      "r": "DÜNYA",
+      "e": "12.00 Euro Bölgesi Eylül nihai TÜFE (önceki yıllık %3,2, çekirdek %2,4) ve dış ticaret dengesi · 15.30 ABD ithalat-ihracat fiyatları (önceki ithalat aylık %0,7) · 16.15 ABD sanayi üretimi (önceki %0,0) ve kapasite kullanımı (%76,3) · 23.00 TIC sermaye akımları. Henüz açıklanmadı",
+      "imp": "m"
+    },
+    {
+      "d": "16-22 Eki",
+      "r": "TR",
+      "e": "Haftalık repo vade takvimi: 16 Ekim 150, 19 Ekim 1, 20 Ekim 20, 21 Ekim 50, 22 Ekim 50 mlr ₺ vadesini dolduruyor. Stok bugün 271 mlr ₺. Yerine konan tutarlar vade dolanın altında kalırsa stok erimeye devam eder — PPK öncesi izlediğim asıl seri bu",
       "imp": "h"
     },
     {
       "d": "22 Eki",
       "r": "TR",
-      "e": "TCMB Para Politikası Kurulu. Politika faizi %37,00. Beklentim 100 baz puanlık indirim — gerekçem enflasyon patikası değil, rezerv birikimiyle doğan sterilizasyon yükünün faiz sabitken taşınamaz hâle gelmesi",
+      "e": "TCMB Para Politikası Kurulu. Politika faizi %37,00, ağırlıklı ortalama fonlama maliyeti de %37,00. Beklentim 100 baz puanlık indirim; MSCI kaynaklı risk primi artışı bu beklentinin karşısındaki asıl risk",
+      "imp": "h"
+    },
+    {
+      "d": "28 Eki",
+      "r": "ABD",
+      "e": "FOMC. Fed Funds %3,75-4,00. 15 Ekim akşamı itibarıyla 25 bp artırım olasılığı %15'in altında; 9 Aralık toplantısı için ~%78",
+      "imp": "h"
+    },
+    {
+      "d": "Kasım",
+      "r": "TR",
+      "e": "MSCI Yarı Yıl Endeks Gözden Geçirmesi. Dondurma kararı gereği Türk hisselerinde FIF ve pay sayısı artışları, IMI'ye yeni eklemeler ve segment yükselişleri bu gözden geçirmede UYGULANMAYACAK",
+      "imp": "h"
+    },
+    {
+      "d": "3 Kas",
+      "r": "TR",
+      "e": "TÜİK Ekim TÜFE ve Yİ-ÜFE (Eylül: TÜFE aylık %1,84, yıllık %29,73). Benzindeki kademeli ÖTV adımının pompaya yansıyan ilk tam ayı",
+      "imp": "h"
+    },
+    {
+      "d": "Haz 2027",
+      "r": "TR",
+      "e": "MSCI eşiği: yeterli ilerleme görülmezse Türkiye endekslerinin Gelişmekte Olan Piyasa'dan Sınır veya Bağımsız Piyasa statüsüne indirilmesi için istişare başlatılması değerlendirilecek. Nihai karar 2027 Yıllık Piyasa Sınıflandırma Gözden Geçirmesi'nde",
       "imp": "h"
     }
   ],
   "notes": [
-    "<b>Günün tezi:</b> Dün BİST'i düşüren şey ABD enflasyonu değil, fon soruşturmasının düzenleyicinin eski yönetimine uzanmasıydı; bu yerli bir risk primi kalemi olduğu için 22 Ekim'de TCMB'nin elini dışarıdan gelenden fazla bağlıyor.",
-    "<b>Rezerv önizlemem (bugün 14.30):</b> Günlük analitik brüt 2 Ekim'de 169,64, 9 Ekim'de 173,81 mlr$ — haftalık +4,17. Bunu 2 Ekim resmî seviyesi 167,39'a eklersem ≈171,5 mlr$. Altı haftalık 21,06 mlr$ kaybın %19,8'i geri alınır.",
-    "<b>Kırılım testi:</b> 2 Ekim yayınında brütün %63,96'sı altındı; altında her %1 hareket brütü ≈1,07 mlr$ oynatıyor. +4,17'nin tamamı değerleme olsaydı altının ≈%3,9 artması gerekirdi. Bugün kırılıma bakacağım.",
-    "<b>İki yön aynı anda doğru:</b> TCMB'nin ilan ettiği haftalık repo tutarı 1 → 20 → 50 mlr ₺ ile büyüyor; stok ise 421'den 371 mlr ₺'ye indi, çünkü 6-9 Ekim'in 100-150 mlr ₺'lik ihaleleri vade dolduruyor. Bugün 150 mlr ₺ daha doluyor.",
-    "<b>Risk kaçışı değil, iskonto oranı:</b> Nasdaq %−1,88, Russell %−1,93 ve teknoloji %−3,00 düşerken sağlık %+2,44, temel tüketim %+2,21, enerji %+0,65 yükseldi; Dow yalnızca %−0,09. VIX %+10 ile 16,82'de kaldı.",
+    "<b>Günün haberi MSCI'dan:</b> Türk hisselerinde FIF ve pay sayısı artışları, IMI'ye eklemeler ve segment yükselişleri donduruldu. Haziran 2027'ye kadar ilerleme olmazsa Gelişmekte Olan Piyasa'dan indirme istişaresi gündeme gelecek.",
+    "<b>Rezervde kırılımın cevabı:</b> 9 Ekim haftasında altın 54 mn$ azaldı, döviz 4.241 mn$ arttı — değerleme değil fiili birikim. Altın payı %63,96'dan %62,37'ye indi; döviz ayağı 11 Eylül'den beri en yüksek.",
+    "<b>Kaynak ne portföy ne yurt içi dönüşüm:</b> Yabancı akımı 9 Ekim haftasında −865 mn$. Yurt içi yerleşiklerin parite etkisinden arındırılmış döviz mevduatı 11 Eyl-2 Eki'de dört hafta arttı (+7,0 mlr$).",
+    "<b>Bütçe:</b> Eylül açığı 532,2 mlr ₺, yılın en yükseği; faiz dışı açık %268,8 arttı. Vergi geliri %+21,3, Eylül TÜFE %29,73 → reel %−6,5.",
+    "<b>Sıcak veri, düşen getiri:</b> ABD ÜFE mal fiyatları %2,6 ile 2009'dan beri rekor ama %80'i enerji; perakendede benzin hariç artış %0,2. 10Y %5,09, 30Y %5,43 (≈−10 bp). 28 Ekim artırım olasılığı %15'in altına indi."
   ]
 };
 </script>
@@ -656,14 +686,14 @@ const DATA = {
 <!-- GRAFİKLER -->
 <h2>Piyasa Hareketleri & TCMB Döviz Pozisyonu</h2>
 <div class="grid two">
-  <div class="chartbox"><canvas id="movesChart"></canvas></div>
-  <div class="chartbox"><canvas id="fxposChart"></canvas></div>
+  <div class="chartbox"><div class="chartwrap"><canvas id="movesChart"></canvas></div><div class="chartcap" id="movesCap"></div></div>
+  <div class="chartbox"><div class="chartwrap"><canvas id="fxposChart"></canvas></div><div class="chartcap" id="fxposCap"></div></div>
 </div>
 
 <h2>Rezervler & Enflasyon</h2>
 <div class="grid two">
-  <div class="chartbox"><canvas id="resChart"></canvas></div>
-  <div class="chartbox"><canvas id="cpiChart"></canvas></div>
+  <div class="chartbox"><div class="chartwrap"><canvas id="resChart"></canvas></div><div class="chartcap" id="resCap"></div></div>
+  <div class="chartbox"><div class="chartwrap"><canvas id="cpiChart"></canvas></div><div class="chartcap" id="cpiCap"></div></div>
 </div>
 
 <!-- TAKVİM + NOTLAR -->
@@ -720,9 +750,8 @@ new Chart(document.getElementById('movesChart'),{
     datasets:[{data:DATA.moves.values,
       backgroundColor:DATA.moves.values.map(v=>v>=0?'#27c08a':'#ff5d6c'),
       borderRadius:5}]},
-  options:{plugins:{legend:{display:false},
-    title:{display:true,text:'2026 İlk Yarı Getirileri (%)',color:'#e8edf7',font:{size:14}},
-    subtitle:{display:true,text:DATA.moves.note,color:txtc,font:{size:10}}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+    title:{display:true,text:'2026 İlk Yarı Getirileri (%)',color:'#e8edf7',font:{size:14}}},
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc}}}}
 });
 
@@ -732,9 +761,8 @@ new Chart(document.getElementById('fxposChart'),{
     datasets:[{data:DATA.fxposition.values,label:'Pozisyon (mlr$)',
       borderColor:'#4f8cff',backgroundColor:'rgba(79,140,255,.15)',
       fill:true,tension:.2,pointRadius:0,borderWidth:2}]},
-  options:{plugins:{legend:{display:false},
-    title:{display:true,text:'TCMB Döviz Pozisyonu (mlr$, 27 Şubat\'tan beri)',color:'#e8edf7',font:{size:13}},
-    subtitle:{display:true,text:DATA.fxposition.note,color:txtc,font:{size:10}}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+    title:{display:true,text:'TCMB Döviz Pozisyonu (mlr$, 27 Şubat\'tan beri)',color:'#e8edf7',font:{size:13}}},
    scales:{x:{grid:{color:gridc},ticks:{maxTicksLimit:12,autoSkip:true}},y:{grid:{color:gridc}}}}
 });
 
@@ -745,9 +773,8 @@ new Chart(document.getElementById('resChart'),{
     datasets:[{data:DATA.reserves.values,label:'Toplam rezerv (mlr$)',
       borderColor:'#ff5d6c',backgroundColor:'rgba(255,93,108,.15)',
       fill:true,tension:.25,pointRadius:4,pointBackgroundColor:'#ff5d6c'}]},
-  options:{plugins:{legend:{display:false},
-    title:{display:true,text:'TCMB Toplam Rezervler (mlr USD)',color:'#e8edf7',font:{size:14}},
-    subtitle:{display:true,text:DATA.reserves.note,color:txtc,font:{size:10}}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+    title:{display:true,text:'TCMB Toplam Rezervler (mlr USD)',color:'#e8edf7',font:{size:14}}},
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc}}}}
 });
 
@@ -757,11 +784,14 @@ new Chart(document.getElementById('cpiChart'),{
   data:{labels:DATA.inflation.labels,
     datasets:[{data:DATA.inflation.values,
       backgroundColor:['#f5b942','#9b7dff','#4f8cff'],borderRadius:5}]},
-  options:{plugins:{legend:{display:false},
-    title:{display:true,text:'Enflasyon — Eylül 2026 (yıllık %)',color:'#e8edf7',font:{size:14}},
-    subtitle:{display:true,text:DATA.inflation.note,color:txtc,font:{size:10}}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+    title:{display:true,text:'Enflasyon — Eylül 2026 (yıllık %)',color:'#e8edf7',font:{size:14}}},
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc},ticks:{callback:v=>v+'%'}}}}
 });
+
+// ---- Grafik alt yazıları (başlık altından grafik altına taşındı, 16 Ekim 2026) ----
+[['movesCap',DATA.moves],['fxposCap',DATA.fxposition],['resCap',DATA.reserves],['cpiCap',DATA.inflation]]
+  .forEach(([id,d])=>{ const el=document.getElementById(id); if(el&&d&&d.note) el.textContent=d.note; });
 </script>
 </body>
 </html>
