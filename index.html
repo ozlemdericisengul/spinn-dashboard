@@ -90,126 +90,126 @@
 <!-- ============================================================== -->
 <script>
 const DATA = {
-  "asof": "22 Ekim 2026, Perşembe · 05:40 TSİ",
+  "asof": "25 Kasım 2026, Çarşamba · 05.20 TSİ",
   "kpis": [
     {
       "label": "USD/TRY",
-      "val": "49,512",
-      "chg": "22 Eki TCMB · 21 Eki 49,489",
+      "val": "50,538",
+      "chg": "TCMB 25 Kas · 24 Kas kapanış 50,621",
       "dir": "down",
-      "meta": "EUR/TL 55,578 · 21 Eki 18.29 49,60"
+      "meta": "EUR/TL 55,219 · %+0,47 (13→23 Kas)"
     },
     {
       "label": "BIST 100",
-      "val": "11.577,12",
-      "chg": "%−1,87 (21 Eki) · −220,58 puan",
+      "val": "10.965,93",
+      "chg": "%−1,25 (24 Kas) · −138,45",
       "dir": "down",
-      "meta": "USD bazında 2,34 $ · sigorta %−5,89"
+      "meta": "USD bazında 2,17 $ · hacim 83,8 mlr ₺"
     },
     {
       "label": "5Y CDS",
-      "val": "250,08 bps",
-      "chg": "19 Eki · 21 Eki gün içi ~254",
+      "val": "256,9 bps",
+      "chg": "20 Kas (son teyitli)",
       "dir": "down",
-      "meta": "16 Eki 248,07 · 21 Eki kapanış teyitsiz"
+      "meta": "24 Kas kapanışı bulunamadı"
     },
     {
-      "label": "TR 2Y getiri",
-      "val": "%39,47",
-      "chg": "21 Eki · 20 Eki %39,56 · −9 bp",
-      "dir": "up",
-      "meta": "5Y %38,65 (−5 bp) · 10Y %35,59 (20 Eki)"
+      "label": "TR 10Y getiri",
+      "val": "%36,45",
+      "chg": "24 Kas · +32 bp",
+      "dir": "down",
+      "meta": "2Y %39,76 (+9 bp)"
     },
     {
-      "label": "Efektif Fonlama",
-      "val": "%37,00",
-      "chg": "21 Eki · PPK bugün 14.00",
+      "label": "Politika Faizi",
+      "val": "%36,00",
+      "chg": "22 Eki PPK · −100 bp",
       "dir": "flat",
-      "meta": "net sterilizasyon ~1.036 mlr ₺"
+      "meta": "10 Ara indirim ağırlığım %70"
     },
     {
       "label": "TÜFE (yıllık)",
-      "val": "%29,73",
-      "chg": "Eylül · aylık %1,84",
-      "dir": "up",
-      "meta": "OVP 2026 yıl sonu tahmini %28,4"
+      "val": "%29,77",
+      "chg": "Ekim · aylık %2,58",
+      "dir": "down",
+      "meta": "Kasım TÜFE 3 Ara"
     },
     {
       "label": "TCMB Brüt Rezerv",
-      "val": "171,6 mlr$",
-      "chg": "9 Eki haftası · +4,19 mlr$",
-      "dir": "up",
-      "meta": "16 Eki haftası bugün 14.30 · önizleme ~169,0"
+      "val": "159,0 mlr$",
+      "chg": "13 Kas haftası · −2,1 mlr$",
+      "dir": "down",
+      "meta": "günlük 23 Kas: 139,4 (−4,8)"
     },
     {
       "label": "TCMB Net Rezerv",
-      "val": "43,8 mlr$",
-      "chg": "20 Eki · 19 Eki'ye göre −0,77",
+      "val": "14,5 mlr$",
+      "chg": "23 Kas · 20 Kas'a göre −5,4",
       "dir": "down",
-      "meta": "Hazine dahil 50,9 (−0,83)"
+      "meta": "Hazine dahil 20,6 (−5,3)"
     },
     {
       "label": "TCMB Döviz Pozisyonu",
-      "val": "31,8 mlr$",
-      "chg": "20 Eki · günlük −0,56",
+      "val": "1,8 mlr$",
+      "chg": "23 Kas · günlük −5,6",
       "dir": "down",
-      "meta": "12 Eki'ye göre −7,16 · 27 Şub 70,1"
+      "meta": "13 Kas 23,8 → −21,9"
     },
     {
       "label": "S&P 500",
-      "val": "7.757,17",
-      "chg": "%+0,58 (21 Eki) · +44,60 puan",
-      "dir": "up",
-      "meta": "vadeli 22 Eki sabah %−0,5"
+      "val": "7.201,09",
+      "chg": "%−0,50 (24 Kas)",
+      "dir": "down",
+      "meta": "Nvidia %−5,9 · VIX 26,36"
     },
     {
       "label": "Nasdaq Bileşik",
-      "val": "26.702,86",
-      "chg": "%+1,05 (21 Eki) · +278,04 puan",
-      "dir": "up",
-      "meta": "Meta seans sonrası %+2,2, Tesla %−3,3"
+      "val": "23.733,54",
+      "chg": "%−1,48 (24 Kas)",
+      "dir": "down",
+      "meta": "Nasdaq 100 %−1,99"
     },
     {
       "label": "Dow Jones",
-      "val": "52.856,09",
-      "chg": "%+0,69 (21 Eki) · +360,21 puan",
+      "val": "50.018,70",
+      "chg": "%+0,85 (24 Kas)",
       "dir": "up",
-      "meta": "Russell 2000 %+0,27"
+      "meta": "+423,39 puan · değer rotasyonu"
     },
     {
       "label": "ABD 10Y",
-      "val": "%5,13",
-      "chg": "21 Eki · +1 bp",
-      "dir": "down",
-      "meta": "2Y %4,81 (+2 bp) · 22 Eki sabah %5,11"
+      "val": "%4,90",
+      "chg": "24 Kas · ~yatay",
+      "dir": "flat",
+      "meta": "kaynaklar %4,90-4,94"
     },
     {
       "label": "Altın",
-      "val": "4.114,40 $",
-      "chg": "22 Eki sabah · %−0,6",
+      "val": "3.553,80 $",
+      "chg": "24 Kas vadeli · %−2,7",
       "dir": "down",
-      "meta": "haftalık dip bölgesi ~4.100 $"
+      "meta": "gram 5.843 ₺ (%−1,58)"
     },
     {
       "label": "Brent",
-      "val": "108,82 $",
-      "chg": "21 Eki · %+0,03",
-      "dir": "up",
-      "meta": "22 Eki sabah 110 $ üzeri (%+1,3)"
+      "val": "91,40 $",
+      "chg": "24 Kas kapanış Ocak · %+2,27",
+      "dir": "down",
+      "meta": "sabah 90,68 · makas 2,62"
     },
     {
-      "label": "DXY",
-      "val": "101,65",
-      "chg": "22 Eki · 21 Eki 101,69",
+      "label": "EUR/USD",
+      "val": "1,0926",
+      "chg": "25 Kas sabah",
       "dir": "flat",
-      "meta": "EUR/USD 1,1225"
+      "meta": "DXY 104,09 (24 Kas 103,67)"
     },
     {
       "label": "Fed Funds",
       "val": "%3,75–4,00",
-      "chg": "16 Eyl · +25 bp, 12-0",
-      "dir": "up",
-      "meta": "Ekim sabit ~%88 · Aralık artırım >%90"
+      "chg": "28 Eki sabit (10-2 oy)",
+      "dir": "flat",
+      "meta": "9 Ara +25 bp ~%96-100 (aktarım)"
     }
   ],
   "moves": {
@@ -388,7 +388,30 @@ const DATA = {
       "15.10",
       "16.10",
       "19.10",
-      "20.10"
+      "20.10",
+      "21.10",
+      "22.10",
+      "23.10",
+      "26.10",
+      "27.10",
+      "28.10",
+      "30.10",
+      "02.11",
+      "03.11",
+      "04.11",
+      "05.11",
+      "06.11",
+      "09.11",
+      "10.11",
+      "11.11",
+      "12.11",
+      "13.11",
+      "16.11",
+      "17.11",
+      "18.11",
+      "19.11",
+      "20.11",
+      "23.11"
     ],
     "values": [
       70.13,
@@ -548,11 +571,34 @@ const DATA = {
       39.08,
       34.22,
       34.06,
-      33.94,
-      32.4,
-      31.84
+      33.93,
+      32.39,
+      31.83,
+      31.52,
+      29.71,
+      25.69,
+      22.89,
+      22.73,
+      23.01,
+      19.26,
+      16.52,
+      19.92,
+      21.26,
+      27.12,
+      23.45,
+      24.44,
+      30.0,
+      30.08,
+      25.81,
+      23.78,
+      21.46,
+      22.93,
+      20.11,
+      13.67,
+      7.41,
+      1.83
     ],
-    "note": "Son satır 20 Ekim: toplam döviz pozisyonu 31,84 mlr$, günlük −559,1 mn$. 12 Ekim'deki 38,99 mlr$'dan altı iş gününde −7,16 mlr$; 27 Şubat'ta 70,13 mlr$ idi."
+    "note": "23 Kas: 1,8 mlr$, günlük −5,6. 13 Kas'tan beri −21,9 mlr$; altın değerlemesi dışındaki çıkış ~14,7 mlr$ (hesap)."
   },
   "reserves": {
     "labels": [
@@ -576,7 +622,12 @@ const DATA = {
       "18 Eyl",
       "25 Eyl",
       "2 Eki",
-      "9 Eki"
+      "9 Eki",
+      "16 Eki",
+      "23 Eki",
+      "30 Eki",
+      "6 Kas",
+      "13 Kas"
     ],
     "values": [
       205.2,
@@ -599,105 +650,117 @@ const DATA = {
       174.4,
       171.2,
       167.4,
-      171.6
+      171.6,
+      169.1,
+      162.2,
+      158.1,
+      161.1,
+      159.0
     ],
-    "note": "9 Eki: brüt 171,575 mlr$, haftalık +4,187 (%+2,50) — altı haftalık düşüş serisi kırıldı. Kırılım: altın 107,008 (−0,054), döviz 64,567 (+4,241). Artışın tamamı döviz ayağından; altın payı %63,96'dan %62,37'ye indi."
+    "note": "13 Kas: brüt 159,0 mlr$, haftalık −2,1 (%−1,3). Altın 99,7 (−4,3), döviz 59,3 (+2,2): döviz ayağı önceki haftanın 2,4 katı. Önizlemem tuttu. Yılbaşına göre −34,9."
   },
   "inflation": {
     "labels": [
       "TÜFE",
-      "Çekirdek",
+      "Çekirdek (B)",
       "Yİ-ÜFE"
     ],
     "values": [
-      29.73,
-      28.7,
-      27.38
+      29.77,
+      28.46,
+      27.41
     ],
-    "note": "Eylül 2026 yıllık. TÜFE aylık +1,84 (anket ortalaması %2,18; ağustos yıllık %31,51'di) ve yıllık oran Kasım 2021'den beri ilk kez %30'un altında. Yİ-ÜFE aylık +2,07 (ağustos +2,57), yıllık %27,95'ten %27,38'e indi. Aylık kırılımda gıda %0,20 geriledi, ulaştırma %2,79 ve konut %2,71 arttı; benzindeki ÖTV adımı 1 Ekim'de yürürlüğe girdiği için eylül verisinde yok. Çekirdek göstergede kaynak endeks tipini (B/C) belirtmedi."
+    "note": "Ekim 2026 yıllık. TÜFE aylık %2,58 (ekonomist anketi ort. %2,20, PKA medyanı %2,11), yıllık %29,73'ten %29,77'ye çıktı. Gıda aylık %3,50 ile 0,84 puan katkı yaptı. B çekirdek aylık %2,00, yıllık %28,46. Yİ-ÜFE aylık %1,65, yıllık %27,41."
   },
   "calendar": [
     {
-      "d": "22 Eki",
-      "r": "TR",
-      "e": "14.00 TCMB PPK. Politika faizi %37, gecelik borç verme %40, borçlanma %35,5. Beklentim 100 bp (%36); AA Finans anketi 19/20 aynı. İzlenecek: koridor alt ucu. 10.00 tüketici güveni (Eylül 91,9).",
-      "imp": "h"
-    },
-    {
-      "d": "22 Eki",
-      "r": "TR",
-      "e": "14.30 TCMB 16 Ekim haftası rezervleri ve yabancı portföy akımı. Günlük seride 9-16 Eki brüt −2,53 mlr$; önizlemem ~169,0 mlr$. 22 Ekim vadeli 50 mlr ₺ repo vadesi",
-      "imp": "h"
-    },
-    {
-      "d": "22 Eki",
-      "r": "DÜNYA",
-      "e": "13.50 Bailey · 15.30 ABD haftalık işsizlik başvuruları · 17.00 Euro Bölgesi tüketici güveni öncü (önceki −16,5) ve ABD öncü göstergeler · 20.00 ABD 5Y TIPS ihalesi. Henüz açıklanmadı",
-      "imp": "m"
-    },
-    {
-      "d": "23 Eki",
-      "r": "TR",
-      "e": "10.00 Sektörel enflasyon beklentileri. 12 ay sonrası: hanehalkı %45,60 · reel kesim %32,50 · piyasa katılımcıları %23,89",
-      "imp": "h"
-    },
-    {
-      "d": "23 Eki",
-      "r": "DÜNYA",
-      "e": "Küresel Ekim öncü PMI'ları (ABD 16.45) · Michigan nihai güven · Rusya Merkez Bankası faiz kararı · S&P Almanya, Moody's Fransa değerlendirmeleri",
-      "imp": "h"
-    },
-    {
-      "d": "27 Eki",
-      "r": "TR",
-      "e": "27 Ekim vadeli haftalık repo (0,265 mlr ₺) ve haftalık depo (20 mlr ₺) vadeleri",
-      "imp": "m"
-    },
-    {
-      "d": "28 Eki",
+      "d": "25 Kas",
       "r": "ABD",
-      "e": "FOMC. Fed Funds %3,75-4,00. Tahmin piyasaları 21 Eki: sabit %88, artırım %11",
+      "e": "16.30 Ekim çekirdek PCE (bekl. aylık %0,3; önc. %0,3, yıllık %3,1) · 3Ç GSYH 2. tahmin (bekl. %3,5) · dayanıklı mal · işsizlik başvuruları (bekl. 201 bin)",
       "imp": "h"
     },
     {
-      "d": "28 Eki",
-      "r": "TR",
-      "e": "28 Ekim vadeli haftalık repo (ilan 1 mlr ₺) ve haftalık depo (20 mlr ₺) vadeleri",
+      "d": "25 Kas",
+      "r": "ABD",
+      "e": "18.00 yeni konut satışları (önc. 676 bin) · 18.30 EIA · 21.00 7 yıllık ihale · 22.00 Bej Kitap",
       "imp": "m"
     },
     {
-      "d": "3 Kas",
+      "d": "25 Kas",
       "r": "TR",
-      "e": "TÜİK Ekim TÜFE ve Yİ-ÜFE (Eylül: aylık %1,84, yıllık %29,73). Anket medyanı aylık %2,11",
+      "e": "1,25 mlr € yeşil tahvil (≈1,37 mlr$) Hazine hesaplarına · 100 mlr ₺ repo ve 50 mlr ₺ depo vadesi",
+      "imp": "m"
+    },
+    {
+      "d": "26 Kas",
+      "r": "TR",
+      "e": "14.30 haftalık rezerv (20 Kas haftası) — hesabım: manşet ~142 mlr$, döviz ayağı ~−9,0 · yabancı akımları · 14.00 BDDK",
       "imp": "h"
     },
     {
-      "d": "Kasım",
+      "d": "26 Kas",
+      "r": "ABD",
+      "e": "Şükran Günü — piyasalar kapalı; 27 Kas kısa seans",
+      "imp": "m"
+    },
+    {
+      "d": "27 Kas",
       "r": "TR",
-      "e": "MSCI Yarı Yıl Endeks Gözden Geçirmesi — Türk hisselerinde FIF/pay sayısı artışları, IMI eklemeleri ve segment yükselişleri dondurulmuş olarak uygulanmayacak",
+      "e": "10.00 TÜİK ekonomik güven endeksi",
+      "imp": "m"
+    },
+    {
+      "d": "27 Kas",
+      "r": "Euro",
+      "e": "Almanya GfK tüketici güveni · Euro Bölgesi ekonomik güveni",
+      "imp": "l"
+    },
+    {
+      "d": "3 Ara",
+      "r": "TR",
+      "e": "Kasım TÜFE — Karahan: gıda baz etkisiyle yıllık yükselebilir",
+      "imp": "h"
+    },
+    {
+      "d": "9 Ara",
+      "r": "ABD",
+      "e": "Yılın son FOMC'si — 25 bp artırım ~tamamen fiyatlı",
       "imp": "h"
     },
     {
       "d": "10 Ara",
       "r": "TR",
-      "e": "Yılın son PPK'sı. AA Finans anketinde yıl sonu politika faizi medyanı %35",
+      "e": "Yılın son PPK'sı. Politika faizi %36; indirim ağırlığım %70 (26 Kas: döviz ayağı >+2 → %80, eksi → %60)",
+      "imp": "h"
+    },
+    {
+      "d": "17 Ara",
+      "r": "Euro",
+      "e": "ECB toplantısı",
+      "imp": "m"
+    },
+    {
+      "d": "Mar 2027",
+      "r": "TR",
+      "e": "FTSE Russell: yeni eklemeler ve fiili dolaşım artışları en az bu gözden geçirmeye kadar donduruldu",
       "imp": "m"
     },
     {
       "d": "Haz 2027",
       "r": "TR",
-      "e": "MSCI eşiği: yeterli ilerleme görülmezse Gelişmekte Olan Piyasa'dan indirme istişaresi değerlendirilecek",
+      "e": "MSCI eşiği: yeterli ilerleme görülmezse Gelişmekte Olan Piyasa'dan indirme istişaresi",
       "imp": "h"
     }
   ],
   "notes": [
-    "<b>BİST geri verdi:</b> 11.577,12 (%−1,87), dolar bazında 2,34 $; Salı'daki 367,56 puanlık kazancın %60'ı silindi. Sigorta %−5,89, metal eşya %−4,28; teknoloji %+0,37 tek artı.",
-    "<b>SPK:</b> Alnus, Bulls ve Pusula Yatırım'ın faaliyetleri 21 Eki 00.01'den itibaren geçici olarak durduruldu; gerekçe açıklanmadı.",
-    "<b>Fon kanunu:</b> TBMM Genel Kurulu ilk 5 maddeyi kabul etti. Ara ödeme kişi başı 1 mn ₺'ye kadar; 17 Eylül ve öncesi TEFAS'ta bloke kalan talimatlar da kapsamda.",
-    "<b>2027 bütçesi:</b> harcama 27.276, gelir 23.408, açık 3.868 mlr ₺ (GSYH'nin %3,5'i). OVP: 2026 yıl sonu enflasyon %28,4, 2027 hedefi %21; büyüme 2027 %4,2.",
-    "<b>KKO ve güven:</b> KKO (arındırılmış) %74,3 (+0,2); reel kesim güveni 101,1 (−1,4), arındırılmamış 99,8 ile 100'ün altına indi. Siparişler zayıfladı.",
-    "<b>Rezerv (20 Eki satırı):</b> brüt 170,65 (−0,15), net 43,84 (−0,77), döviz pozisyonu 31,84 mlr$ (−0,56). Nettekini +0,62 yükümlülük açıklıyor; aritmetik birebir kapanıyor.",
-    "<b>Küresel:</b> Nasdaq %+1,05, S&P %+0,58; Tesla ve Lam sonrası vadeliler %−0,5. Brent Suudi saldırıları ve ABD'nin personel tahliyesiyle sabah 110 $ üzerinde. UK TÜFE %3,5 (bkl. %3,4)."
+    "<b>Döviz pozisyonu (23 Kas):</b> 1,8 mlr$ (−5,6). 20 Kas 7,4 (−6,3). Son üç günde −18,3; 13 Kas'tan beri −21,9 mlr$.",
+    "<b>Günlük rezerv (23 Kas):</b> brüt 139,4 mlr$ (−4,8), net 14,5 (−5,4), Hazine dahil 20,6 (−5,3). 20 Kas: brüt 144,2 (−7,2), net 19,8 (−6,4).",
+    "<b>SPINN hesabı:</b> 13-23 Kas altın dışı çıkış ~14,7 mlr$ (değerleme −7,2); dolar/TL yalnız %+0,47. Satış hipotezi doğruysa ~741 mlr ₺ TL likiditesi çekildi.",
+    "<b>26 Kas önizleme:</b> 13-20 Kas günlük bilanço −17,1 mlr$ (altın −8,0, altın dışı −9,0). Manşet ~142 mlr$; dünkü 145-147 tahminim aşağı çekildi.",
+    "<b>BİST:</b> %−1,25 ile 10.965,93, 11.000'in altı; 14 yükselen/82 düşen, hacim 83,8 mlr ₺. Banka %−2,12, faktoring %−5,30. Dolar bazında 2,17 $.",
+    "<b>ABD:</b> Nasdaq %−1,48, Nvidia %−5,9, Micron %−11,0; Dow %+0,85 ile 50.018,70. Conference Board güveni 103,3 (bekl. 92,2), enflasyon beklentisi %5,7.",
+    "<b>Tarife:</b> ABD Section 301 kapsamında Çin, AB ve 14 ekonomiye artışa hazırlanıyor; Türkiye listede yok. Oranlar henüz açıklanmadı.",
+    "<b>Emtia:</b> Brent Ocak 91,40 $ (%+2,27), makas 2,62. Ons vadeli ~3.554 $ (%−2,7), gümüş sabah %−5,4. Yeşil tahvil tutarı bugün Hazine hesaplarında."
   ]
 };
 </script>
@@ -807,7 +870,7 @@ new Chart(document.getElementById('cpiChart'),{
     datasets:[{data:DATA.inflation.values,
       backgroundColor:['#f5b942','#9b7dff','#4f8cff'],borderRadius:5}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
-    title:{display:true,text:'Enflasyon — Eylül 2026 (yıllık %)',color:'#e8edf7',font:{size:14}}},
+    title:{display:true,text:'Enflasyon — Ekim 2026 (yıllık %)',color:'#e8edf7',font:{size:14}}},
    scales:{x:{grid:{color:gridc}},y:{grid:{color:gridc},ticks:{callback:v=>v+'%'}}}}
 });
 
